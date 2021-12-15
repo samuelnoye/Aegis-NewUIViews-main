@@ -18,7 +18,7 @@ struct SignUpView: View {
     @State var passFieldName: String = "Password"
     @State var passFieldBind: String = "password"
     @State var passConFieldName: String = "Confirm Password"
-    @State var passConFieldBind: String = "Conpassword"
+    @State var passConFieldBind: String = ""
     
     //MARK: - BODY
     var body: some View {
@@ -45,8 +45,9 @@ struct SignUpView: View {
                     
                     //PASSWORD FIELD
                     UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
-                    //CONFIRM PASSWORD FIELD
                     UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
+                    //CONFIRM PASSWORD FIELD
+                  //  UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
                     
                     
                     

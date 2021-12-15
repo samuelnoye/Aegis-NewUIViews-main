@@ -28,7 +28,8 @@ struct DividerView: View {
         }
 
         var line: some View {
-            VStack { Divider().background(color)
+            VStack { Divider()
+                    .background(color).opacity(0.90)
                     .foregroundColor(color)
             }.padding(horizontalPadding)
         }

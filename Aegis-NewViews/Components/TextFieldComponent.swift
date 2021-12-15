@@ -80,7 +80,6 @@ struct ButtonWithIconView: View {
             Section {
                 HStack {
                     
-                    
                     if hidden{
                         TextField("\(fieldName)", text: $fieldBind)
                             .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
@@ -94,7 +93,7 @@ struct ButtonWithIconView: View {
                             .padding(.leading)
                       }
                     
-                    Button(action:{
+                     Button(action:{
                         // action
                         hidden.toggle()
                     }, label: {
@@ -110,6 +109,7 @@ struct ButtonWithIconView: View {
         }
     
 }
+
 
 public struct Screen {
     public static let screenSize: CGRect = UIScreen.main.bounds
