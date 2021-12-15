@@ -25,24 +25,8 @@ struct UserProfileTextFieldView: View {
             .cornerRadius(3)
     }
 }
-struct UserProfileEmailTextFieldView: View {
-    @Binding var fieldBind: String
-    @Binding var fieldName: String
-    var body: some View {
-        Section {
-            HStack {
-                Text("\(fieldName)")
-                    .padding(.leading, 12)
-                TextField("", text: $fieldBind)
-                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
-                    .frame( height: 35.0)
-                    .disabled(true)
-            }.foregroundColor(.gray)
-                .padding(.all, 5)
-        } .background(Color.black)
-            .cornerRadius(20)
-    }
-}
+
+
 struct GeneralButtonView: View {
     @Binding var buttonName: String
     
@@ -84,9 +68,46 @@ struct ButtonWithIconView: View {
             .background(Color.black.cornerRadius(20))
             .border(Color.white, width: 1)
     }
-    
-    
-    
+}
+    struct UserProfilePasswordField: View {
+        @Binding var fieldBind: String
+        @Binding var fieldName: String
+        
+        
+        @State var hidden: Bool = false
+        
+        var body: some View {
+            Section {
+                HStack {
+                    
+                    
+                    if hidden{
+                        TextField("\(fieldName)", text: $fieldBind)
+                            .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                            .frame( height: 35.0)
+                            .padding(.leading)
+                        
+                    }else{
+                        SecureField("\(fieldName)", text: $fieldBind)
+                            .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                            .frame( height: 35.0)
+                            .padding(.leading)
+                      }
+                    
+                    Button(action:{
+                        // action
+                        hidden.toggle()
+                    }, label: {
+                        Image(systemName: hidden ? "eye" : "eye.slash")
+                            .imageScale(.medium)
+                            .foregroundColor(Color.gray) })
+                    
+                }
+                .padding(.all, 8)
+            } .background(Color.black)
+                .border(Color.white, width: 1)
+                .cornerRadius(3)
+        }
     
 }
 

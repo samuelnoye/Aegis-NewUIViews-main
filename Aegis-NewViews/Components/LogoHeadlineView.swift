@@ -30,7 +30,7 @@ struct LogoHeadlineView: View {
                     
                     
                 }//:VSTACK
-                .padding(.bottom, 30)
+                .padding(.bottom, 50)
                 
                
                 

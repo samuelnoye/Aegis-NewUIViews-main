@@ -10,7 +10,7 @@ import SwiftUI
 struct AuthView: View {
     //MARK: - PROPERTIES
     @State private var email: String = ""
-    @State var fieldBind: String = ""
+    @State var fieldBind: String = "email"
     @State var buttonName: String = "Continue"
     @State var fieldName: String = "Email"
     @State var buttonIconName: String = "Continue with Apple"
@@ -59,8 +59,7 @@ struct AuthView: View {
                 
             }//:VSTACK
             .frame(width: Screen.screenSize.width*0.90)
-            .padding(.bottom,20)
-            .padding(.top, 180)
+            .padding(.top, 140)
             
         }//:ZSTACK
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
