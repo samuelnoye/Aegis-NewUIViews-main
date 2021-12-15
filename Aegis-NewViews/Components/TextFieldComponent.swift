@@ -97,7 +97,7 @@ struct ButtonWithIconView: View {
                         // action
                         hidden.toggle()
                     }, label: {
-                        Image(systemName: hidden ? "eye" : "eye.slash")
+                        Image(systemName: hidden ? "eye.slash" : "eye")
                             .imageScale(.medium)
                             .foregroundColor(Color.gray) })
                     
