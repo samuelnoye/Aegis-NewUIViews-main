@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D55A7ADD2769DBF900D06E03 /* CustomFonts in Resources */ = {isa = PBXBuildFile; fileRef = D55A7ADC2769DBF900D06E03 /* CustomFonts */; };
+		D55A7AE32769E06200D06E03 /* LogoHeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */; };
+		D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE42769E1D800D06E03 /* BottomTextView.swift */; };
+		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
+		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
+		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
+		D5C495BC27689C89002DC90F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495BB27689C89002DC90F /* Preview Assets.xcassets */; };
+		D5C495BE27689C89002DC90F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495BD27689C89002DC90F /* Persistence.swift */; };
+		D5C495C127689C89002DC90F /* Aegis_NewViews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5C495BF27689C89002DC90F /* Aegis_NewViews.xcdatamodeld */; };
+		D5C495CB27689C89002DC90F /* Aegis_NewViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495CA27689C89002DC90F /* Aegis_NewViewsTests.swift */; };
+		D5C495D527689C89002DC90F /* Aegis_NewViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495D427689C89002DC90F /* Aegis_NewViewsUITests.swift */; };
+		D5C495D727689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495D627689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift */; };
+		D5C495E527689D3F002DC90F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E427689D3F002DC90F /* AuthView.swift */; };
+		D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E62768ECF5002DC90F /* DividerView.swift */; };
+		D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5C495C727689C89002DC90F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5C495A927689C87002DC90F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5C495B027689C87002DC90F;
+			remoteInfo = "Aegis-NewViews";
+		};
+		D5C495D127689C89002DC90F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5C495A927689C87002DC90F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5C495B027689C87002DC90F;
+			remoteInfo = "Aegis-NewViews";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D55A7ADC2769DBF900D06E03 /* CustomFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomFonts; sourceTree = "<group>"; };
+		D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoHeadlineView.swift; sourceTree = "<group>"; };
+		D55A7AE42769E1D800D06E03 /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
+		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
+		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5C495B827689C89002DC90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5C495BB27689C89002DC90F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5C495BD27689C89002DC90F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D5C495C027689C89002DC90F /* Aegis_NewViews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aegis_NewViews.xcdatamodel; sourceTree = "<group>"; };
+		D5C495C627689C89002DC90F /* Aegis-NewViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aegis-NewViewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C495CA27689C89002DC90F /* Aegis_NewViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsTests.swift; sourceTree = "<group>"; };
+		D5C495D027689C89002DC90F /* Aegis-NewViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aegis-NewViewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C495D427689C89002DC90F /* Aegis_NewViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsUITests.swift; sourceTree = "<group>"; };
+		D5C495D627689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5C495E427689D3F002DC90F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		D5C495E62768ECF5002DC90F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5C495AE27689C87002DC90F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C495C327689C89002DC90F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C495CD27689C89002DC90F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5C495A827689C87002DC90F = {
+			isa = PBXGroup;
+			children = (
+				D5C495B327689C87002DC90F /* Aegis-NewViews */,
+				D5C495C927689C89002DC90F /* Aegis-NewViewsTests */,
+				D5C495D327689C89002DC90F /* Aegis-NewViewsUITests */,
+				D5C495B227689C87002DC90F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5C495B227689C87002DC90F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5C495B127689C87002DC90F /* Aegis-NewViews.app */,
+				D5C495C627689C89002DC90F /* Aegis-NewViewsTests.xctest */,
+				D5C495D027689C89002DC90F /* Aegis-NewViewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5C495B327689C87002DC90F /* Aegis-NewViews */ = {
+			isa = PBXGroup;
+			children = (
+				D55A7ADC2769DBF900D06E03 /* CustomFonts */,
+				D5C495E82768FC3F002DC90F /* Components */,
+				D5C495E327689CE1002DC90F /* AllViews */,
+				D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */,
+				D5C495B627689C87002DC90F /* ContentView.swift */,
+				D5C495B827689C89002DC90F /* Assets.xcassets */,
+				D5C495BF27689C89002DC90F /* Aegis_NewViews.xcdatamodeld */,
+				D5C495BA27689C89002DC90F /* Preview Content */,
+			);
+			path = "Aegis-NewViews";
+			sourceTree = "<group>";
+		};
+		D5C495BA27689C89002DC90F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D5C495BB27689C89002DC90F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5C495C927689C89002DC90F /* Aegis-NewViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5C495CA27689C89002DC90F /* Aegis_NewViewsTests.swift */,
+			);
+			path = "Aegis-NewViewsTests";
+			sourceTree = "<group>";
+		};
+		D5C495D327689C89002DC90F /* Aegis-NewViewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5C495D427689C89002DC90F /* Aegis_NewViewsUITests.swift */,
+				D5C495D627689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift */,
+			);
+			path = "Aegis-NewViewsUITests";
+			sourceTree = "<group>";
+		};
+		D5C495E327689CE1002DC90F /* AllViews */ = {
+			isa = PBXGroup;
+			children = (
+				D5C495E427689D3F002DC90F /* AuthView.swift */,
+				D5C495BD27689C89002DC90F /* Persistence.swift */,
+			);
+			path = AllViews;
+			sourceTree = "<group>";
+		};
+		D5C495E82768FC3F002DC90F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D5C495E62768ECF5002DC90F /* DividerView.swift */,
+				D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */,
+				D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */,
+				D55A7AE42769E1D800D06E03 /* BottomTextView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5C495B027689C87002DC90F /* Aegis-NewViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C495DA27689C89002DC90F /* Build configuration list for PBXNativeTarget "Aegis-NewViews" */;
+			buildPhases = (
+				D5C495AD27689C87002DC90F /* Sources */,
+				D5C495AE27689C87002DC90F /* Frameworks */,
+				D5C495AF27689C87002DC90F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aegis-NewViews";
+			productName = "Aegis-NewViews";
+			productReference = D5C495B127689C87002DC90F /* Aegis-NewViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5C495C527689C89002DC90F /* Aegis-NewViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C495DD27689C89002DC90F /* Build configuration list for PBXNativeTarget "Aegis-NewViewsTests" */;
+			buildPhases = (
+				D5C495C227689C89002DC90F /* Sources */,
+				D5C495C327689C89002DC90F /* Frameworks */,
+				D5C495C427689C89002DC90F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5C495C827689C89002DC90F /* PBXTargetDependency */,
+			);
+			name = "Aegis-NewViewsTests";
+			productName = "Aegis-NewViewsTests";
+			productReference = D5C495C627689C89002DC90F /* Aegis-NewViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5C495CF27689C89002DC90F /* Aegis-NewViewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C495E027689C89002DC90F /* Build configuration list for PBXNativeTarget "Aegis-NewViewsUITests" */;
+			buildPhases = (
+				D5C495CC27689C89002DC90F /* Sources */,
+				D5C495CD27689C89002DC90F /* Frameworks */,
+				D5C495CE27689C89002DC90F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5C495D227689C89002DC90F /* PBXTargetDependency */,
+			);
+			name = "Aegis-NewViewsUITests";
+			productName = "Aegis-NewViewsUITests";
+			productReference = D5C495D027689C89002DC90F /* Aegis-NewViewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5C495A927689C87002DC90F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D5C495B027689C87002DC90F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					D5C495C527689C89002DC90F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D5C495B027689C87002DC90F;
+					};
+					D5C495CF27689C89002DC90F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D5C495B027689C87002DC90F;
+					};
+				};
+			};
+			buildConfigurationList = D5C495AC27689C87002DC90F /* Build configuration list for PBXProject "Aegis-NewViews" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5C495A827689C87002DC90F;
+			productRefGroup = D5C495B227689C87002DC90F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5C495B027689C87002DC90F /* Aegis-NewViews */,
+				D5C495C527689C89002DC90F /* Aegis-NewViewsTests */,
+				D5C495CF27689C89002DC90F /* Aegis-NewViewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5C495AF27689C87002DC90F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C495BC27689C89002DC90F /* Preview Assets.xcassets in Resources */,
+				D55A7ADD2769DBF900D06E03 /* CustomFonts in Resources */,
+				D5C495B927689C89002DC90F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C495C427689C89002DC90F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C495CE27689C89002DC90F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5C495AD27689C87002DC90F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C495BE27689C89002DC90F /* Persistence.swift in Sources */,
+				D5C495E527689D3F002DC90F /* AuthView.swift in Sources */,
+				D55A7AE32769E06200D06E03 /* LogoHeadlineView.swift in Sources */,
+				D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */,
+				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
+				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,
+				D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */,
+				D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */,
+				D5C495C127689C89002DC90F /* Aegis_NewViews.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C495C227689C89002DC90F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C495CB27689C89002DC90F /* Aegis_NewViewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C495CC27689C89002DC90F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C495D727689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift in Sources */,
+				D5C495D527689C89002DC90F /* Aegis_NewViewsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5C495C827689C89002DC90F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5C495B027689C87002DC90F /* Aegis-NewViews */;
+			targetProxy = D5C495C727689C89002DC90F /* PBXContainerItemProxy */;
+		};
+		D5C495D227689C89002DC90F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5C495B027689C87002DC90F /* Aegis-NewViews */;
+			targetProxy = D5C495D127689C89002DC90F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D5C495D827689C89002DC90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5C495D927689C89002DC90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5C495DB27689C89002DC90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aegis-NewViews/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PK549RRNR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViews";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5C495DC27689C89002DC90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aegis-NewViews/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PK549RRNR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViews";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5C495DE27689C89002DC90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PK549RRNR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViewsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aegis-NewViews.app/Aegis-NewViews";
+			};
+			name = Debug;
+		};
+		D5C495DF27689C89002DC90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PK549RRNR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViewsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aegis-NewViews.app/Aegis-NewViews";
+			};
+			name = Release;
+		};
+		D5C495E127689C89002DC90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PK549RRNR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViewsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Aegis-NewViews";
+			};
+			name = Debug;
+		};
+		D5C495E227689C89002DC90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2PK549RRNR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViewsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Aegis-NewViews";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5C495AC27689C87002DC90F /* Build configuration list for PBXProject "Aegis-NewViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C495D827689C89002DC90F /* Debug */,
+				D5C495D927689C89002DC90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C495DA27689C89002DC90F /* Build configuration list for PBXNativeTarget "Aegis-NewViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C495DB27689C89002DC90F /* Debug */,
+				D5C495DC27689C89002DC90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C495DD27689C89002DC90F /* Build configuration list for PBXNativeTarget "Aegis-NewViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C495DE27689C89002DC90F /* Debug */,
+				D5C495DF27689C89002DC90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C495E027689C89002DC90F /* Build configuration list for PBXNativeTarget "Aegis-NewViewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C495E127689C89002DC90F /* Debug */,
+				D5C495E227689C89002DC90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5C495BF27689C89002DC90F /* Aegis_NewViews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5C495C027689C89002DC90F /* Aegis_NewViews.xcdatamodel */,
+			);
+			currentVersion = D5C495C027689C89002DC90F /* Aegis_NewViews.xcdatamodel */;
+			path = Aegis_NewViews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D5C495A927689C87002DC90F /* Project object */;
+}
