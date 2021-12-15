@@ -22,7 +22,8 @@ struct LogoHeadlineView: View {
                          An artificially intelligent
                          safety system for bikers.
                          """)
-                        .font(.system(size: 20, weight: .light))
+                        //.font(.system(size: 20, weight: .light, design: .rounded))
+                        .font(Font.custom("NexaRegular", size: 20))
                         .fontWeight(.regular)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
