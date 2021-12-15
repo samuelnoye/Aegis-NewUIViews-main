@@ -10,7 +10,6 @@ import SwiftUI
 struct SignUpView: View {
     
     //MARK: - PROPERTIES
-    @State private var email: String = ""
     @State var fieldBind: String = ""
     @State var buttonName: String = "Sign up"
     @State var fieldName: String = "Email"
