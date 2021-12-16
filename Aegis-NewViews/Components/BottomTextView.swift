@@ -28,6 +28,7 @@ struct BottomTextView: View {
             }
         }.frame(width: Screen.screenSize.width * 0.99, height: 45, alignment: .center)
             .multilineTextAlignment(.center)
+            .font(Font.custom("Nexa-Trial-Regular",size: 15))
     }
 }
 

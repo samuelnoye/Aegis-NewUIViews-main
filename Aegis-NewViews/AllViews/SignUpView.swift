@@ -36,7 +36,7 @@ struct SignUpView: View {
                 //MARK: - PASSWORDS FIELD AND BUTTON
                 VStack(spacing: 30){
                     Text("Create new account")
-                        .font(Font.custom("NexaRegular", size: 20))
+                        .font(Font.custom("Nexa-Trial-Regular", size: 20))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)

@@ -23,7 +23,7 @@ struct LogoHeadlineView: View {
                          safety system for bikers.
                          """)
                         //.font(.system(size: 20, weight: .light, design: .rounded))
-                        .font(Font.custom("NexaRegular", size: 20))
+                        .font(Font.custom("Nexa-Trial-Regular", size: 20))
                         .fontWeight(.regular)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)

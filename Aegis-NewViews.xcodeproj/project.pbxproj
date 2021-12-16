@@ -28,6 +28,7 @@
 		D55A7B0B276A51D900D06E03 /* Nexa-Trial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF9276A51D900D06E03 /* Nexa-Trial-Regular.ttf */; };
 		D55A7B0C276A51D900D06E03 /* Nexa-Trial-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AFA276A51D900D06E03 /* Nexa-Trial-Bold.ttf */; };
 		D55A7B0D276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AFB276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf */; };
+		D55A7B0F276A576500D06E03 /* NexaRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7B0E276A576500D06E03 /* NexaRegular.otf */; };
 		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
 		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
 		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		D55A7AF9276A51D900D06E03 /* Nexa-Trial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Regular.ttf"; sourceTree = "<group>"; };
 		D55A7AFA276A51D900D06E03 /* Nexa-Trial-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Bold.ttf"; sourceTree = "<group>"; };
 		D55A7AFB276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D55A7B0E276A576500D06E03 /* NexaRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NexaRegular.otf; path = "Aegis-NewViews/Nexa-Font/NexaRegular.otf"; sourceTree = SOURCE_ROOT; };
 		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
 		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		D55A7AE9276A517900D06E03 /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
+				D55A7B0E276A576500D06E03 /* NexaRegular.otf */,
 				D55A7AF2276A51D800D06E03 /* Nexa-Trial-Black.ttf */,
 				D55A7AEF276A51D800D06E03 /* Nexa-Trial-BlackItalic.ttf */,
 				D55A7AFA276A51D900D06E03 /* Nexa-Trial-Bold.ttf */,
@@ -355,6 +358,7 @@
 				D55A7AFD276A51D900D06E03 /* Nexa-Trial-ExtraLightItalic.ttf in Resources */,
 				D55A7B0A276A51D900D06E03 /* Nexa-Trial-LightItalic.ttf in Resources */,
 				D55A7B09276A51D900D06E03 /* Nexa-Trial-Heavy.ttf in Resources */,
+				D55A7B0F276A576500D06E03 /* NexaRegular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
