@@ -24,12 +24,11 @@ struct DividerView: View {
                 line
                 Text(label).foregroundColor(color)
                 line
-            }
-        }
+            }.foregroundColor(color)        }
 
         var line: some View {
             VStack { Divider()
-                    .background(color).opacity(0.90)
+                    .background(color)
                     .foregroundColor(color)
             }.padding(horizontalPadding)
         }

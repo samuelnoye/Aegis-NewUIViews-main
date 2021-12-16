@@ -24,9 +24,9 @@ struct SignUpView: View {
         ZStack{
             Image("BgImg")
                 .resizable()
-                .scaledToFit()
+               // .scaledToFit()
             
-            VStack(spacing: 20){
+            VStack(spacing: 40){
                 
                 //MARK: - LOGO & HEADLINE TEXT
                 LogoHeadlineView().padding()
@@ -36,17 +36,17 @@ struct SignUpView: View {
                 //MARK: - PASSWORDS FIELD AND BUTTON
                 VStack(spacing: 30){
                     Text("Create new account")
-                        .font(Font.custom("Nexa-Trial-Regular", size: 20))
-                        .fontWeight(.light)
+                        .font(Font.custom("Nexa-Trial-Light", size: 20))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                        .padding(.bottom, 10)
+                        .padding(.bottom,20)
+                        
                     
                     //PASSWORD FIELD
                     UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
-                    UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
                     //CONFIRM PASSWORD FIELD
-                  //  UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
+                    UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
+                 
                     
                     
                     
@@ -55,19 +55,23 @@ struct SignUpView: View {
                     }, label: {
                         GeneralButtonView(buttonName: $buttonName)
                     })
-                } .padding(.bottom, 100)
+                }
                 
                 
                 //MARK: - BOTTOM TEXT
+                VStack{
                 BottomTextView()
+                }.padding(.top,20)
                 
             }//:VSTACK
-            .frame(width: Screen.screenSize.width*0.90)
-            .padding(.top, 140)
+           .frame(width: Screen.screenSize.width*0.90)
+           .padding(.top, 80)
             
         }//:ZSTACK
+        
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .edgesIgnoringSafeArea(.all)
+        
         
     }
 }

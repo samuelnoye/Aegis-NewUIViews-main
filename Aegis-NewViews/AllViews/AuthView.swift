@@ -10,7 +10,7 @@ import SwiftUI
 struct AuthView: View {
     //MARK: - PROPERTIES
     @State private var email: String = ""
-    @State var fieldBind: String = "email"
+    @State var fieldBind: String = "Email"
     @State var buttonName: String = "Continue"
     @State var fieldName: String = "Email"
     @State var buttonIconName: String = "Continue with Apple"
@@ -22,9 +22,9 @@ struct AuthView: View {
         ZStack{
             Image("BgImg")
                 .resizable()
-                .scaledToFit()
+               // .scaledToFit()
             
-            VStack(spacing: 20){
+            VStack(spacing: 40){
                 
                 //MARK: - LOGO & HEADLINE TEXT
                 
@@ -40,18 +40,21 @@ struct AuthView: View {
                     }, label: {
                         GeneralButtonView(buttonName: $buttonName)
                     })
-                } .padding(.bottom, 20)
+                }
                 
                 //MARK: - DIVIDER & APPLE BUTTON
+                DividerView(label: dividerText)
+                
+                Button(action:{
+                    // action
+                }, label: {
+                    ButtonWithIconView(buttonName: $buttonIconName, buttonIcon: $iconName) })
                 VStack(spacing: 40){
                     
-                    DividerView(label: dividerText)
-                    Button(action:{
-                        // action
-                    }, label: {
-                        ButtonWithIconView(buttonName: $buttonIconName, buttonIcon: $iconName) })
+                   
+                  
                 }
-               .padding(.bottom,100)
+              // .padding(.bottom,100)
                
                 
                 //MARK: - BOTTOM TEXT
@@ -59,7 +62,7 @@ struct AuthView: View {
                 
             }//:VSTACK
             .frame(width: Screen.screenSize.width*0.90)
-            .padding(.top, 140)
+            .padding(.top, 80)
             
         }//:ZSTACK
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)

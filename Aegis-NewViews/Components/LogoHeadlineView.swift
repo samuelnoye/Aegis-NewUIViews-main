@@ -17,20 +17,20 @@ struct LogoHeadlineView: View {
                     Image("Logo")
                         .resizable()
                         .frame(width: 200, height:70, alignment: .center)
-                        .scaledToFit()
+                       
                     Text("""
                          An artificially intelligent
                          safety system for bikers.
                          """)
                         //.font(.system(size: 20, weight: .light, design: .rounded))
-                        .font(Font.custom("Nexa-Trial-Regular", size: 20))
-                        .fontWeight(.regular)
+                        .font(Font.custom("Nexa-Trial-Light", size: 20))
+                        .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                     
                     
                 }//:VSTACK
-                .padding(.bottom, 50)
+                
                 
                
                 
