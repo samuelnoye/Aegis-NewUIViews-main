@@ -9,26 +9,7 @@
 /* Begin PBXBuildFile section */
 		D55A7AE32769E06200D06E03 /* LogoHeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */; };
 		D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE42769E1D800D06E03 /* BottomTextView.swift */; };
-		D55A7AE8276A01CE00D06E03 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE7276A01CE00D06E03 /* SignUpView.swift */; };
-		D55A7AFC276A51D900D06E03 /* Nexa-Trial-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AEA276A51D800D06E03 /* Nexa-Trial-ExtraBoldItalic.ttf */; };
-		D55A7AFD276A51D900D06E03 /* Nexa-Trial-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AEB276A51D800D06E03 /* Nexa-Trial-ExtraLightItalic.ttf */; };
-		D55A7AFE276A51D900D06E03 /* Nexa-Trial-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AEC276A51D800D06E03 /* Nexa-Trial-HeavyItalic.ttf */; };
-		D55A7AFF276A51D900D06E03 /* Nexa-Trial-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AED276A51D800D06E03 /* Nexa-Trial-RegularItalic.ttf */; };
-		D55A7B00276A51D900D06E03 /* Nexa-Trial-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AEE276A51D800D06E03 /* Nexa-Trial-Thin.ttf */; };
-		D55A7B01276A51D900D06E03 /* Nexa-Trial-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AEF276A51D800D06E03 /* Nexa-Trial-BlackItalic.ttf */; };
-		D55A7B02276A51D900D06E03 /* Nexa-Trial-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF0276A51D800D06E03 /* Nexa-Trial-BoldItalic.ttf */; };
-		D55A7B03276A51D900D06E03 /* Nexa-Trial-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF1276A51D800D06E03 /* Nexa-Trial-ThinItalic.ttf */; };
-		D55A7B04276A51D900D06E03 /* Nexa-Trial-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF2276A51D800D06E03 /* Nexa-Trial-Black.ttf */; };
-		D55A7B05276A51D900D06E03 /* Nexa-Trial-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF3276A51D800D06E03 /* Nexa-Trial-Book.ttf */; };
-		D55A7B06276A51D900D06E03 /* Nexa-Trial-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF4276A51D800D06E03 /* Nexa-Trial-ExtraBold.ttf */; };
-		D55A7B07276A51D900D06E03 /* Nexa-Trial-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF5276A51D800D06E03 /* Nexa-Trial-Light.ttf */; };
-		D55A7B08276A51D900D06E03 /* Nexa-Trial-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF6276A51D900D06E03 /* Nexa-Trial-BookItalic.ttf */; };
-		D55A7B09276A51D900D06E03 /* Nexa-Trial-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF7276A51D900D06E03 /* Nexa-Trial-Heavy.ttf */; };
-		D55A7B0A276A51D900D06E03 /* Nexa-Trial-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF8276A51D900D06E03 /* Nexa-Trial-LightItalic.ttf */; };
-		D55A7B0B276A51D900D06E03 /* Nexa-Trial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AF9276A51D900D06E03 /* Nexa-Trial-Regular.ttf */; };
-		D55A7B0C276A51D900D06E03 /* Nexa-Trial-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AFA276A51D900D06E03 /* Nexa-Trial-Bold.ttf */; };
-		D55A7B0D276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7AFB276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf */; };
-		D55A7B0F276A576500D06E03 /* NexaRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55A7B0E276A576500D06E03 /* NexaRegular.otf */; };
+		D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */; };
 		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
 		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
 		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
@@ -38,9 +19,12 @@
 		D5C495CB27689C89002DC90F /* Aegis_NewViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495CA27689C89002DC90F /* Aegis_NewViewsTests.swift */; };
 		D5C495D527689C89002DC90F /* Aegis_NewViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495D427689C89002DC90F /* Aegis_NewViewsUITests.swift */; };
 		D5C495D727689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495D627689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift */; };
-		D5C495E527689D3F002DC90F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E427689D3F002DC90F /* AuthView.swift */; };
+		D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E427689D3F002DC90F /* SignUpEmailView.swift */; };
 		D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E62768ECF5002DC90F /* DividerView.swift */; };
 		D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */; };
+		D5F78709276C9B750015CB8E /* Nexa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F78708276C9B750015CB8E /* Nexa-Light.ttf */; };
+		D5F7870C276C9C7E0015CB8E /* Nexa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F7870A276C9C7E0015CB8E /* Nexa-Regular.ttf */; };
+		D5F7870D276C9C7E0015CB8E /* Nexa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F7870B276C9C7E0015CB8E /* Nexa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,26 +48,7 @@
 		D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoHeadlineView.swift; sourceTree = "<group>"; };
 		D55A7AE42769E1D800D06E03 /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 		D55A7AE62769F7B100D06E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		D55A7AE7276A01CE00D06E03 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		D55A7AEA276A51D800D06E03 /* Nexa-Trial-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AEB276A51D800D06E03 /* Nexa-Trial-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AEC276A51D800D06E03 /* Nexa-Trial-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-HeavyItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AED276A51D800D06E03 /* Nexa-Trial-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-RegularItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AEE276A51D800D06E03 /* Nexa-Trial-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Thin.ttf"; sourceTree = "<group>"; };
-		D55A7AEF276A51D800D06E03 /* Nexa-Trial-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-BlackItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AF0276A51D800D06E03 /* Nexa-Trial-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-BoldItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AF1276A51D800D06E03 /* Nexa-Trial-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ThinItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AF2276A51D800D06E03 /* Nexa-Trial-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Black.ttf"; sourceTree = "<group>"; };
-		D55A7AF3276A51D800D06E03 /* Nexa-Trial-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Book.ttf"; sourceTree = "<group>"; };
-		D55A7AF4276A51D800D06E03 /* Nexa-Trial-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraBold.ttf"; sourceTree = "<group>"; };
-		D55A7AF5276A51D800D06E03 /* Nexa-Trial-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Light.ttf"; sourceTree = "<group>"; };
-		D55A7AF6276A51D900D06E03 /* Nexa-Trial-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-BookItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AF7276A51D900D06E03 /* Nexa-Trial-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Heavy.ttf"; sourceTree = "<group>"; };
-		D55A7AF8276A51D900D06E03 /* Nexa-Trial-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-LightItalic.ttf"; sourceTree = "<group>"; };
-		D55A7AF9276A51D900D06E03 /* Nexa-Trial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Regular.ttf"; sourceTree = "<group>"; };
-		D55A7AFA276A51D900D06E03 /* Nexa-Trial-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Bold.ttf"; sourceTree = "<group>"; };
-		D55A7AFB276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraLight.ttf"; sourceTree = "<group>"; };
-		D55A7B0E276A576500D06E03 /* NexaRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NexaRegular.otf; path = "Aegis-NewViews/Nexa-Font/NexaRegular.otf"; sourceTree = SOURCE_ROOT; };
+		D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
 		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
 		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,9 +61,12 @@
 		D5C495D027689C89002DC90F /* Aegis-NewViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aegis-NewViewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495D427689C89002DC90F /* Aegis_NewViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsUITests.swift; sourceTree = "<group>"; };
 		D5C495D627689C89002DC90F /* Aegis_NewViewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D5C495E427689D3F002DC90F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		D5C495E427689D3F002DC90F /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
 		D5C495E62768ECF5002DC90F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
+		D5F78708276C9B750015CB8E /* Nexa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Light.ttf"; sourceTree = "<group>"; };
+		D5F7870A276C9C7E0015CB8E /* Nexa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Regular.ttf"; sourceTree = "<group>"; };
+		D5F7870B276C9C7E0015CB8E /* Nexa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,25 +97,9 @@
 		D55A7AE9276A517900D06E03 /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
-				D55A7B0E276A576500D06E03 /* NexaRegular.otf */,
-				D55A7AF2276A51D800D06E03 /* Nexa-Trial-Black.ttf */,
-				D55A7AEF276A51D800D06E03 /* Nexa-Trial-BlackItalic.ttf */,
-				D55A7AFA276A51D900D06E03 /* Nexa-Trial-Bold.ttf */,
-				D55A7AF0276A51D800D06E03 /* Nexa-Trial-BoldItalic.ttf */,
-				D55A7AF3276A51D800D06E03 /* Nexa-Trial-Book.ttf */,
-				D55A7AF6276A51D900D06E03 /* Nexa-Trial-BookItalic.ttf */,
-				D55A7AF4276A51D800D06E03 /* Nexa-Trial-ExtraBold.ttf */,
-				D55A7AEA276A51D800D06E03 /* Nexa-Trial-ExtraBoldItalic.ttf */,
-				D55A7AFB276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf */,
-				D55A7AEB276A51D800D06E03 /* Nexa-Trial-ExtraLightItalic.ttf */,
-				D55A7AF7276A51D900D06E03 /* Nexa-Trial-Heavy.ttf */,
-				D55A7AEC276A51D800D06E03 /* Nexa-Trial-HeavyItalic.ttf */,
-				D55A7AF5276A51D800D06E03 /* Nexa-Trial-Light.ttf */,
-				D55A7AF8276A51D900D06E03 /* Nexa-Trial-LightItalic.ttf */,
-				D55A7AF9276A51D900D06E03 /* Nexa-Trial-Regular.ttf */,
-				D55A7AED276A51D800D06E03 /* Nexa-Trial-RegularItalic.ttf */,
-				D55A7AEE276A51D800D06E03 /* Nexa-Trial-Thin.ttf */,
-				D55A7AF1276A51D800D06E03 /* Nexa-Trial-ThinItalic.ttf */,
+				D5F78708276C9B750015CB8E /* Nexa-Light.ttf */,
+				D5F7870B276C9C7E0015CB8E /* Nexa-Bold.ttf */,
+				D5F7870A276C9C7E0015CB8E /* Nexa-Regular.ttf */,
 			);
 			path = CustomFonts;
 			sourceTree = "<group>";
@@ -216,9 +168,9 @@
 		D5C495E327689CE1002DC90F /* AllViews */ = {
 			isa = PBXGroup;
 			children = (
-				D5C495E427689D3F002DC90F /* AuthView.swift */,
+				D5C495E427689D3F002DC90F /* SignUpEmailView.swift */,
 				D5C495BD27689C89002DC90F /* Persistence.swift */,
-				D55A7AE7276A01CE00D06E03 /* SignUpView.swift */,
+				D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */,
 			);
 			path = AllViews;
 			sourceTree = "<group>";
@@ -338,27 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D55A7AFF276A51D900D06E03 /* Nexa-Trial-RegularItalic.ttf in Resources */,
-				D55A7B0C276A51D900D06E03 /* Nexa-Trial-Bold.ttf in Resources */,
-				D55A7AFC276A51D900D06E03 /* Nexa-Trial-ExtraBoldItalic.ttf in Resources */,
-				D55A7B04276A51D900D06E03 /* Nexa-Trial-Black.ttf in Resources */,
 				D5C495BC27689C89002DC90F /* Preview Assets.xcassets in Resources */,
-				D55A7B0B276A51D900D06E03 /* Nexa-Trial-Regular.ttf in Resources */,
-				D55A7B08276A51D900D06E03 /* Nexa-Trial-BookItalic.ttf in Resources */,
-				D55A7B0D276A51D900D06E03 /* Nexa-Trial-ExtraLight.ttf in Resources */,
-				D55A7B05276A51D900D06E03 /* Nexa-Trial-Book.ttf in Resources */,
-				D55A7B01276A51D900D06E03 /* Nexa-Trial-BlackItalic.ttf in Resources */,
+				D5F78709276C9B750015CB8E /* Nexa-Light.ttf in Resources */,
+				D5F7870D276C9C7E0015CB8E /* Nexa-Bold.ttf in Resources */,
 				D5C495B927689C89002DC90F /* Assets.xcassets in Resources */,
-				D55A7B02276A51D900D06E03 /* Nexa-Trial-BoldItalic.ttf in Resources */,
-				D55A7B07276A51D900D06E03 /* Nexa-Trial-Light.ttf in Resources */,
-				D55A7B03276A51D900D06E03 /* Nexa-Trial-ThinItalic.ttf in Resources */,
-				D55A7AFE276A51D900D06E03 /* Nexa-Trial-HeavyItalic.ttf in Resources */,
-				D55A7B00276A51D900D06E03 /* Nexa-Trial-Thin.ttf in Resources */,
-				D55A7B06276A51D900D06E03 /* Nexa-Trial-ExtraBold.ttf in Resources */,
-				D55A7AFD276A51D900D06E03 /* Nexa-Trial-ExtraLightItalic.ttf in Resources */,
-				D55A7B0A276A51D900D06E03 /* Nexa-Trial-LightItalic.ttf in Resources */,
-				D55A7B09276A51D900D06E03 /* Nexa-Trial-Heavy.ttf in Resources */,
-				D55A7B0F276A576500D06E03 /* NexaRegular.otf in Resources */,
+				D5F7870C276C9C7E0015CB8E /* Nexa-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,12 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C495BE27689C89002DC90F /* Persistence.swift in Sources */,
-				D5C495E527689D3F002DC90F /* AuthView.swift in Sources */,
+				D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */,
 				D55A7AE32769E06200D06E03 /* LogoHeadlineView.swift in Sources */,
 				D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */,
 				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
 				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,
-				D55A7AE8276A01CE00D06E03 /* SignUpView.swift in Sources */,
+				D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */,
 				D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */,
 				D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */,
 				D5C495C127689C89002DC90F /* Aegis_NewViews.xcdatamodeld in Sources */,

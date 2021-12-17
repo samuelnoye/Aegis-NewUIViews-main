@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AuthView: View {
+struct SignUpEmailView: View {
     //MARK: - PROPERTIES
     @State private var email: String = ""
     @State var fieldBind: String = "Email"
@@ -61,8 +61,8 @@ struct AuthView: View {
                 BottomTextView()
                 
             }//:VSTACK
-            .frame(width: Screen.screenSize.width*0.90)
-            .padding(.top, 80)
+            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.90)
+            .padding(.top, 90)
             
         }//:ZSTACK
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
@@ -71,8 +71,8 @@ struct AuthView: View {
 }
 
 //MARK: - PREVIEW
-struct AuthView_Previews: PreviewProvider {
+struct SignUpEmailView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView()
+        SignUpEmailView()
     }
 }

@@ -4,11 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Nexa-Trial-Heavy.ttf</string>
-		<string>Nexa-Trial-Regular.ttf</string>
-		<string>NexaRegular.otf</string>
-		<string>Nexa-Trial-Light.ttf</string>
-		<string></string>
+		<string>Nexa-Light.ttf</string>
+		<string>Nexa-Regular.ttf</string>
+		<string>Nexa-Bold.ttf</string>
 	</array>
 </dict>
 </plist>

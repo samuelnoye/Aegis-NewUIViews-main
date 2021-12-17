@@ -11,7 +11,7 @@ struct BottomTextView: View {
     var body: some View {
         
         //MARK: - BOTTOM TEXT
-        VStack{
+        VStack(spacing:5){
             Spacer()
             Text("By using our app you confirm that you accept our")
                 .foregroundColor(Color.white)
@@ -24,11 +24,13 @@ struct BottomTextView: View {
                 Button(action:{
                     // action
                 }, label: {
-                    Text("Privacy Policy.").foregroundColor(Color("ColorOrange")) })
+                    Text("Privacy Policy.")
+                    .foregroundColor(Color("ColorOrange")) })
             }
         }.frame(width: Screen.screenSize.width * 0.99, height: 45, alignment: .center)
             .multilineTextAlignment(.center)
-            .font(Font.custom("Nexa-Trial-Regular",size: 15))
+            .font(Font.custom("Nexa-Light",size: 16))
+            
     }
 }
 

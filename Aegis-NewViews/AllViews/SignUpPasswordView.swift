@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignUpView: View {
+struct SignUpPasswordView: View {
     
     //MARK: - PROPERTIES
     @State var fieldBind: String = ""
@@ -36,10 +36,10 @@ struct SignUpView: View {
                 //MARK: - PASSWORDS FIELD AND BUTTON
                 VStack(spacing: 30){
                     Text("Create new account")
-                        .font(Font.custom("Nexa-Trial-Light", size: 20))
+                        .font(Font.custom("Nexa-Light", size: 20))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                        .padding(.bottom,20)
+                        .padding(.bottom,18)
                         
                     
                     //PASSWORD FIELD
@@ -61,11 +61,11 @@ struct SignUpView: View {
                 //MARK: - BOTTOM TEXT
                 VStack{
                 BottomTextView()
-                }.padding(.top,20)
+                }.padding(.top,80)
                 
             }//:VSTACK
            .frame(width: Screen.screenSize.width*0.90)
-           .padding(.top, 80)
+           .padding(.top, 100)
             
         }//:ZSTACK
         
@@ -77,8 +77,8 @@ struct SignUpView: View {
 }
 
 //MARK: - PREVIEW
-struct SignUpView_Previews: PreviewProvider {
+struct SignUpPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpPasswordView()
     }
 }
