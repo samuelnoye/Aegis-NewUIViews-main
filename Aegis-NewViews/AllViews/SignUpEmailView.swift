@@ -74,5 +74,6 @@ struct SignUpEmailView: View {
 struct SignUpEmailView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpEmailView()
+.previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

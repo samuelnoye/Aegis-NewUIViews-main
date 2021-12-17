@@ -8,5 +8,14 @@
 		<string>Nexa-Regular.ttf</string>
 		<string>Nexa-Bold.ttf</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>Black</string>
+		<key>UIImageName</key>
+		<string>icon</string>
+		<key>UILaunchScreen</key>
+		<dict/>
+	</dict>
 </dict>
 </plist>
