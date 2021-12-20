@@ -13,23 +13,25 @@ struct LogoHeadlineView: View {
           
                 
                 //MARK: - LOGO & HEADLINE TEXT
-                VStack(spacing: 10){
+                VStack(){
                     Image("Logo")
                         .resizable()
-                        .frame(width: 200, height:70, alignment: .center)
-                       
+                        .frame(width: Screen.screenSize.width*0.40, height: Screen.screenSize.height*0.10, alignment:.center)
+                   
                     Text("""
                          An artificially intelligent
                          safety system for bikers.
                          """)
                         //.font(.system(size: 20, weight: .light, design: .rounded))
-                        .font(Font.custom("Nexa-Light", size: 18))
+                        .font(Font.custom("Nexa-Light", size: 20))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                    
+                        .frame(width: Screen.screenSize.width*1, height: Screen.screenSize.height*0.07, alignment:.center)
+                   
                     
                 }//:VSTACK
+                
                 
                 
                
@@ -44,6 +46,10 @@ struct LogoHeadlineView_Previews: PreviewProvider {
     static var previews: some View {
         LogoHeadlineView()
             .preferredColorScheme(.dark)
+            .previewDevice("iPhone 8")
+        LogoHeadlineView()
+            .preferredColorScheme(.dark)
+            .previewDevice("iPhone 11")
             
     }
 }

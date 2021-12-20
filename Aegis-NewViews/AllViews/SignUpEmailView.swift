@@ -22,15 +22,16 @@ struct SignUpEmailView: View {
         ZStack{
             Image("BgImg")
                 .resizable()
-               // .scaledToFit()
-            
+                .frame(width: Screen.screenSize.width*1, height: Screen.screenSize.height*1, alignment: .center)
+                
+            Spacer()
             VStack(spacing: 40){
                 
                 //MARK: - LOGO & HEADLINE TEXT
-                
+                Spacer()
+                VStack{
                 LogoHeadlineView()
-                
-                
+                }
                 //MARK: - EMAIL FIELD AND BUTTON
                 VStack(spacing: 30){
                     
@@ -48,21 +49,19 @@ struct SignUpEmailView: View {
                 Button(action:{
                     // action
                 }, label: {
-                    ButtonWithIconView(buttonName: $buttonIconName, buttonIcon: $iconName) })
-                VStack(spacing: 40){
+                    ButtonWithIconView(buttonName: $buttonIconName, buttonIcon: $iconName)
                     
-                   
-                  
-                }
-              // .padding(.bottom,100)
+                })
                
-                
-                //MARK: - BOTTOM TEXT
+                Spacer()
+               //MARK: - BOTTOM TEXT
+                VStack{
                 BottomTextView()
+                }
                 
             }//:VSTACK
-            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.90)
-            .padding(.top, 90)
+            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70, alignment: .top)
+            //.padding()
             
         }//:ZSTACK
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
@@ -73,7 +72,10 @@ struct SignUpEmailView: View {
 //MARK: - PREVIEW
 struct SignUpEmailView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpEmailView()
-.previewInterfaceOrientation(.portraitUpsideDown)
+        SignUpEmailView().previewDevice("iPhone 11")
+        SignUpEmailView().previewDevice("iPhone 8")
+
     }
 }
+
+

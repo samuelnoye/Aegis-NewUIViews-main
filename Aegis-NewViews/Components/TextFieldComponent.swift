@@ -38,7 +38,7 @@ struct GeneralButtonView: View {
             .frame(width: Screen.screenSize.width * 0.9, height: 45, alignment: .center)
             .overlay(Text(buttonName)
                         .foregroundColor(Color.white))
-            .font(Font.custom("Nexa-Light", size: 20))
+            .font(Font.custom("Nexa-Light", size: 18))
             .foregroundColor(Color.green)
             .background(Color("MainColor").cornerRadius(20))
         

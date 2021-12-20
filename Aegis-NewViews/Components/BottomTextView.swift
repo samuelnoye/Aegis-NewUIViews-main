@@ -27,10 +27,10 @@ struct BottomTextView: View {
                     Text("Privacy Policy.")
                     .foregroundColor(Color("ColorOrange")) })
             }
-        }.frame(width: Screen.screenSize.width * 0.99, height: 45, alignment: .center)
-            .multilineTextAlignment(.center)
-            .font(Font.custom("Nexa-Light",size: 16))
-            
+        }.multilineTextAlignment(.center)
+            .font(Font.custom("Nexa-Light",size: 15))
+            .frame(width: Screen.screenSize.width * 0.99, height: 45, alignment: .center)
+                
     }
 }
 

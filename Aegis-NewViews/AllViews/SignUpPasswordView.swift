@@ -25,13 +25,11 @@ struct SignUpPasswordView: View {
             Image("BgImg")
                 .resizable()
                // .scaledToFit()
-            
+           
             VStack(spacing: 40){
-                
+                Spacer()
                 //MARK: - LOGO & HEADLINE TEXT
-                LogoHeadlineView().padding()
-                
-                
+                LogoHeadlineView()
                 
                 //MARK: - PASSWORDS FIELD AND BUTTON
                 VStack(spacing: 30){
@@ -39,37 +37,30 @@ struct SignUpPasswordView: View {
                         .font(Font.custom("Nexa-Light", size: 20))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                        .padding(.bottom,18)
+                       // .padding(.bottom,18)
                         
-                    
                     //PASSWORD FIELD
                     UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
                     //CONFIRM PASSWORD FIELD
                     UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
                  
-                    
-                    
-                    
                     Button(action:{
                         // action
                     }, label: {
                         GeneralButtonView(buttonName: $buttonName)
                     })
                 }
-                
-                
+               // Spacer()
                 //MARK: - BOTTOM TEXT
                 VStack{
                 BottomTextView()
-                }.padding(.top,80)
-                
+                }.padding(.top,20)
             }//:VSTACK
-           .frame(width: Screen.screenSize.width*0.90)
-           .padding(.top, 100)
+            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70, alignment: .top)
             
         }//:ZSTACK
         
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .center)
         .edgesIgnoringSafeArea(.all)
         
         
@@ -79,6 +70,8 @@ struct SignUpPasswordView: View {
 //MARK: - PREVIEW
 struct SignUpPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpPasswordView()
+        SignUpPasswordView().previewDevice("iPhone 11")
+        SignUpPasswordView().previewDevice("iPhone 8")
+           
     }
 }
