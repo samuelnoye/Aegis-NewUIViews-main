@@ -16,16 +16,11 @@ struct BottomTextView: View {
             Text("By using our app you confirm that you accept our")
                 .foregroundColor(Color.white)
             HStack{
-                Button(action:{
-                    // action
-                }, label: {
-                    Text("Terms of Use").foregroundColor(Color("ColorOrange")) })
+                Link("Terms of Use",
+                       destination: URL(string: "abc@abc.com")!).foregroundColor(Color("ColorOrange"))
                 Text("and").foregroundColor(Color.white)
-                Button(action:{
-                    // action
-                }, label: {
-                    Text("Privacy Policy.")
-                    .foregroundColor(Color("ColorOrange")) })
+               Link("Privacy Policy.",
+                      destination: URL(string: "abc@abc.com")!).foregroundColor(Color("ColorOrange"))
             }
         }.multilineTextAlignment(.center)
             .font(Font.custom("Nexa-Light",size: 15))
