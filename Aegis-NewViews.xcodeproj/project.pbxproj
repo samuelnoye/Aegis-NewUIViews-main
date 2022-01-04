@@ -11,6 +11,8 @@
 		D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE42769E1D800D06E03 /* BottomTextView.swift */; };
 		D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */; };
 		D5C008F52780F5AC00E74EA2 /* ConfirmEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */; };
+		D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */; };
+		D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */; };
 		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
 		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
 		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		D55A7AE62769F7B100D06E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
 		D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
+		D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordView.swift; sourceTree = "<group>"; };
+		D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
 		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				D5C495BD27689C89002DC90F /* Persistence.swift */,
 				D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */,
 				D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */,
+				D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */,
+				D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */,
 			);
 			path = AllViews;
 			sourceTree = "<group>";
@@ -327,8 +333,10 @@
 				D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */,
 				D55A7AE32769E06200D06E03 /* LogoHeadlineView.swift in Sources */,
 				D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */,
+				D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */,
 				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
 				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,
+				D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */,
 				D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */,
 				D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */,
 				D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */,

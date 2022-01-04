@@ -39,7 +39,7 @@ struct ConfirmEmailView: View {
                        
                         Text("We have sent you an email at").foregroundColor(Color.white)
 //  Text("abc@abc.com").foregroundColor(Color("MainColor"))
-                      Link("abc@abc.com",
+                      Link("abc@abccom",
                             destination: URL(string: "abc@abc.com")!).foregroundColor(Color("MainColor"))
                         Text("to confirm your account").foregroundColor(Color.white)
                        
@@ -68,15 +68,14 @@ struct ConfirmEmailView: View {
                    
                    
                    //MARK: - BOTTOM TEXT
-                    VStack{
+                    
                     BottomTextView()
-                    }
+                    
                     
                 }//:VSTACK
-                .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70, alignment: .top)
-                .font(Font.custom("Nexa-Light",size: 15))
+                .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70)
+                .font(Font.custom("Nexa-Light",size: 20))
                
-                //.padding()
                 
             }//:ZSTACK
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
@@ -88,6 +87,7 @@ struct ConfirmEmailView: View {
 
 struct ConfirmEmailView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmEmailView()
+        ConfirmEmailView().previewDevice("iPhone 8")
+        ConfirmEmailView().previewDevice("iPhone 11")
     }
 }

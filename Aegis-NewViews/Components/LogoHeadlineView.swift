@@ -16,7 +16,7 @@ struct LogoHeadlineView: View {
                 VStack(){
                     Image("Logo")
                         .resizable()
-                        .frame(width: Screen.screenSize.width*0.40, height: Screen.screenSize.height*0.10, alignment:.center)
+                        .frame(width: Screen.screenSize.width*0.50, height: Screen.screenSize.height*0.10, alignment:.center)
                    
                     Text("""
                          An artificially intelligent
