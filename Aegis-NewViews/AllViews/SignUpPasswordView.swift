@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignUpView: View {
+struct SignUpPasswordView: View {
     
     //MARK: - PROPERTIES
     @State var fieldBind: String = ""
@@ -24,57 +24,54 @@ struct SignUpView: View {
         ZStack{
             Image("BgImg")
                 .resizable()
-                .scaledToFit()
-            
-            VStack(spacing: 20){
-                
+               // .scaledToFit()
+           
+            VStack(spacing: 40){
+                Spacer()
                 //MARK: - LOGO & HEADLINE TEXT
-                LogoHeadlineView().padding()
-                
-                
+                LogoHeadlineView()
                 
                 //MARK: - PASSWORDS FIELD AND BUTTON
                 VStack(spacing: 30){
                     Text("Create new account")
-                        .font(Font.custom("Nexa-Trial-Regular", size: 20))
-                        .fontWeight(.light)
+                        .font(Font.custom("Nexa-Light", size: 20))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                        .padding(.bottom, 10)
-                    
+                       // .padding(.bottom,18)
+                        
                     //PASSWORD FIELD
                     UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
-                    UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
                     //CONFIRM PASSWORD FIELD
-                  //  UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
-                    
-                    
-                    
+                    UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
+                 
                     Button(action:{
                         // action
                     }, label: {
                         GeneralButtonView(buttonName: $buttonName)
                     })
-                } .padding(.bottom, 100)
-                
-                
+                }
+               // Spacer()
                 //MARK: - BOTTOM TEXT
+                VStack{
                 BottomTextView()
-                
+                }.padding(.top,20)
             }//:VSTACK
-            .frame(width: Screen.screenSize.width*0.90)
-            .padding(.top, 140)
+            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70, alignment: .top)
             
         }//:ZSTACK
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .center)
         .edgesIgnoringSafeArea(.all)
+        
         
     }
 }
 
 //MARK: - PREVIEW
-struct SignUpView_Previews: PreviewProvider {
+struct SignUpPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpPasswordView().previewDevice("iPhone 11")
+        SignUpPasswordView().previewDevice("iPhone 8")
+           
     }
 }

@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct AuthView: View {
+struct SignUpEmailView: View {
     //MARK: - PROPERTIES
     @State private var email: String = ""
-    @State var fieldBind: String = "email"
+    @State var fieldBind: String = "Email"
     @State var buttonName: String = "Continue"
     @State var fieldName: String = "Email"
     @State var buttonIconName: String = "Continue with Apple"
@@ -22,15 +22,16 @@ struct AuthView: View {
         ZStack{
             Image("BgImg")
                 .resizable()
-                .scaledToFit()
-            
-            VStack(spacing: 20){
+                .frame(width: Screen.screenSize.width*1, height: Screen.screenSize.height*1, alignment: .center)
+                
+            Spacer()
+            VStack(spacing: 40){
                 
                 //MARK: - LOGO & HEADLINE TEXT
-                
+                Spacer()
+                VStack{
                 LogoHeadlineView()
-                
-                
+                }
                 //MARK: - EMAIL FIELD AND BUTTON
                 VStack(spacing: 30){
                     
@@ -40,26 +41,27 @@ struct AuthView: View {
                     }, label: {
                         GeneralButtonView(buttonName: $buttonName)
                     })
-                } .padding(.bottom, 20)
+                }
                 
                 //MARK: - DIVIDER & APPLE BUTTON
-                VStack(spacing: 40){
-                    
-                    DividerView(label: dividerText)
-                    Button(action:{
-                        // action
-                    }, label: {
-                        ButtonWithIconView(buttonName: $buttonIconName, buttonIcon: $iconName) })
-                }
-               .padding(.bottom,100)
-               
+                DividerView(label: dividerText)
                 
-                //MARK: - BOTTOM TEXT
+                Button(action:{
+                    // action
+                }, label: {
+                    ButtonWithIconView(buttonName: $buttonIconName, buttonIcon: $iconName)
+                    
+                })
+               
+                Spacer()
+               //MARK: - BOTTOM TEXT
+                VStack{
                 BottomTextView()
+                }
                 
             }//:VSTACK
-            .frame(width: Screen.screenSize.width*0.90)
-            .padding(.top, 140)
+            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70, alignment: .top)
+            //.padding()
             
         }//:ZSTACK
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
@@ -68,8 +70,12 @@ struct AuthView: View {
 }
 
 //MARK: - PREVIEW
-struct AuthView_Previews: PreviewProvider {
+struct SignUpEmailView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView()
+        SignUpEmailView().previewDevice("iPhone 11")
+        SignUpEmailView().previewDevice("iPhone 8")
+
     }
 }
+
+

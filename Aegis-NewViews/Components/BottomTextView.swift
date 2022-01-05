@@ -11,24 +11,21 @@ struct BottomTextView: View {
     var body: some View {
         
         //MARK: - BOTTOM TEXT
-        VStack{
+        VStack(spacing:5){
             Spacer()
             Text("By using our app you confirm that you accept our")
                 .foregroundColor(Color.white)
             HStack{
-                Button(action:{
-                    // action
-                }, label: {
-                    Text("Terms of Use").foregroundColor(Color("ColorOrange")) })
+                Link("Terms of Use",
+                       destination: URL(string: "abc@abc.com")!).foregroundColor(Color("ColorOrange"))
                 Text("and").foregroundColor(Color.white)
-                Button(action:{
-                    // action
-                }, label: {
-                    Text("Privacy Policy.").foregroundColor(Color("ColorOrange")) })
+               Link("Privacy Policy.",
+                      destination: URL(string: "abc@abc.com")!).foregroundColor(Color("ColorOrange"))
             }
-        }.frame(width: Screen.screenSize.width * 0.99, height: 45, alignment: .center)
-            .multilineTextAlignment(.center)
-            .font(Font.custom("Nexa-Trial-Regular",size: 15))
+        }.multilineTextAlignment(.center)
+            .font(Font.custom("Nexa-Light",size: 15))
+            .frame(width: Screen.screenSize.width * 0.99, height: 45, alignment: .center)
+                
     }
 }
 

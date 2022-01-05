@@ -13,7 +13,7 @@ struct Aegis_NewViewsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            SignUpEmailView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
