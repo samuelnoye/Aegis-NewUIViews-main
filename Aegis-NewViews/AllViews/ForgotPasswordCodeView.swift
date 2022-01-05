@@ -23,7 +23,7 @@ struct ForgotPasswordCodeView: View {
                 .frame(width: Screen.screenSize.width*1, height: Screen.screenSize.height*1, alignment: .center)
                 
             Spacer()
-            VStack(spacing: 30){
+            VStack(spacing: 50){
                 
                 //MARK: - LOGO & HEADLINE TEXT
                 Spacer()
@@ -47,10 +47,24 @@ struct ForgotPasswordCodeView: View {
                     }, label: {
                         GeneralButtonView(buttonName: $buttonName)
                     })
-                }
                 
-             
-               
+                
+                //Button
+                      Button(action:{
+                         // isOnboarding = true
+                     }){
+
+                    Text("Resend")
+                             .font(Font.custom("Nexa-Light", size: 18))
+                             .foregroundColor(Color.white)
+                             .padding(.horizontal,50)
+                             .padding(.vertical,8)
+                    }//: Button
+                    
+                     .background(
+                        Capsule()
+                            .fill(Color("MainColor")))
+            }
                 Spacer()
                //MARK: - BOTTOM TEXT
                 VStack{
