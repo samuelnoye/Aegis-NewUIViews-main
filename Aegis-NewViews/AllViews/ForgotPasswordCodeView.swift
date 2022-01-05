@@ -55,7 +55,7 @@ struct ForgotPasswordCodeView: View {
                      }){
 
                     Text("Resend")
-                             .font(Font.custom("Nexa-Light", size: 18))
+                             .font(Font.custom("Nexa-Light", size: 17))
                              .foregroundColor(Color.white)
                              .padding(.horizontal,50)
                              .padding(.vertical,8)
