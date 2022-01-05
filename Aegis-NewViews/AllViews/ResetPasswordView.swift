@@ -23,10 +23,22 @@ struct ResetPasswordView: View {
         ZStack{
             Image("BgImg")
                 .resizable()
-               // .scaledToFit()
+             
            
             VStack(spacing: 40){
+                //MARK: - BACKWARD ARROW
+                HStack(){
+                    Button(action:{
+                        // action
+                    }, label: {
+                        Image(systemName:"arrow.backward")
+                            .imageScale(.large)
+                            .foregroundColor(Color.white)
+                    })
+                    Spacer()
+                }.padding(.top, 40)
                 Spacer()
+                
                 //MARK: - LOGO & HEADLINE TEXT
                 LogoHeadlineView()
                 
@@ -35,8 +47,7 @@ struct ResetPasswordView: View {
                     Text("Create new password")
                         .font(Font.custom("Nexa-Light", size: 20))
                         .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                       // .padding(.bottom,18)
+                       // .padding(.bottom,10)
                         
                     //PASSWORD FIELD
                     UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
@@ -49,13 +60,13 @@ struct ResetPasswordView: View {
                         GeneralButtonView(buttonName: $buttonName)
                     })
                 }
-               // Spacer()
+                Spacer()
                 //MARK: - BOTTOM TEXT
                 VStack{
                 BottomTextView()
-                }.padding(.top,20)
+                }.padding(.bottom,30)
             }//:VSTACK
-            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70, alignment: .top)
+            .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*1.0)
             
         }//:ZSTACK
         
@@ -69,6 +80,7 @@ struct ResetPasswordView: View {
 //MARK: - PREVIEW
 struct ResetPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        ResetPasswordView()
+        ResetPasswordView().previewDevice("iPhone 8")
+        ResetPasswordView().previewDevice("iPhone 11")
     }
 }
