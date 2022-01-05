@@ -6,6 +6,7 @@
 //
 import SwiftUI
 
+
 struct UserProfileTextFieldView: View {
     @Binding var fieldBind: String
     @Binding var fieldName: String
@@ -22,11 +23,10 @@ struct UserProfileTextFieldView: View {
             }
             .padding(.all, 8)
         } .background(Color.black)
-            .border(Color.white, width: 1)
-            .cornerRadius(3)
+            .overlay(RoundedRectangle(cornerRadius: 3)
+                        .stroke(Color.white, lineWidth: 1))
     }
 }
-
 
 struct GeneralButtonView: View {
     @Binding var buttonName: String
@@ -116,3 +116,4 @@ struct ButtonWithIconView: View {
 public struct Screen {
     public static let screenSize: CGRect = UIScreen.main.bounds
 }
+
