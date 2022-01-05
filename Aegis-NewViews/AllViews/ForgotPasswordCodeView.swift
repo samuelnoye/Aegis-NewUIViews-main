@@ -34,7 +34,7 @@ struct ForgotPasswordCodeView: View {
                 Text("Please enter 6 digit code sent to")
                     .font(Font.custom("Nexa-Light", size: 20))
                     .foregroundColor(Color.white)
-                Text("abc.com")
+                Text("abc@abccom")
                     .font(Font.custom("Nexa-Light", size: 20))
                     .foregroundColor(Color("MainColor"))
                 }
