@@ -58,7 +58,7 @@ struct ForgotPasswordView: View {
             
             
         }//:ZSTACK
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: Screen.screenSize.width*2.90, alignment: .center)
         .edgesIgnoringSafeArea(.all)
     }
 }
