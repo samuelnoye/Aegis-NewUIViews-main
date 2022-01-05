@@ -106,8 +106,9 @@ struct ButtonWithIconView: View {
                 .padding(.all, 8)
             }.font(Font.custom("Nexa-Light", size: 18))
             .background(Color.black)
-                .border(Color.white, width: 1)
-                .cornerRadius(3)
+            .overlay(RoundedRectangle(cornerRadius: 3)
+                        .stroke(Color.white, lineWidth: 1))
+
         }
     
 }
