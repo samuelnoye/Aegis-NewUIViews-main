@@ -40,9 +40,9 @@ struct SignUpPasswordView: View {
                        // .padding(.bottom,18)
                         
                     //PASSWORD FIELD
-                    UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
+                    UserProfilePasswordField(fieldName: $passFieldName, fieldBind: $fieldBind)
                     //CONFIRM PASSWORD FIELD
-                    UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
+                    UserProfilePasswordField(fieldName: $passConFieldName, fieldBind: $passConFieldBind)
                  
                     Button(action:{
                         // action

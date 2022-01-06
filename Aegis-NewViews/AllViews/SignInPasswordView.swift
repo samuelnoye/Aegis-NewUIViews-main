@@ -38,7 +38,7 @@ struct SignInPasswordView: View {
                    
                     
                     //PASSWORD FIELD
-                    UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
+                    UserProfilePasswordField(fieldName: $passFieldName, fieldBind: $fieldBind)
                     
                     //SIGN IN BUTTON
                     Button(action:{

@@ -37,7 +37,7 @@ struct ForgotPasswordView: View {
                 //MARK: - EMAIL FIELD AND BUTTON
                 VStack(spacing: 30){
                     
-                    UserProfileTextFieldView(fieldBind: $fieldBind, fieldName: $fieldName)
+                    UserProfileTextFieldView(fieldName: $fieldName, fieldBind: $fieldBind)
                     Button(action:{
                         // action
                     }, label: {
@@ -66,7 +66,7 @@ struct ForgotPasswordView: View {
 //MARK: - PREVIEW
 struct ForgotPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        ForgotPasswordView().previewDevice("iPhone 8")
+      //  ForgotPasswordView().previewDevice("iPhone 8")
         ForgotPasswordView().previewDevice("iPhone 11")
     }
 }

@@ -35,7 +35,7 @@ struct SignUpEmailView: View {
                 //MARK: - EMAIL FIELD AND BUTTON
                 VStack(spacing: 30){
                     
-                    UserProfileTextFieldView(fieldBind: $fieldBind, fieldName: $fieldName)
+                    UserProfileTextFieldView(fieldName: $fieldName, fieldBind: $fieldBind)
                     Button(action:{
                         // action
                     }, label: {

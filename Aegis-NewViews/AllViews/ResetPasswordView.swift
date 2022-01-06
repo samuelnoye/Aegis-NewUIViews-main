@@ -10,11 +10,10 @@ import SwiftUI
 struct ResetPasswordView: View {
     
     //MARK: - PROPERTIES
-    @State var fieldBind: String = ""
+  
     @State var buttonName: String = "Reset Password"
-    @State var fieldName: String = "Email"
     @State var passFieldName: String = "Password"
-    @State var passFieldBind: String = "password"
+    @State var passFieldBind: String = "Password"
     @State var passConFieldName: String = "Confirm Password"
     @State var passConFieldBind: String = ""
     
@@ -36,7 +35,7 @@ struct ResetPasswordView: View {
                             .foregroundColor(Color.white)
                     })
                     Spacer()
-                }.padding(.top, 40)
+                }.padding(.top, 50)
                 Spacer()
                 
                 //MARK: - LOGO & HEADLINE TEXT
@@ -50,9 +49,10 @@ struct ResetPasswordView: View {
                        // .padding(.bottom,10)
                         
                     //PASSWORD FIELD
-                    UserProfilePasswordField(fieldBind: $fieldBind, fieldName: $passFieldName)
+                   
+                    UserProfilePasswordField(fieldName: $passFieldName, fieldBind: $passFieldBind)
                     //CONFIRM PASSWORD FIELD
-                    UserProfilePasswordField(fieldBind: $passConFieldBind, fieldName: $passConFieldName)
+                    UserProfilePasswordField(fieldName: $passConFieldName, fieldBind: $passConFieldBind)
                  
                     Button(action:{
                         // action
@@ -64,7 +64,7 @@ struct ResetPasswordView: View {
                 //MARK: - BOTTOM TEXT
                 VStack{
                 BottomTextView()
-                }.padding(.bottom,30)
+                }.padding(.bottom,40)
             }//:VSTACK
             .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*1.0)
             
@@ -80,7 +80,7 @@ struct ResetPasswordView: View {
 //MARK: - PREVIEW
 struct ResetPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        ResetPasswordView().previewDevice("iPhone 8")
+      //  ResetPasswordView().previewDevice("iPhone 8")
         ResetPasswordView().previewDevice("iPhone 11")
     }
 }

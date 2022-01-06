@@ -8,8 +8,9 @@ import SwiftUI
 
 
 struct UserProfileTextFieldView: View {
-    @Binding var fieldBind: String
     @Binding var fieldName: String
+    @Binding var fieldBind: String
+    
     var body: some View {
         Section {
             HStack {
@@ -19,6 +20,7 @@ struct UserProfileTextFieldView: View {
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                     .frame( height: 35.0)
                     .padding(.leading)
+                    .foregroundColor(Color.gray)
                 
             }
             .padding(.all, 8)
@@ -40,7 +42,6 @@ struct GeneralButtonView: View {
                         .foregroundColor(Color.white))
             .font(Font.custom("Nexa-Light", size: 18))
             .foregroundColor(Color.green)
-            .background(Color("MainColor").cornerRadius(20))
         
         
     }
@@ -71,10 +72,9 @@ struct ButtonWithIconView: View {
     }
 }
     struct UserProfilePasswordField: View {
-        @Binding var fieldBind: String
+        
         @Binding var fieldName: String
-        
-        
+        @Binding var fieldBind: String
         @State var hidden: Bool = false
         
         var body: some View {
@@ -105,6 +105,7 @@ struct ButtonWithIconView: View {
                 }
                 .padding(.all, 8)
             }.font(Font.custom("Nexa-Light", size: 18))
+             .foregroundColor(Color.gray)
             .background(Color.black)
             .overlay(RoundedRectangle(cornerRadius: 3)
                         .stroke(Color.white, lineWidth: 1))
