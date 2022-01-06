@@ -10,9 +10,9 @@ import SwiftUI
 struct SignUpEmailView: View {
     //MARK: - PROPERTIES
     @State private var email: String = ""
-    @State var fieldBind: String = "Email"
-    @State var buttonName: String = "Continue"
+    @State var fieldBind: String = ""
     @State var fieldName: String = "Email"
+    @State var buttonName: String = "Continue"
     @State var buttonIconName: String = "Continue with Apple"
     @State var iconName: String = "applelogo"
     @State var dividerText: String = "or"

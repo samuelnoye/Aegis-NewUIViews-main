@@ -14,7 +14,6 @@ struct UserProfileTextFieldView: View {
     var body: some View {
         Section {
             HStack {
-                
                 TextField("\(fieldName)", text: $fieldBind)
                     .font(Font.custom("Nexa-Light", size: 20))
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
