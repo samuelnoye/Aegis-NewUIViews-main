@@ -23,7 +23,19 @@ struct SignInPasswordView: View {
                 .frame(width: Screen.screenSize.width*1, height: Screen.screenSize.height*1, alignment: .center)
            
             VStack(spacing: 40){
-               // Spacer()
+              
+                //MARK: - BACKWARD ARROW
+                HStack(){
+                    Button(action:{
+                        // action
+                    }, label: {
+                        Image(systemName:"arrow.backward")
+                            .imageScale(.large)
+                            .foregroundColor(Color.white)
+                    })
+                    Spacer()
+                }.padding(.top, 50)
+                Spacer()
                 //MARK: - LOGO & HEADLINE TEXT
                 LogoHeadlineView()
                 
@@ -56,11 +68,11 @@ struct SignInPasswordView: View {
                             .font(Font.custom("Nexa-Light", size: 20))
                         .foregroundColor(Color("MainColor")) })
                 }
-                //Spacer()
+                Spacer()
                 
                 //MARK: - BOTTOM TEXT
                 VStack{
-                BottomTextView()
+                    BottomTextView().padding(.bottom,40)
                 }
             }//:VSTACK
             .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*1, alignment: .center)
@@ -78,6 +90,6 @@ struct SignInPasswordView: View {
 struct SignInPasswordView_Previews: PreviewProvider {
     static var previews: some View {
         SignInPasswordView().previewDevice("iPhone 11")
-        SignInPasswordView().previewDevice("iPhone 8")
+        //SignInPasswordView().previewDevice("iPhone 8")
     }
 }
