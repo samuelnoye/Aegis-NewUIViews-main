@@ -19,7 +19,7 @@ struct UserProfileTextFieldView: View {
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                     .frame( height: 35.0)
                     .padding(.leading)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(Color.white)
                 
             }
             .padding(.all, 8)

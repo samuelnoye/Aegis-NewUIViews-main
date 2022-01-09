@@ -71,7 +71,5 @@ struct SignUpPasswordView: View {
 struct SignUpPasswordView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpPasswordView().previewDevice("iPhone 11")
-        SignUpPasswordView().previewDevice("iPhone 8")
-           
     }
 }

@@ -87,7 +87,7 @@ struct ConfirmEmailView: View {
 
 struct ConfirmEmailView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmEmailView().previewDevice("iPhone 8")
+       // ConfirmEmailView().previewDevice("iPhone 8")
         ConfirmEmailView().previewDevice("iPhone 11")
     }
 }

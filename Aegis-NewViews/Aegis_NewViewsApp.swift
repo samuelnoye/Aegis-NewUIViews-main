@@ -13,9 +13,12 @@ struct Aegis_NewViewsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            //ForgotPasswordCodeView()
-             SignUpEmailView()
+            ForgotPasswordCodeView()
+            //ForgotPasswordView()
+             //SignUpEmailView()
             //SignInPasswordView()
+            //SignUpPasswordView()
+            //ConfirmEmailView()
             //ResetPasswordView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
