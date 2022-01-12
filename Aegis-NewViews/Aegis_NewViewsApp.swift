@@ -15,7 +15,8 @@ struct Aegis_NewViewsApp: App {
         WindowGroup {
             //ForgotPasswordCodeView()
             //ForgotPasswordView()
-             SignUpEmailView()
+            // SignUpEmailView()
+            MainPageView()
             //SignInPasswordView()
             //SignUpPasswordView()
             //ConfirmEmailView()

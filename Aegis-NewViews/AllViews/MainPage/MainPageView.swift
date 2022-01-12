@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct MainPageView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    init(){
+        UITabBar.appearance().barTintColor = .white
     }
-}
-
-struct MainPageView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainPageView()
+    var body: some View {
+        TabView{
+            Text("A")
+            .tabItem{
+                Image(systemName: "bicycle")
+                Text("A")
+            }
+            Text("MAIN")
+            .tabItem{
+                //Image(systemName: "bicycle")
+                Text("MAIN")
+            }
+            Text("B")
+            .tabItem{
+                Image(systemName: "person.crop.circle")
+                Text("B")
+            }
+        }
     }
 }
