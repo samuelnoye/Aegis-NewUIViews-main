@@ -28,9 +28,6 @@
 		D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E427689D3F002DC90F /* SignUpEmailView.swift */; };
 		D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E62768ECF5002DC90F /* DividerView.swift */; };
 		D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */; };
-		D5F78709276C9B750015CB8E /* Nexa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F78708276C9B750015CB8E /* Nexa-Light.ttf */; };
-		D5F7870C276C9C7E0015CB8E /* Nexa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F7870A276C9C7E0015CB8E /* Nexa-Regular.ttf */; };
-		D5F7870D276C9C7E0015CB8E /* Nexa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F7870B276C9C7E0015CB8E /* Nexa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +53,9 @@
 		D55A7AE62769F7B100D06E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
 		D5AE63D6278EF52E005E4294 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		D5AE63D8278F20FE005E4294 /* poppins.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.light.ttf; sourceTree = "<group>"; };
+		D5AE63D9278F210C005E4294 /* poppins.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.regular.ttf; sourceTree = "<group>"; };
+		D5AE63DA278F2125005E4294 /* poppins.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.bold.ttf; sourceTree = "<group>"; };
 		D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
 		D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordView.swift; sourceTree = "<group>"; };
 		D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -76,9 +76,6 @@
 		D5C495E427689D3F002DC90F /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
 		D5C495E62768ECF5002DC90F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
-		D5F78708276C9B750015CB8E /* Nexa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Light.ttf"; sourceTree = "<group>"; };
-		D5F7870A276C9C7E0015CB8E /* Nexa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Regular.ttf"; sourceTree = "<group>"; };
-		D5F7870B276C9C7E0015CB8E /* Nexa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +106,9 @@
 		D55A7AE9276A517900D06E03 /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
-				D5F78708276C9B750015CB8E /* Nexa-Light.ttf */,
-				D5F7870B276C9C7E0015CB8E /* Nexa-Bold.ttf */,
-				D5F7870A276C9C7E0015CB8E /* Nexa-Regular.ttf */,
+				D5AE63D8278F20FE005E4294 /* poppins.light.ttf */,
+				D5AE63D9278F210C005E4294 /* poppins.regular.ttf */,
+				D5AE63DA278F2125005E4294 /* poppins.bold.ttf */,
 			);
 			path = CustomFonts;
 			sourceTree = "<group>";
@@ -325,10 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C495BC27689C89002DC90F /* Preview Assets.xcassets in Resources */,
-				D5F78709276C9B750015CB8E /* Nexa-Light.ttf in Resources */,
-				D5F7870D276C9C7E0015CB8E /* Nexa-Bold.ttf in Resources */,
 				D5C495B927689C89002DC90F /* Assets.xcassets in Resources */,
-				D5F7870C276C9C7E0015CB8E /* Nexa-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

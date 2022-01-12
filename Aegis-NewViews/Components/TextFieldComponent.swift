@@ -64,7 +64,7 @@ struct ButtonWithIconView: View {
                         .foregroundColor(Color.white)
                     Spacer()
                 })
-            .font(Font.custom("Nexa-Light", size: 20))
+            .font(Font.custom("poppins.light", size: 20))
             .foregroundColor(Color.black)
             .background(Color.black.cornerRadius(20))
             .border(Color.white, width: 1)
@@ -103,7 +103,7 @@ struct ButtonWithIconView: View {
                     
                 }
                 .padding(.all, 8)
-            }.font(Font.custom("Nexa-Light", size: 18))
+            }.font(Font.custom("poppins.light", size: 18))
              .foregroundColor(Color.gray)
             .background(Color.black)
             .overlay(RoundedRectangle(cornerRadius: 3)
