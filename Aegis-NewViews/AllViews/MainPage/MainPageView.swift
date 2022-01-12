@@ -13,20 +13,20 @@ struct MainPageView: View {
     }
     var body: some View {
         TabView{
-            Text("A")
+           LogoHeadlineView()
             .tabItem{
                 Image(systemName: "bicycle")
-                Text("A")
+                Text("Rides")
             }
             Text("MAIN")
             .tabItem{
                 //Image(systemName: "bicycle")
                 Text("MAIN")
             }
-            Text("B")
+            Text("Profile")
             .tabItem{
-                Image(systemName: "person.crop.circle")
-                Text("B")
+                Image(systemName: "person.crop.circle.fill")
+                Text("Profile")
             }
         }
     }
