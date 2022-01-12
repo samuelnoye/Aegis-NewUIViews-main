@@ -23,7 +23,7 @@ struct LogoHeadlineView: View {
                          safety system for bikers.
                          """)
                         //.font(.system(size: 20, weight: .light, design: .rounded))
-                        .font(Font.custom("poppins.light", size: 20))
+                        .font(Font.custom("poppins.extralight", size: 20))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)

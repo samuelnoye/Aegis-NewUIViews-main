@@ -56,6 +56,7 @@
 		D5AE63D8278F20FE005E4294 /* poppins.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.light.ttf; sourceTree = "<group>"; };
 		D5AE63D9278F210C005E4294 /* poppins.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.regular.ttf; sourceTree = "<group>"; };
 		D5AE63DA278F2125005E4294 /* poppins.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.bold.ttf; sourceTree = "<group>"; };
+		D5AE63DB278F2353005E4294 /* poppins.extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.extralight.ttf; sourceTree = "<group>"; };
 		D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
 		D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordView.swift; sourceTree = "<group>"; };
 		D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				D5AE63D8278F20FE005E4294 /* poppins.light.ttf */,
+				D5AE63DB278F2353005E4294 /* poppins.extralight.ttf */,
 				D5AE63D9278F210C005E4294 /* poppins.regular.ttf */,
 				D5AE63DA278F2125005E4294 /* poppins.bold.ttf */,
 			);

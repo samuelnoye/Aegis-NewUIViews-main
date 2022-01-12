@@ -15,7 +15,7 @@ struct MainPageView: View {
         TabView{
            LogoHeadlineView()
             .tabItem{
-                Image(systemName: "bicycle")
+                Image(systemName: "bike")
                 Text("Rides")
             }
             Text("MAIN")

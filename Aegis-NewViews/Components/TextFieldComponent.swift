@@ -15,7 +15,7 @@ struct UserProfileTextFieldView: View {
         Section {
             HStack {
                 TextField("\(fieldName)", text: $fieldBind)
-                    .font(Font.custom("Nexa-Light", size: 20))
+                    .font(Font.custom("poppins.extralight", size: 20))
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                     .frame( height: 35.0)
                     .padding(.leading)
@@ -39,7 +39,7 @@ struct GeneralButtonView: View {
             .frame(width: Screen.screenSize.width * 0.9, height: 50, alignment: .center)
             .overlay(Text(buttonName)
                         .foregroundColor(Color.white))
-            .font(Font.custom("Nexa-Light", size: 18))
+            .font(Font.custom("poppins.extralight", size: 18))
             .foregroundColor(Color.green)
         
         
@@ -64,7 +64,7 @@ struct ButtonWithIconView: View {
                         .foregroundColor(Color.white)
                     Spacer()
                 })
-            .font(Font.custom("poppins.light", size: 20))
+            .font(Font.custom("poppins.extralight", size: 20))
             .foregroundColor(Color.black)
             .background(Color.black.cornerRadius(20))
             .border(Color.white, width: 1)
@@ -103,7 +103,7 @@ struct ButtonWithIconView: View {
                     
                 }
                 .padding(.all, 8)
-            }.font(Font.custom("poppins.light", size: 18))
+            }.font(Font.custom("poppins.extralight", size: 18))
              .foregroundColor(Color.gray)
             .background(Color.black)
             .overlay(RoundedRectangle(cornerRadius: 3)
