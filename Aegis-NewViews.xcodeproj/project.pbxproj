@@ -11,6 +11,7 @@
 		D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE42769E1D800D06E03 /* BottomTextView.swift */; };
 		D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */; };
 		D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63D6278EF52E005E4294 /* MainPageView.swift */; };
+		D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63DD278F5C8C005E4294 /* RidesView.swift */; };
 		D5C008F52780F5AC00E74EA2 /* ConfirmEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */; };
 		D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */; };
 		D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */; };
@@ -57,6 +58,7 @@
 		D5AE63D9278F210C005E4294 /* poppins.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.regular.ttf; sourceTree = "<group>"; };
 		D5AE63DA278F2125005E4294 /* poppins.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.bold.ttf; sourceTree = "<group>"; };
 		D5AE63DB278F2353005E4294 /* poppins.extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.extralight.ttf; sourceTree = "<group>"; };
+		D5AE63DD278F5C8C005E4294 /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
 		D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
 		D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordView.swift; sourceTree = "<group>"; };
 		D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				D5AE63D6278EF52E005E4294 /* MainPageView.swift */,
+				D5AE63DD278F5C8C005E4294 /* RidesView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */,
 				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
 				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,
+				D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */,
 				D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */,
 				D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */,
 				D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */,
