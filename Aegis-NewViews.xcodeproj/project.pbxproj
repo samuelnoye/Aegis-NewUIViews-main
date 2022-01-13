@@ -17,6 +17,7 @@
 		D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */; };
 		D5C008FB27858F9D00E74EA2 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008FA27858F9D00E74EA2 /* ResetPasswordView.swift */; };
 		D5C008FD2785E11400E74EA2 /* ForgotPasswordCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008FC2785E11400E74EA2 /* ForgotPasswordCodeView.swift */; };
+		D5C0ADA4279030CA007AC1EE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA3279030CA007AC1EE /* TabBarView.swift */; };
 		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
 		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
 		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		D5C008FA27858F9D00E74EA2 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		D5C008FC2785E11400E74EA2 /* ForgotPasswordCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCodeView.swift; sourceTree = "<group>"; };
+		D5C0ADA3279030CA007AC1EE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
 		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				D5AE63D6278EF52E005E4294 /* MainPageView.swift */,
 				D5AE63DD278F5C8C005E4294 /* RidesView.swift */,
+				D5C0ADA3279030CA007AC1EE /* TabBarView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */,
 				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
 				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,
+				D5C0ADA4279030CA007AC1EE /* TabBarView.swift in Sources */,
 				D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */,
 				D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */,
 				D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */,

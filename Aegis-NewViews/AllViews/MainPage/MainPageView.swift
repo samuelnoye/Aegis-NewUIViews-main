@@ -11,13 +11,14 @@ struct MainPageView: View {
     @State private var tabSelection = 1
       
     init(){
-     UITabBar.appearance().barTintColor = .gray
+     UITabBar.appearance().barTintColor = .systemBackground
     }
     var body: some View {
         ZStack{
             
         TabView(selection: $tabSelection){
-LogoHeadlineView()
+         //ResetPasswordView()
+            Image("bike")
             .tabItem{
                 Image("bike")
                 Text("Rides")
