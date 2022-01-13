@@ -10,7 +10,8 @@ import SwiftUI
 struct TabBarView: View {
     
     @State private var tabSelection = 1
-    let tabBarItems = ["bike","helmet","person.crop.circle.fill"]
+    let tabBarItems = ["bike","helmet","profile"]
+    let tabBarLabel = ["Rides","","Profile"]
     
     init(){
         UITabBar.appearance().barTintColor = .systemBackground
@@ -20,7 +21,7 @@ struct TabBarView: View {
         VStack{
             ZStack{
                 switch tabSelection{
-                case 1:
+                case 0:
                     NavigationView{
                         Text("1")
                             .navigationTitle("First")
@@ -33,13 +34,18 @@ struct TabBarView: View {
             
             Spacer()
             HStack{
-                ForEach(1..<4){num in
+                ForEach(0..<3){num in
+                    Button(action: {
+                        tabSelection = num
+                    }, label: {
                         Spacer()
                     VStack{
-                    Image("bike")
-                        Text("Rides")
-                    }
+                    Image(tabBarItems[num])
+                        Text(tabBarLabel[num])
+                    }.font(Font.custom("poppins.extralight", size: 10))
+                        .foregroundColor(Color.green)
                     Spacer()
+                    })
                 }
              }.padding()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)

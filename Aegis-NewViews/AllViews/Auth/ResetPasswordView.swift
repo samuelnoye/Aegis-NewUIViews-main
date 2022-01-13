@@ -70,8 +70,8 @@ struct ResetPasswordView: View {
             
         }//:ZSTACK
         
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .center)
-        .edgesIgnoringSafeArea(.all)
+//        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .center)
+//        .edgesIgnoringSafeArea(.all)
         
         
     }
