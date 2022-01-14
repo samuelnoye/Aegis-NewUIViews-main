@@ -12,7 +12,7 @@ struct TabTopView: View {
     var body: some View {
         ZStack{
             HStack{
-                Image("tabViewlogo-white").resizable()
+                Image(colorScheme == .light ? "tabViewlogo-white":"tabViewlogo-dark").resizable()
                 Spacer()
                 Image(systemName: "ellipsis")
                     .foregroundColor(Color("MainColor"))
