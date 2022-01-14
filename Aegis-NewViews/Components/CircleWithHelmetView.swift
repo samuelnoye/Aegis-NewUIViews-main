@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CircleWithHelmetView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
-    @Binding var circleTabIndex: Int
+   // @Binding var circleTabIndex: Int
     //@State private var tabSelection = 0
     var body: some View {
         VStack(alignment: .center){
@@ -17,7 +17,7 @@ struct CircleWithHelmetView: View {
             
             Button(action:{
                 // action
-                circleTabIndex = 2
+              
             }, label: {
                 ZStack(){
                     Circle()

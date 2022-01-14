@@ -10,16 +10,27 @@ import SwiftUI
 struct TabTopView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     var body: some View {
+        HStack{
+            
         ZStack{
+            Rectangle()
+                .fill(Color("HomePageColor"))
             HStack{
-                Image(colorScheme == .light ? "tabViewlogo-white":"tabViewlogo-dark").resizable()
+                Image(colorScheme == .light ? "tabViewlogo-dark":"tabViewlogo-white")
                 Spacer()
-                Image(systemName: "ellipsis")
-                    .foregroundColor(Color("MainColor"))
+                Button(action:{
+                    // action
+                }, label: {
+                    Image(systemName: "ellipsis")
+                        .foregroundColor(Color("MainColor"))
+                })
             }.padding()
+            
         }.background(Color("HomePageColor"))
-        .frame(width: Screen.screenSize.width*1.0, height: Screen.screenSize.height*0.20)
+        .frame(height: Screen.screenSize.height*0.10)
         .edgesIgnoringSafeArea(.all)
+            Spacer()
+        }
     }
 }
 

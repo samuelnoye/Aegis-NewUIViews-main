@@ -16,7 +16,7 @@ struct MainPageView: View {
     }
     var body: some View {
         ZStack{
-           
+            
             TabView(selection: $tabSelection){
                 //ResetPasswordView()
                 
@@ -44,9 +44,9 @@ struct MainPageView: View {
                     }
                     .tag(3)
             }
-            TabTopView()
-            Spacer()
-            CircleWithHelmetView(circleTabIndex: $circleTabIndex)
+            TabTopView()//.padding(.bottom,750)
+            
+            CircleWithHelmetView()
                 .padding(.bottom,30)
             
            
