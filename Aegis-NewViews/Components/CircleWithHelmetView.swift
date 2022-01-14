@@ -30,7 +30,7 @@ struct CircleWithHelmetView: View {
                     Image(colorScheme == .light ? "helmet-white" : "helmet-dark")
                 }
             })
-        }.padding(.bottom,30)
+        }
     }
 }
 

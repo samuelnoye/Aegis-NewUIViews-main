@@ -20,6 +20,7 @@
 		D5C0ADA4279030CA007AC1EE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA3279030CA007AC1EE /* TabBarView.swift */; };
 		D5C0ADA627907A8A007AC1EE /* Plan_Route in Resources */ = {isa = PBXBuildFile; fileRef = D5C0ADA527907A8A007AC1EE /* Plan_Route */; };
 		D5C0ADA82791BE1A007AC1EE /* CircleWithHelmetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */; };
+		D5C0ADAA2791CAFA007AC1EE /* TabTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */; };
 		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
 		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
 		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		D5C0ADA3279030CA007AC1EE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		D5C0ADA527907A8A007AC1EE /* Plan_Route */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plan_Route; sourceTree = "<group>"; };
 		D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleWithHelmetView.swift; sourceTree = "<group>"; };
+		D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTopView.swift; sourceTree = "<group>"; };
 		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
 		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */,
 				D55A7AE42769E1D800D06E03 /* BottomTextView.swift */,
 				D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */,
+				D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				D5C008FD2785E11400E74EA2 /* ForgotPasswordCodeView.swift in Sources */,
 				D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */,
 				D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */,
+				D5C0ADAA2791CAFA007AC1EE /* TabTopView.swift in Sources */,
 				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
 				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,
 				D5C0ADA82791BE1A007AC1EE /* CircleWithHelmetView.swift in Sources */,

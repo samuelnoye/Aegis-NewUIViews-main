@@ -16,24 +16,26 @@ struct MainPageView: View {
     }
     var body: some View {
         ZStack{
-            
+           
             TabView(selection: $tabSelection){
                 //ResetPasswordView()
                 
                 ScrollView{
                    VStack{
-                       Text("hjfn")
+                       
+                       ResetPasswordView()
                         }
                      }
                 .tabItem{
                     Image("bike-green")
                     Text("Rides")
+                       
                 }
                 .tag(1)
-                
+               
                 Text("MAIN")
                     .tabItem{
-                        
+                       
                     }.tag(2)
                 Text("Profile")
                     .tabItem{
@@ -42,9 +44,12 @@ struct MainPageView: View {
                     }
                     .tag(3)
             }
-            
+            TabTopView()
+            Spacer()
             CircleWithHelmetView(circleTabIndex: $circleTabIndex)
+                .padding(.bottom,30)
             
+           
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .edgesIgnoringSafeArea(.all)
     }
