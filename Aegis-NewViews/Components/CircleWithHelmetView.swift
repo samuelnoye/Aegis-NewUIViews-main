@@ -17,7 +17,7 @@ struct CircleWithHelmetView: View {
             
             Button(action:{
                 // action
-                circleTabIndex = circleTabIndex
+                circleTabIndex = 2
             }, label: {
                 ZStack(){
                     Circle()
