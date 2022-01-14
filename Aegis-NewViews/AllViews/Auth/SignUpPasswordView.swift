@@ -22,7 +22,7 @@ struct SignUpPasswordView: View {
     //MARK: - BODY
     var body: some View {
         ZStack{
-            Image("BgImg")
+            Image("BG")
                 .resizable()
                // .scaledToFit()
            

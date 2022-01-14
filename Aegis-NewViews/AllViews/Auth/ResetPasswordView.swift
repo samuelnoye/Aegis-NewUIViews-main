@@ -20,7 +20,7 @@ struct ResetPasswordView: View {
     //MARK: - BODY
     var body: some View {
         ZStack{
-            Image("BgImg")
+            Image("BG")
                 .resizable()
              
            

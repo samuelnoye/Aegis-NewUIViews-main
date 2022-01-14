@@ -9,25 +9,24 @@ import SwiftUI
 
 struct MainPageView: View {
     @State private var tabSelection = 1
-    
+    @State var circleTabIndex: Int = 2
     init(){
-        UITabBar.appearance().barTintColor = .systemBackground
+       // UITabBar.appearance().barTintColor = Color("HomePageColor")
+        UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
     }
     var body: some View {
         ZStack{
             
             TabView(selection: $tabSelection){
                 //ResetPasswordView()
-                NavigationView{
+                
                 ScrollView{
                    VStack{
                        Text("hjfn")
                         }
-                     }.navigationTitle("First")
-                        .background(Color.gray)
-                }
+                     }
                 .tabItem{
-                    Image("bike")
+                    Image("bike-green")
                     Text("Rides")
                 }
                 .tag(1)
@@ -44,23 +43,8 @@ struct MainPageView: View {
                     .tag(3)
             }
             
-            VStack(alignment: .center){
-                Spacer()
-                
-                Button(action:{
-                    // action
-                    tabSelection = 2
-                }, label: {
-                    ZStack(){
-                        Circle()
-                            .fill(Color.green)
-                            .frame(width: 130, height: 65)
-                            .overlay(Circle().stroke(Color.white,lineWidth: 4))
-                            .shadow(color: .gray, radius: 4, x: 0, y: 0)
-                        Image("helmet")
-                    }
-                })
-            }.padding(.bottom,30)
+            CircleWithHelmetView(circleTabIndex: $circleTabIndex)
+            
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .edgesIgnoringSafeArea(.all)
     }

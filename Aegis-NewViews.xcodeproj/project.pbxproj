@@ -18,6 +18,8 @@
 		D5C008FB27858F9D00E74EA2 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008FA27858F9D00E74EA2 /* ResetPasswordView.swift */; };
 		D5C008FD2785E11400E74EA2 /* ForgotPasswordCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008FC2785E11400E74EA2 /* ForgotPasswordCodeView.swift */; };
 		D5C0ADA4279030CA007AC1EE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA3279030CA007AC1EE /* TabBarView.swift */; };
+		D5C0ADA627907A8A007AC1EE /* Plan_Route in Resources */ = {isa = PBXBuildFile; fileRef = D5C0ADA527907A8A007AC1EE /* Plan_Route */; };
+		D5C0ADA82791BE1A007AC1EE /* CircleWithHelmetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */; };
 		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
 		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
 		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
@@ -66,6 +68,8 @@
 		D5C008FA27858F9D00E74EA2 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		D5C008FC2785E11400E74EA2 /* ForgotPasswordCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCodeView.swift; sourceTree = "<group>"; };
 		D5C0ADA3279030CA007AC1EE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D5C0ADA527907A8A007AC1EE /* Plan_Route */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plan_Route; sourceTree = "<group>"; };
+		D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleWithHelmetView.swift; sourceTree = "<group>"; };
 		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
 		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 				D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */,
 				D5C495B627689C87002DC90F /* ContentView.swift */,
 				D5C495B827689C89002DC90F /* Assets.xcassets */,
+				D5C0ADA527907A8A007AC1EE /* Plan_Route */,
 				D5C495BF27689C89002DC90F /* Aegis_NewViews.xcdatamodeld */,
 				D5C495BA27689C89002DC90F /* Preview Content */,
 			);
@@ -221,6 +226,7 @@
 				D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */,
 				D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */,
 				D55A7AE42769E1D800D06E03 /* BottomTextView.swift */,
+				D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C0ADA627907A8A007AC1EE /* Plan_Route in Resources */,
 				D5C495BC27689C89002DC90F /* Preview Assets.xcassets in Resources */,
 				D5C495B927689C89002DC90F /* Assets.xcassets in Resources */,
 			);
@@ -365,6 +372,7 @@
 				D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */,
 				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
 				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,
+				D5C0ADA82791BE1A007AC1EE /* CircleWithHelmetView.swift in Sources */,
 				D5C0ADA4279030CA007AC1EE /* TabBarView.swift in Sources */,
 				D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */,
 				D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */,

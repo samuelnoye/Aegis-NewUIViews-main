@@ -18,7 +18,7 @@ struct ForgotPasswordView: View {
     //MARK: - BODY
     var body: some View {
         ZStack{
-            Image("BgImg")
+            Image("BG")
                 .resizable()
                 .frame(width: Screen.screenSize.width*1, height: Screen.screenSize.height*1, alignment: .center)
                 

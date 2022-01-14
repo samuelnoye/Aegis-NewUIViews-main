@@ -9,9 +9,10 @@ import SwiftUI
 
 struct TabBarView: View {
     
-    @State private var tabSelection = 1
-    let tabBarItems = ["bike","helmet","profile"]
-    let tabBarLabel = ["Rides","","Profile"]
+    @State private var tabSelection = 0
+    let tabBarItemsDark = ["bike-green","helmet-white","Profile-white"]
+    let tabBarItemsWhite = ["bike-gray","helmet-dark","Profile-dark"]
+    let tabBarLabel = ["Rides","KL","Profile"]
     
     init(){
         UITabBar.appearance().barTintColor = .systemBackground
@@ -40,10 +41,11 @@ struct TabBarView: View {
                     }, label: {
                         Spacer()
                     VStack{
-                    Image(tabBarItems[num])
+                    Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
                         Text(tabBarLabel[num])
-                    }.font(Font.custom("poppins.extralight", size: 10))
-                        .foregroundColor(Color.green)
+                            .font(Font.custom("poppins.extralight", size: 10))
+                                    .foregroundColor(tabSelection == num ? Color(.green) : .gray)
+                    }
                     Spacer()
                     })
                 }
