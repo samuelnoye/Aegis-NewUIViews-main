@@ -29,7 +29,7 @@ struct RidesCardView: View {
                 Spacer()
                 HStack(spacing: 20){
                     VStack(alignment:.leading, spacing: 15){
-                        VStack{
+                        VStack(alignment: .leading){
                             Text("Distance")
                                 .font(Font.custom("poppins.light", size: 8))
                             HStack{
@@ -40,7 +40,7 @@ struct RidesCardView: View {
                             }
                         }
                         
-                        VStack{
+                        VStack(alignment: .leading){
                             Text("Duration")
                                 .font(Font.custom("poppins.light", size: 8))
                             HStack{
@@ -50,7 +50,7 @@ struct RidesCardView: View {
                                     .font(Font.custom("poppins.light", size: 10))
                             }
                         }
-                        VStack{
+                        VStack(alignment: .leading){
                             Text("Speed")
                                 .font(Font.custom("poppins.light", size: 8))
                             HStack{
@@ -60,17 +60,18 @@ struct RidesCardView: View {
                                     .font(Font.custom("poppins.light", size: 10))
                             }
                         }
+                        
                     }
+                    Spacer()
                     Image(rides.video)
                         .renderingMode(.original)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 250, height: Screen.screenSize.height*0.14, alignment: .center)
+                        .frame(width: 250, height: Screen.screenSize.height*0.14)
                         .background(Color("MainPageColor"))
                         .cornerRadius(10)
                 }
             }
-            .multilineTextAlignment(.leading)
             .padding()
             .frame(height: Screen.screenSize.height*0.20)
             

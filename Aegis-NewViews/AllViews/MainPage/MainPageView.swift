@@ -28,7 +28,7 @@ struct MainPageView: View {
                         }
                     }
                     }
-                }
+                }.navigationViewStyle(StackNavigationViewStyle())
                 .tabItem{
                     Image("bike-green")
                     Text("Rides")
