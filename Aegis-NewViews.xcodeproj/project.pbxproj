@@ -21,6 +21,9 @@
 		D5C0ADA627907A8A007AC1EE /* Plan_Route in Resources */ = {isa = PBXBuildFile; fileRef = D5C0ADA527907A8A007AC1EE /* Plan_Route */; };
 		D5C0ADA82791BE1A007AC1EE /* CircleWithHelmetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */; };
 		D5C0ADAA2791CAFA007AC1EE /* TabTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */; };
+		D5C0ADAE27922AFF007AC1EE /* RidesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADAD27922AFF007AC1EE /* RidesData.swift */; };
+		D5C0ADB027922B29007AC1EE /* RidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADAF27922B29007AC1EE /* RidesModel.swift */; };
+		D5C0ADB22792305C007AC1EE /* RidesCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0ADB12792305C007AC1EE /* RidesCardView.swift */; };
 		D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */; };
 		D5C495B727689C87002DC90F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495B627689C87002DC90F /* ContentView.swift */; };
 		D5C495B927689C89002DC90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C495B827689C89002DC90F /* Assets.xcassets */; };
@@ -72,6 +75,9 @@
 		D5C0ADA527907A8A007AC1EE /* Plan_Route */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plan_Route; sourceTree = "<group>"; };
 		D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleWithHelmetView.swift; sourceTree = "<group>"; };
 		D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTopView.swift; sourceTree = "<group>"; };
+		D5C0ADAD27922AFF007AC1EE /* RidesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesData.swift; sourceTree = "<group>"; };
+		D5C0ADAF27922B29007AC1EE /* RidesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesModel.swift; sourceTree = "<group>"; };
+		D5C0ADB12792305C007AC1EE /* RidesCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesCardView.swift; sourceTree = "<group>"; };
 		D5C495B127689C87002DC90F /* Aegis-NewViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aegis-NewViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C495B427689C87002DC90F /* Aegis_NewViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aegis_NewViewsApp.swift; sourceTree = "<group>"; };
 		D5C495B627689C87002DC90F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +156,43 @@
 			path = MainPage;
 			sourceTree = "<group>";
 		};
+		D5C0ADAB27922AB0007AC1EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5C0ADAF27922B29007AC1EE /* RidesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5C0ADAC27922AD5007AC1EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D5C0ADAD27922AFF007AC1EE /* RidesData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D5C0ADB32792307C007AC1EE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D5C495E62768ECF5002DC90F /* DividerView.swift */,
+				D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */,
+				D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */,
+				D55A7AE42769E1D800D06E03 /* BottomTextView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D5C0ADB427923088007AC1EE /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */,
+				D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */,
+				D5C0ADB12792305C007AC1EE /* RidesCardView.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
 		D5C495A827689C87002DC90F = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +216,8 @@
 		D5C495B327689C87002DC90F /* Aegis-NewViews */ = {
 			isa = PBXGroup;
 			children = (
+				D5C0ADAC27922AD5007AC1EE /* Data */,
+				D5C0ADAB27922AB0007AC1EE /* Model */,
 				D55A7AE9276A517900D06E03 /* CustomFonts */,
 				D55A7AE62769F7B100D06E03 /* Info.plist */,
 				D5C495E82768FC3F002DC90F /* Components */,
@@ -224,12 +269,8 @@
 		D5C495E82768FC3F002DC90F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D5C495E62768ECF5002DC90F /* DividerView.swift */,
-				D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */,
-				D55A7AE22769E06200D06E03 /* LogoHeadlineView.swift */,
-				D55A7AE42769E1D800D06E03 /* BottomTextView.swift */,
-				D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */,
-				D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */,
+				D5C0ADB427923088007AC1EE /* MainPage */,
+				D5C0ADB32792307C007AC1EE /* Auth */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -370,6 +411,7 @@
 				D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */,
 				D5C008FB27858F9D00E74EA2 /* ResetPasswordView.swift in Sources */,
 				D55A7AE32769E06200D06E03 /* LogoHeadlineView.swift in Sources */,
+				D5C0ADAE27922AFF007AC1EE /* RidesData.swift in Sources */,
 				D5C008FD2785E11400E74EA2 /* ForgotPasswordCodeView.swift in Sources */,
 				D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */,
 				D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */,
@@ -379,8 +421,10 @@
 				D5C0ADA82791BE1A007AC1EE /* CircleWithHelmetView.swift in Sources */,
 				D5C0ADA4279030CA007AC1EE /* TabBarView.swift in Sources */,
 				D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */,
+				D5C0ADB22792305C007AC1EE /* RidesCardView.swift in Sources */,
 				D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */,
 				D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */,
+				D5C0ADB027922B29007AC1EE /* RidesModel.swift in Sources */,
 				D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */,
 				D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */,
 				D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */,

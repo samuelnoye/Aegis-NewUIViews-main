@@ -15,6 +15,7 @@ struct TabTopView: View {
         ZStack{
             Rectangle()
                 .fill(Color("HomePageColor"))
+           
             HStack{
                 Image(colorScheme == .light ? "tabViewlogo-dark":"tabViewlogo-white")
                 Spacer()

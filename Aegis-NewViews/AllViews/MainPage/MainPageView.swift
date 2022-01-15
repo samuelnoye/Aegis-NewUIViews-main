@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainPageView: View {
     @State private var tabSelection = 1
-    @State var circleTabIndex: Int = 2
+  
+    var rides: [Rides] = RidesData
     init(){
        // UITabBar.appearance().barTintColor = Color("HomePageColor")
         UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
@@ -18,14 +19,16 @@ struct MainPageView: View {
         ZStack{
             
             TabView(selection: $tabSelection){
-                //ResetPasswordView()
-                
-                ScrollView{
-                   VStack{
-                       
-                       ResetPasswordView()
+            
+                NavigationView {
+                ScrollView([.vertical], showsIndicators: false){
+                    VStack{
+                   ForEach(rides){ item in
+                                RidesCardView(rides: item)
                         }
-                     }
+                    }
+                    }
+                }
                 .tabItem{
                     Image("bike-green")
                     Text("Rides")
@@ -44,7 +47,7 @@ struct MainPageView: View {
                     }
                     .tag(3)
             }
-            TabTopView()//.padding(.bottom,750)
+            TabTopView().padding(.bottom,750)
             
             CircleWithHelmetView()
                 .padding(.bottom,30)
