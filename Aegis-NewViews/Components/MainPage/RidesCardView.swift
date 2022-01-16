@@ -33,20 +33,27 @@ struct RidesCardView: View {
                         VStack(alignment: .leading){
                             Text("Distance")
                                 .font(Font.custom("poppins.light", size: 8))
-                            HStack{
+                            HStack(spacing:1){
                                 Text(rides.distance)
-                                    .font(Font.custom("poppins.bold", size: 15))
+                                    .font(Font.custom("poppins.bold", size: 14))
+                                VStack{
+                                    //Spacer()
+                                    Text("g").font(Font.custom("poppins.light", size: 2))
                                 Text("km")
                                     .font(Font.custom("poppins.light", size: 10))
+                                     
+                                    //.padding(.top)
+                                }.frame(alignment: .bottom)
+                                
                             }
                         }
                         Spacer()
                         VStack(alignment: .leading){
                             Text("Duration")
                                 .font(Font.custom("poppins.light", size: 8))
-                            HStack{
+                            HStack(spacing:1){
                                 Text(rides.duration)
-                                    .font(Font.custom("poppins.bold", size: 15))
+                                    .font(Font.custom("poppins.bold", size: 14))
                                 Text("hr")
                                     .font(Font.custom("poppins.light", size: 10))
                             }
@@ -55,9 +62,9 @@ struct RidesCardView: View {
                         VStack(alignment: .leading){
                             Text("Speed")
                                 .font(Font.custom("poppins.light", size: 8))
-                            HStack{
+                            HStack(spacing:1){
                                 Text(rides.speed)
-                                    .font(Font.custom("poppins.bold", size: 15))
+                                    .font(Font.custom("poppins.bold", size: 14))
                                 Text("kph")
                                     .font(Font.custom("poppins.light", size: 10))
                             }
