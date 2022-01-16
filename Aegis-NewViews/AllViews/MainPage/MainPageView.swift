@@ -57,7 +57,7 @@ struct MainPageView: View {
             TabTopView()//.padding(.bottom,750)
             Spacer()
             CircleWithHelmetView()
-                .padding(.bottom,Screen.screenSize.height < 700 ? 10: 30)
+                .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)
             }
            
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
