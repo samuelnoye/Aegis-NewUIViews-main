@@ -36,6 +36,7 @@
 		D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E427689D3F002DC90F /* SignUpEmailView.swift */; };
 		D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E62768ECF5002DC90F /* DividerView.swift */; };
 		D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */; };
+		D5E02C6527947D6E00E19402 /* SearchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E02C6427947D6E00E19402 /* SearchButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		D5C495E427689D3F002DC90F /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
 		D5C495E62768ECF5002DC90F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
+		D5E02C6427947D6E00E19402 /* SearchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				D5C0ADA72791BE1A007AC1EE /* CircleWithHelmetView.swift */,
 				D5C0ADA92791CAFA007AC1EE /* TabTopView.swift */,
 				D5C0ADB12792305C007AC1EE /* RidesCardView.swift */,
+				D5E02C6427947D6E00E19402 /* SearchButtonView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */,
 				D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */,
 				D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */,
+				D5E02C6527947D6E00E19402 /* SearchButtonView.swift in Sources */,
 				D5C495C127689C89002DC90F /* Aegis_NewViews.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

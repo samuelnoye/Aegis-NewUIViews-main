@@ -20,7 +20,7 @@ struct RidesCardView: View {
             
             VStack(){
                 HStack(){
-                    Text("\(rides.day) Rides \(rides.username)")
+                    Text("\(rides.day) ride with \(rides.username)")
                         .font(Font.custom("poppins.light", size: 13))
                     Spacer()
                     Text(rides.date)
@@ -37,25 +37,26 @@ struct RidesCardView: View {
                                 Text(rides.distance)
                                     .font(Font.custom("poppins.bold", size: 14))
                                 VStack{
-                                    //Spacer()
-                                    Text("g").font(Font.custom("poppins.light", size: 2))
-                                Text("km")
-                                    .font(Font.custom("poppins.light", size: 10))
-                                     
-                                    //.padding(.top)
-                                }.frame(alignment: .bottom)
-                                
+                                    
+                                    Text(".").font(Font.custom("poppins.light", size: 2))
+                                    Text("km")
+                                        .font(Font.custom("poppins.light", size: 10))
+                                }
                             }
                         }
                         Spacer()
                         VStack(alignment: .leading){
                             Text("Duration")
                                 .font(Font.custom("poppins.light", size: 8))
+                            
                             HStack(spacing:1){
                                 Text(rides.duration)
                                     .font(Font.custom("poppins.bold", size: 14))
-                                Text("hr")
-                                    .font(Font.custom("poppins.light", size: 10))
+                                VStack{
+                                    Text(".").font(Font.custom("poppins.light", size: 3))
+                                    Text("hr")
+                                        .font(Font.custom("poppins.light", size: 10))
+                                }
                             }
                         }
                         Spacer()
@@ -65,27 +66,27 @@ struct RidesCardView: View {
                             HStack(spacing:1){
                                 Text(rides.speed)
                                     .font(Font.custom("poppins.bold", size: 14))
-                                Text("kph")
-                                    .font(Font.custom("poppins.light", size: 10))
+                                VStack{
+                                    Text(".").font(Font.custom("poppins.light", size: 3))
+                                    Text("kph")
+                                        .font(Font.custom("poppins.light", size: 10))
+                                }
                             }
                         }
-                        
                     }
                     Spacer()
                     Image(rides.video)
                         .renderingMode(.original)
                         .resizable()
-                        .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.16)
+                        .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.17)
                         .background(Color("MainPageColor"))
                         .cornerRadius(10)
                 }
-                .frame(height: Screen.screenSize.height*0.16)
+                .frame(height: Screen.screenSize.height*0.17)
             }
             .padding()
             .frame(width: Screen.screenSize.width*0.95,height: Screen.screenSize.height*0.25)
-            
-        }//.padding()
-        //
+        }
     }
 }
 

@@ -18,16 +18,22 @@ struct MainPageView: View {
     var body: some View {
         ZStack{
             
+            
             TabView(selection: $tabSelection){
             
                 NavigationView {
                 ScrollView([.vertical], showsIndicators: false){
                     VStack{
+                        SearchButtonView()
+                            .padding(.top, 50)
                    ForEach(rides){ item in
+                       
                        RidesCardView(rides: item)
                         }
-                    }.frame(width: Screen.screenSize.width*1).background(Color("HomePageBGColor"))
                     }
+                    .padding()
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity).background(Color("HomePageBGColor"))
+                    } .navigationBarHidden(true)
                 }.navigationViewStyle(StackNavigationViewStyle())
                 .tabItem{
                     Image("bike-green")
