@@ -14,6 +14,7 @@ struct MainPageView: View {
     init(){
        // UITabBar.appearance().barTintColor = Color("HomePageColor")
         UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
+        UINavigationBar.appearance().backgroundColor = UIColor(Color("HomePageBGColor"))
     }
     var body: some View {
         ZStack{
@@ -47,11 +48,12 @@ struct MainPageView: View {
                     }
                     .tag(3)
             }
-            TabTopView().padding(.bottom,750)
-            
+            VStack{
+            TabTopView()//.padding(.bottom,750)
+            Spacer()
             CircleWithHelmetView()
-                .padding(.bottom,30)
-            
+                .padding(.bottom,20)
+            }
            
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .edgesIgnoringSafeArea(.all)

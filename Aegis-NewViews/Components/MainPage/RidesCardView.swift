@@ -14,7 +14,7 @@ struct RidesCardView: View {
         ZStack{
             
             Rectangle()
-                .fill(Color("MainColor"))
+                .fill(Color("HomePageColor"))
                 .cornerRadius(10)
                 .frame(width: Screen.screenSize.width*0.9, height: Screen.screenSize.height*0.20)
             

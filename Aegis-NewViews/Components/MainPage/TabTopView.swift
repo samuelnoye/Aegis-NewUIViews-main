@@ -15,7 +15,8 @@ struct TabTopView: View {
         ZStack{
             Rectangle()
                 .fill(Color("HomePageColor"))
-           
+            VStack{
+           Spacer()
             HStack{
                 Image(colorScheme == .light ? "tabViewlogo-dark":"tabViewlogo-white")
                 Spacer()
@@ -26,11 +27,11 @@ struct TabTopView: View {
                         .foregroundColor(Color("MainColor"))
                 })
             }.padding()
-            
+            }//.padding()
         }.background(Color("HomePageColor"))
-        .frame(height: Screen.screenSize.height*0.10)
+        .frame(height: Screen.screenSize.height*0.12)
         .edgesIgnoringSafeArea(.all)
-            Spacer()
+          
         }
     }
 }

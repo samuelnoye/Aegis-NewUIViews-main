@@ -13,7 +13,7 @@ struct CircleWithHelmetView: View {
     //@State private var tabSelection = 0
     var body: some View {
         VStack(alignment: .center){
-            Spacer()
+            //Spacer()
             
             Button(action:{
                 // action
