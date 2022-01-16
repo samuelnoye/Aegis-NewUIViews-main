@@ -12,9 +12,8 @@ struct MainPageView: View {
   
     var rides: [Rides] = RidesData
     init(){
-       // UITabBar.appearance().barTintColor = Color("HomePageColor")
-        UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
         UINavigationBar.appearance().backgroundColor = UIColor(Color("HomePageBGColor"))
+        UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
     }
     var body: some View {
         ZStack{
@@ -25,9 +24,9 @@ struct MainPageView: View {
                 ScrollView([.vertical], showsIndicators: false){
                     VStack{
                    ForEach(rides){ item in
-                                RidesCardView(rides: item)
+                       RidesCardView(rides: item)
                         }
-                    }
+                    }.frame(width: Screen.screenSize.width*1).background(Color("HomePageBGColor"))
                     }
                 }.navigationViewStyle(StackNavigationViewStyle())
                 .tabItem{
