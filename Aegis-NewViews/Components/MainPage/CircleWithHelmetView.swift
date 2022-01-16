@@ -20,9 +20,9 @@ struct CircleWithHelmetView: View {
               
             }, label: {
                 ZStack(){
-                    Circle() //width: 150, height:75 //width: 130, height: 65
+                    Circle()
                         .fill(Color("CircleBorderColor-1"))
-                        .frame(width: Screen.screenSize.width < 375 ? 140 : 150, height: Screen.screenSize.height < 700 ? 70 : 75)
+                        .frame(width: Screen.screenSize.width < 375 ? 136 : 150, height: Screen.screenSize.height < 700 ? 68 : 75)
                     Circle()
                         .fill(Color("MainColor"))
                         .frame(width: Screen.screenSize.width < 375 ? 110 : 130, height: Screen.screenSize.height < 700 ? 55 : 65)
