@@ -16,7 +16,7 @@ struct RidesCardView: View {
             Rectangle()
                 .fill(Color("HomePageColor"))
                 .cornerRadius(10)
-                .frame(width: Screen.screenSize.width*0.9, height: Screen.screenSize.height*0.20)
+                .frame(width: Screen.screenSize.width*1.0, height: Screen.screenSize.height*0.25)
             
             VStack(){
                 HStack(){
@@ -27,8 +27,9 @@ struct RidesCardView: View {
                         .font(Font.custom("poppins.light", size: 10))
                 }
                 Spacer()
-                HStack(spacing: 20){
-                    VStack(alignment:.leading, spacing: 15){
+                
+                HStack(){
+                    VStack(alignment:.leading){
                         VStack(alignment: .leading){
                             Text("Distance")
                                 .font(Font.custom("poppins.light", size: 8))
@@ -39,7 +40,7 @@ struct RidesCardView: View {
                                     .font(Font.custom("poppins.light", size: 10))
                             }
                         }
-                        
+                        Spacer()
                         VStack(alignment: .leading){
                             Text("Duration")
                                 .font(Font.custom("poppins.light", size: 8))
@@ -50,6 +51,7 @@ struct RidesCardView: View {
                                     .font(Font.custom("poppins.light", size: 10))
                             }
                         }
+                        Spacer()
                         VStack(alignment: .leading){
                             Text("Speed")
                                 .font(Font.custom("poppins.light", size: 8))
@@ -66,14 +68,13 @@ struct RidesCardView: View {
                     Image(rides.video)
                         .renderingMode(.original)
                         .resizable()
-                        .scaledToFit()
-                        .frame(width: 250, height: Screen.screenSize.height*0.14)
+                        .frame(width: 270, height: Screen.screenSize.height*0.16)
                         .background(Color("MainPageColor"))
                         .cornerRadius(10)
                 }
             }
             .padding()
-            .frame(height: Screen.screenSize.height*0.20)
+            .frame(width: Screen.screenSize.width*1.0,height: Screen.screenSize.height*0.25)
             
         }.padding()
         //

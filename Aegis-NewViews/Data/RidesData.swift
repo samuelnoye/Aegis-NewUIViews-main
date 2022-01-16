@@ -14,7 +14,7 @@ let RidesData: [Rides] = [
         distance: "25.5",
         duration:"1.03",
         speed: "73",
-        video: "vid1"
+        video: "map"
       ),
     Rides(
         username: "Mark",
@@ -23,7 +23,7 @@ let RidesData: [Rides] = [
         distance: "25.5",
         duration:"1.03",
         speed: "73",
-        video: "vid2"
+        video: "map"
       ),
     Rides(
         username: "Josh",
@@ -32,7 +32,7 @@ let RidesData: [Rides] = [
         distance: "25.5",
         duration:"1.03",
         speed: "73",
-        video: "vid3"
+        video: "map"
       ),
     Rides(
         username: "Gerald",
@@ -41,6 +41,25 @@ let RidesData: [Rides] = [
         distance: "25.5",
         duration:"1.03",
         speed: "73",
-        video: "vid4"
+        video: "map"
+      )
+    ,
+  Rides(
+      username: "Gerald",
+      date: "12-08-21",
+      day: "Monday",
+      distance: "25.5",
+      duration:"1.03",
+      speed: "73",
+      video: "map"
+    ),
+    Rides(
+        username: "Josh",
+        date: "12-08-21",
+        day: "Monday",
+        distance: "25.5",
+        duration:"1.03",
+        speed: "73",
+        video: "map"
       )
 ]
