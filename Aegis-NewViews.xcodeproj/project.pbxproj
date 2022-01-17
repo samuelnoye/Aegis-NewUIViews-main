@@ -37,11 +37,7 @@
 		D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E62768ECF5002DC90F /* DividerView.swift */; };
 		D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */; };
 		D5E02C6527947D6E00E19402 /* SearchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E02C6427947D6E00E19402 /* SearchButtonView.swift */; };
-		D5E02C6C279576C800E19402 /* poppins.medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E02C67279576C800E19402 /* poppins.medium.ttf */; };
-		D5E02C6D279576C800E19402 /* poppins.extrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E02C68279576C800E19402 /* poppins.extrabold.ttf */; };
-		D5E02C6E279576C800E19402 /* poppins.semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E02C69279576C800E19402 /* poppins.semibold.ttf */; };
-		D5E02C6F279576C800E19402 /* poppins.thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E02C6A279576C800E19402 /* poppins.thin.ttf */; };
-		D5E02C70279576C800E19402 /* poppins.black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E02C6B279576C800E19402 /* poppins.black.ttf */; };
+		D5E02C722795E46E00E19402 /* poppins-family in Resources */ = {isa = PBXBuildFile; fileRef = D5E02C712795E46E00E19402 /* poppins-family */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +63,6 @@
 		D55A7AE62769F7B100D06E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
 		D5AE63D6278EF52E005E4294 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
-		D5AE63D8278F20FE005E4294 /* poppins.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.light.ttf; sourceTree = "<group>"; };
-		D5AE63D9278F210C005E4294 /* poppins.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.regular.ttf; sourceTree = "<group>"; };
-		D5AE63DA278F2125005E4294 /* poppins.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.bold.ttf; sourceTree = "<group>"; };
-		D5AE63DB278F2353005E4294 /* poppins.extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.extralight.ttf; sourceTree = "<group>"; };
 		D5AE63DD278F5C8C005E4294 /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
 		D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
 		D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordView.swift; sourceTree = "<group>"; };
@@ -100,11 +92,7 @@
 		D5C495E62768ECF5002DC90F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
 		D5E02C6427947D6E00E19402 /* SearchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonView.swift; sourceTree = "<group>"; };
-		D5E02C67279576C800E19402 /* poppins.medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.medium.ttf; sourceTree = "<group>"; };
-		D5E02C68279576C800E19402 /* poppins.extrabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.extrabold.ttf; sourceTree = "<group>"; };
-		D5E02C69279576C800E19402 /* poppins.semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.semibold.ttf; sourceTree = "<group>"; };
-		D5E02C6A279576C800E19402 /* poppins.thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.thin.ttf; sourceTree = "<group>"; };
-		D5E02C6B279576C800E19402 /* poppins.black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins.black.ttf; sourceTree = "<group>"; };
+		D5E02C712795E46E00E19402 /* poppins-family */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "poppins-family"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,15 +123,7 @@
 		D55A7AE9276A517900D06E03 /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
-				D5AE63D8278F20FE005E4294 /* poppins.light.ttf */,
-				D5AE63DB278F2353005E4294 /* poppins.extralight.ttf */,
-				D5E02C6B279576C800E19402 /* poppins.black.ttf */,
-				D5E02C68279576C800E19402 /* poppins.extrabold.ttf */,
-				D5E02C67279576C800E19402 /* poppins.medium.ttf */,
-				D5E02C69279576C800E19402 /* poppins.semibold.ttf */,
-				D5E02C6A279576C800E19402 /* poppins.thin.ttf */,
-				D5AE63D9278F210C005E4294 /* poppins.regular.ttf */,
-				D5AE63DA278F2125005E4294 /* poppins.bold.ttf */,
+				D5E02C712795E46E00E19402 /* poppins-family */,
 			);
 			path = CustomFonts;
 			sourceTree = "<group>";
@@ -397,13 +377,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E02C6D279576C800E19402 /* poppins.extrabold.ttf in Resources */,
-				D5E02C70279576C800E19402 /* poppins.black.ttf in Resources */,
-				D5E02C6F279576C800E19402 /* poppins.thin.ttf in Resources */,
 				D5C0ADA627907A8A007AC1EE /* Plan_Route in Resources */,
 				D5C495BC27689C89002DC90F /* Preview Assets.xcassets in Resources */,
-				D5E02C6C279576C800E19402 /* poppins.medium.ttf in Resources */,
-				D5E02C6E279576C800E19402 /* poppins.semibold.ttf in Resources */,
+				D5E02C722795E46E00E19402 /* poppins-family in Resources */,
 				D5C495B927689C89002DC90F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

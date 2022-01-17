@@ -74,7 +74,7 @@ struct ConfirmEmailView: View {
                     
                 }//:VSTACK
                 .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70)
-                .font(Font.custom("Nexa-Light",size: 20))
+                .font(Font.custom("Poppins-ExtraLight",size: 17))
                
                 
             }//:ZSTACK

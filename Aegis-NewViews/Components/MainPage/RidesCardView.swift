@@ -16,17 +16,16 @@ struct RidesCardView: View {
             Rectangle()
                 .fill(Color("HomePageColor"))
                 .cornerRadius(15)
-                //.padding()
                 .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.20)
                 
             
             VStack(){
                 HStack(){
                     Text("\(rides.day) ride with \(rides.username)")
-                        .font(Font.custom("poppins.light", size: 13))
+                        .font(Font.custom("Poppins-Light", size: 13))
                     Spacer()
                     Text(rides.date)
-                        .font(Font.custom("poppins.light", size: 10))
+                        .font(Font.custom("Poppins-Light", size: 10))
                 }
                 Spacer()
                 
@@ -34,42 +33,42 @@ struct RidesCardView: View {
                     VStack(alignment:.leading){
                         VStack(alignment: .leading){
                             Text("Distance")
-                                .font(Font.custom("poppins.light", size: 8))
+                                .font(Font.custom("Poppins-Light", size: 8))
                             HStack(spacing:1){
-                                Text(rides.distance).font(Font.custom("poppins.bold", size: 14))
+                                Text(rides.distance).font(Font.custom("Poppins-Bold", size: 14))
                                 VStack{
-                                    Text(".").font(Font.custom("poppins.light", size: 2))
+                                    Text(".").font(Font.custom("Poppins-Light", size: 2))
                                     Text("km")
-                                        .font(Font.custom("poppins.light", size: 10))
+                                        .font(Font.custom("Poppins-Light", size: 10))
                                 }
                             }
                         }
                         Spacer()
                         VStack(alignment: .leading){
                             Text("Duration")
-                                .font(Font.custom("poppins.light", size: 8))
+                                .font(Font.custom("Poppins-Light", size: 8))
                             
                             HStack(spacing:1){
                                 Text(rides.duration)
-                                    .font(Font.custom("poppins.bold", size: 14))
+                                    .font(Font.custom("Poppins-ExtraBold", size: 14))
                                 VStack{
-                                    Text(".").font(Font.custom("poppins.light", size: 3))
+                                    Text(".").font(Font.custom("Poppins-Light", size: 3))
                                     Text("hr")
-                                        .font(Font.custom("poppins.light", size: 10))
+                                        .font(Font.custom("Poppins-Light", size: 10))
                                 }
                             }
                         }
                         Spacer()
                         VStack(alignment: .leading){
                             Text("Speed")
-                                .font(Font.custom("poppins.light", size: 8))
+                                .font(Font.custom("Poppins-Light", size: 8))
                             HStack(spacing:1){
                                 Text(rides.speed)
-                                    .font(Font.custom("poppins.bold", size: 14))
+                                    .font(Font.custom("Poppins-Bold", size: 14))
                                 VStack{
-                                    Text(".").font(Font.custom("poppins.light", size: 3))
+                                    Text(".").font(Font.custom("Poppins-Light", size: 3))
                                     Text("kph")
-                                        .font(Font.custom("poppins.light", size: 10))
+                                        .font(Font.custom("Poppins-Light", size: 10))
                                 }
                             }
                         }

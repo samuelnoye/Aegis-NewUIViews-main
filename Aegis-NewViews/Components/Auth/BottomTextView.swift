@@ -23,7 +23,7 @@ struct BottomTextView: View {
                       destination: URL(string: "abc@abc.com")!).foregroundColor(Color("ColorOrange"))
             }
         }.multilineTextAlignment(.center)
-            .font(Font.custom("poppins.extralight",size: 15))
+            .font(Font.custom("Poppins-ExtraLight",size: 13))
             .frame(width: Screen.screenSize.width * 0.99, height: 45, alignment: .center)
                 
     }

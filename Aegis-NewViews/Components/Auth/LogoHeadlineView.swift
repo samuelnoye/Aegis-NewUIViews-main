@@ -14,7 +14,7 @@ struct LogoHeadlineView: View {
                 
                 //MARK: - LOGO & HEADLINE TEXT
                 VStack(){
-                    Image("Logo")
+                    Image("logo")
                         .resizable()
                         .frame(width: Screen.screenSize.width*0.50, height: Screen.screenSize.height*0.10, alignment:.center)
                    
@@ -23,7 +23,7 @@ struct LogoHeadlineView: View {
                          safety system for bikers.
                          """)
                         //.font(.system(size: 20, weight: .light, design: .rounded))
-                        .font(Font.custom("poppins.extralight", size: 20))
+                        .font(Font.custom("Poppins-ExtraLight", size: 17))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
