@@ -11,18 +11,11 @@ struct SearchButtonView: View {
     //MARK: - PROPERETIES
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     @State private var tabSelection = 0
-    let buttonLabel = ["Recent","Favourite","Speed","Distance","Duration"]
-   // let buttonColor = ["bike-gray","hCircleWithHelmetView()","Profile-dark"]
-    
+    let buttonLabel = ["Recent","Favorites","Speed","Distance","Duration"]
+  
     //MARK: - BOBY
     var body: some View {
-        
-       
-        
-        
-        // Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
-        
-        HStack{
+       HStack{
             ForEach(0..<5){num in
                 Button(action:{
                     // action
@@ -31,14 +24,15 @@ struct SearchButtonView: View {
                     Text(buttonLabel[num])
                         .font(Font.custom("poppins.extralight", size: 10))
                         .foregroundColor(tabSelection == num ? Color.white : Color("TextColor"))
-                        .padding(.horizontal,15)
+                        .padding(.horizontal,13)
                         .padding(.vertical,7)
                 }//: Button
                 .background(
                     Capsule()
                         .fill(tabSelection == num ? Color("MainColor") : Color("HomePageColor"))
                 )
-            }
+                
+            }//.padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
          }//.padding()
         
       
