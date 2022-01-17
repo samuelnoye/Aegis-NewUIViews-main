@@ -20,7 +20,7 @@ struct SignUpEmailView: View {
     //MARK: - BODY
     var body: some View {
         ZStack{
-            Image("BG")
+            Image("logo")
                 .resizable()
                 .frame(width: Screen.screenSize.width*1, height: Screen.screenSize.height*1, alignment: .center)
                 
