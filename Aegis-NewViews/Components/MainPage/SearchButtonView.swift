@@ -22,12 +22,12 @@ struct SearchButtonView: View {
                     tabSelection = num
                 }){
                     Text(buttonLabel[num])
-                        .font(Font.custom("poppins.extralight", size: Screen.screenSize.height < 500 ? 4 : 10))
+                        .font(Font.custom("poppins.extralight", size: Screen.screenSize.height < 600 ? 1 : 10))
                         .foregroundColor(tabSelection == num ? Color.white : Color("TextColor"))
-                        .padding(.horizontal,13)
+                        .padding(.horizontal, Screen.screenSize.height < 600 ? 8 : 14)
                         .padding(.vertical,7)
                 }//: Button
-                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.height < 500 ? 0 : 1)
+                //.padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.height < 500 ? 0 : 1)
                 .background(
                     Capsule()
                         .fill(tabSelection == num ? Color("MainColor") : Color("HomePageColor"))
