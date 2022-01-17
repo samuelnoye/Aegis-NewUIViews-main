@@ -16,7 +16,9 @@ struct RidesCardView: View {
             Rectangle()
                 .fill(Color("HomePageColor"))
                 .cornerRadius(15)
-                .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.22)
+                //.padding()
+                .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.20)
+                
             
             VStack(){
                 HStack(){
@@ -83,7 +85,8 @@ struct RidesCardView: View {
                 .frame(height: Screen.screenSize.height*0.15)
             }
             .padding()
-            .frame(width: Screen.screenSize.width*0.95,height: Screen.screenSize.height*0.22)
+            .frame(width: Screen.screenSize.width*0.95,height: Screen.screenSize.height*0.20)
+            
         }
     }
 }

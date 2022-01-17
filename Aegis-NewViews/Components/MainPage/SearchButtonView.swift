@@ -27,7 +27,7 @@ struct SearchButtonView: View {
                         .padding(.horizontal,13)
                         .padding(.vertical,7)
                 }//: Button
-                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.height < 700 ? 2 : 3)
+                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.height < 700 ? 2 : 2)
                 .background(
                     Capsule()
                         .fill(tabSelection == num ? Color("MainColor") : Color("HomePageColor"))
