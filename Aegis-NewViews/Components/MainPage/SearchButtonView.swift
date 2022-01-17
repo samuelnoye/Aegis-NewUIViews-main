@@ -15,7 +15,7 @@ struct SearchButtonView: View {
   
     //MARK: - BOBY
     var body: some View {
-       HStack{
+        HStack(spacing: 5){
             ForEach(0..<5){num in
                 Button(action:{
                     // action
@@ -27,13 +27,14 @@ struct SearchButtonView: View {
                         .padding(.horizontal,13)
                         .padding(.vertical,7)
                 }//: Button
+                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.height < 700 ? 0 : 5)
                 .background(
                     Capsule()
                         .fill(tabSelection == num ? Color("MainColor") : Color("HomePageColor"))
                 )
                 
-            }//.padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
-         }//.padding()
+            }//.padding()
+         }
         
       
         
