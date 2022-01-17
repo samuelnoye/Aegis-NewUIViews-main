@@ -34,7 +34,7 @@ struct MainPageView: View {
                     } .navigationBarHidden(true)
                 }.navigationViewStyle(StackNavigationViewStyle())
                 .tabItem{
-                    Image("bike-green")
+                    Image(tabSelection == 1 ?"bike-green":"bike-gray")
                     Text("Rides")
                 }
                 .tag(1)
