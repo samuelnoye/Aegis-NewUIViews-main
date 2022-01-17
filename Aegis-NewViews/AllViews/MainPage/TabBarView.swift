@@ -10,12 +10,12 @@ import SwiftUI
 struct TabBarView: View {
     
     @State private var tabSelection = 0
-    let tabBarItemsDark = ["bike-green","helmet-white","Profile-white"]
-    let tabBarItemsWhite = ["bike-gray","helmet-dark","Profile-dark"]
-    let tabBarLabel = ["Rides","KL","Profile"]
+    let tabBarItemsDark = ["bike-green","CircleWithHelmetView()","Profile-white"]
+    let tabBarItemsWhite = ["bike-gray","hCircleWithHelmetView()","Profile-dark"]
+    let tabBarLabel = ["Rides","","Profile"]
     
     init(){
-        UITabBar.appearance().barTintColor = .systemBackground
+        UITabBar.appearance().barTintColor = UIColor(Color("HomePageColor"))
     }
   
     var body: some View {

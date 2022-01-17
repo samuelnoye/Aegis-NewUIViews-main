@@ -12,7 +12,6 @@ struct MainPageView: View {
   
     var rides: [Rides] = RidesData
     init(){
-        UINavigationBar.appearance().backgroundColor = UIColor(Color("HomePageBGColor"))
         UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
     }
     var body: some View {
