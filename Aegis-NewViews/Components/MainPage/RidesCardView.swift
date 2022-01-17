@@ -15,7 +15,7 @@ struct RidesCardView: View {
             
             Rectangle()
                 .fill(Color("HomePageColor"))
-                .cornerRadius(10)
+                .cornerRadius(15)
                 .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.22)
             
             VStack(){
@@ -78,7 +78,7 @@ struct RidesCardView: View {
                         .resizable()
                         .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.15)
                         .background(Color("MainPageColor"))
-                        .cornerRadius(10)
+                        .cornerRadius(15)
                 }
                 .frame(height: Screen.screenSize.height*0.15)
             }
