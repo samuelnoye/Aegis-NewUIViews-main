@@ -13,6 +13,7 @@ struct MainPageView: View {
     var rides: [Rides] = RidesData
     init(){
         UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
+        UITabBar.appearance().unselectedItemTintColor = UIColor.red
     }
     var body: some View {
         ZStack{

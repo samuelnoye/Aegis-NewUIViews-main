@@ -16,7 +16,7 @@ struct RidesCardView: View {
             Rectangle()
                 .fill(Color("HomePageColor"))
                 .cornerRadius(10)
-                .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.25)
+                .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.22)
             
             VStack(){
                 HStack(){
@@ -78,14 +78,14 @@ struct RidesCardView: View {
                     Image(rides.video)
                         .renderingMode(.original)
                         .resizable()
-                        .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.17)
+                        .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.15)
                         .background(Color("MainPageColor"))
                         .cornerRadius(10)
                 }
-                .frame(height: Screen.screenSize.height*0.17)
+                .frame(height: Screen.screenSize.height*0.15)
             }
             .padding()
-            .frame(width: Screen.screenSize.width*0.95,height: Screen.screenSize.height*0.25)
+            .frame(width: Screen.screenSize.width*0.95,height: Screen.screenSize.height*0.22)
         }
     }
 }
