@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>poppins.light.ttf</string>
+		<string>poppins.extrabold.ttf</string>
+		<string>poppins.thin.ttf</string>
 		<string>poppins.extralight.ttf</string>
 		<string>poppins.regular.ttf</string>
 		<string>poppins.bold.ttf</string>

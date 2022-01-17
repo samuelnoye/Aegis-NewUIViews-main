@@ -34,10 +34,8 @@ struct RidesCardView: View {
                             Text("Distance")
                                 .font(Font.custom("poppins.light", size: 8))
                             HStack(spacing:1){
-                                Text(rides.distance)
-                                    .font(Font.custom("poppins.bold", size: 14))
+                                Text(rides.distance).font(Font.custom("poppins.bold", size: 14))
                                 VStack{
-                                    
                                     Text(".").font(Font.custom("poppins.light", size: 2))
                                     Text("km")
                                         .font(Font.custom("poppins.light", size: 10))

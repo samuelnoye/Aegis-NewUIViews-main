@@ -13,15 +13,13 @@ struct MainPageView: View {
     var rides: [Rides] = RidesData
     init(){
         UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
-        UITabBar.appearance().unselectedItemTintColor = UIColor.red
     }
     var body: some View {
         ZStack{
             
             
             TabView(selection: $tabSelection){
-            
-                NavigationView {
+            NavigationView {
                 ScrollView([.vertical], showsIndicators: false){
                     VStack{
                         SearchButtonView()
@@ -38,7 +36,6 @@ struct MainPageView: View {
                 .tabItem{
                     Image("bike-green")
                     Text("Rides")
-                       
                 }
                 .tag(1)
                
@@ -46,13 +43,14 @@ struct MainPageView: View {
                     .tabItem{
                        
                     }.tag(2)
+                
                 Text("Profile")
                     .tabItem{
                         Image(systemName: "person.crop.circle.fill")
                         Text("Profile")
                     }
                     .tag(3)
-            }
+            }.accentColor(Color("MainColor"))
             VStack{
             TabTopView()//.padding(.bottom,750)
             Spacer()
