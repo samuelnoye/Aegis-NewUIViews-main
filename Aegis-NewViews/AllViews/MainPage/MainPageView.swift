@@ -22,6 +22,7 @@ struct MainPageView: View {
             
             //MARK: - TABVIEW
             TabView(selection: $tabSelection){
+                //RIDES
                 RideDetailsView()
                     .tabItem{
                         Image(tabSelection == 1 ?"bike-green":"bike-gray")
@@ -29,18 +30,18 @@ struct MainPageView: View {
                     }
                     .tag(1)
                 
+                //MAIN
                 Text("MAIN")
-                SignInPasswordView()
-                    .tabItem{
-                        //CircleWithHelmetView() replaces this
-                    }
+                
+                    .tabItem{}
                     .tag(2)
                 
+                //PROFILE
                 Text("Profile")
                     .tabItem{
                         //Image(systemName: "person.crop.circle.fill")
                         ProfileIconView()
-                        Text("Profile1")
+                        Text("Profile")
                     }
                     .tag(3)
             }.accentColor(Color("MainColor"))
@@ -60,6 +61,6 @@ struct MainPageView: View {
             
         }//:ZStack
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-            .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.all)
     }
 }

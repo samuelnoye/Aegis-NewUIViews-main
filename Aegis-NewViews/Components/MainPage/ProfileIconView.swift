@@ -13,8 +13,8 @@ struct ProfileIconView: View {
             Circle()
                 .fill(Color("MainColor"))
                 .frame(width: Screen.screenSize.width < 375 ? 50 : 80, height: Screen.screenSize.height < 700 ? 25 : 40)
-            Image(systemName: "person.crop.circle.fill")
-                .frame(width: Screen.screenSize.width < 375 ? 45 : 80, height: Screen.screenSize.height < 700 ? 22.5 : 40)
+            Image(systemName: "person.crop.circle")
+                .frame(width: Screen.screenSize.width < 375 ? 45 : 80, height: Screen.screenSize.height < 700 ? 22.5 : 40).border(Color("MainColor"), width: 1)
             
         }
     }
