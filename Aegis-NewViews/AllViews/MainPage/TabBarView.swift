@@ -62,22 +62,3 @@ struct TabBarView_Previews: PreviewProvider {
     }
 }
 
-//TabView(selection: $tabSelection){
-    //ResetPasswordView()
-//    Image("bike")
-//        .tabItem{
-//            Image("bike")
-//            Text("Rides")
-//        }
-//        .tag(1)
-//    Text("MAIN")
-//        .tabItem{
-//
-//        }.tag(2)
-//    Text("Profile")
-//        .tabItem{
-//            Image(systemName: "person.crop.circle.fill")
-//            Text("Profile")
-//        }
-//    .tag(3)
-//}
