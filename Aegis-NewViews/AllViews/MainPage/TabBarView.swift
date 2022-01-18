@@ -10,8 +10,8 @@ import SwiftUI
 struct TabBarView: View {
     
     @State private var tabSelection = 0
-    let tabBarItemsDark = ["bike-green","CircleWithHelmetView()","Profile-white"]
-    let tabBarItemsWhite = ["bike-gray","hCircleWithHelmetView()","Profile-dark"]
+    let tabBarItemsDark = ["bike-green","","Profile-white"]
+    let tabBarItemsWhite = ["bike-gray","","Profile-dark"]
     let tabBarLabel = ["Rides","","Profile"]
     
     init(){
@@ -40,12 +40,23 @@ struct TabBarView: View {
                         tabSelection = num
                     }, label: {
                         Spacer()
-                    VStack{
-                    Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
-                        Text(tabBarLabel[num])
-                            .font(Font.custom("poppins.extralight", size: 10))
-                                    .foregroundColor(tabSelection == num ? Color(.green) : .gray)
+                        if num == 1{
+                   CircleWithHelmetView()
+                        }else if num == 2{
+                        ProfileIconView()
+                            Text(tabBarLabel[num])
+                                .font(Font.custom("poppins.extralight", size: 10))
+                                .foregroundColor(tabSelection == num ? Color(.green) : .init(white: 0.8))
+                         }
+                        else{
+                        VStack{
+                        Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
+                            Text(tabBarLabel[num])
+                                .font(Font.custom("poppins.extralight", size: 10))
+                                .foregroundColor(tabSelection == num ? Color(.green) : .init(white: 0.8))
+                        }
                     }
+                        
                     Spacer()
                     })
                 }
