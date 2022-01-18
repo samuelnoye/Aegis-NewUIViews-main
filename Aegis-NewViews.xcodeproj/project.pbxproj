@@ -13,6 +13,7 @@
 		D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63D6278EF52E005E4294 /* MainPageView.swift */; };
 		D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63DD278F5C8C005E4294 /* RidesView.swift */; };
 		D5B1778C2796B1C700FF9E93 /* ProfileIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1778B2796B1C700FF9E93 /* ProfileIconView.swift */; };
+		D5B177912796C9C700FF9E93 /* RideDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B177902796C9C700FF9E93 /* RideDetailsView.swift */; };
 		D5C008F52780F5AC00E74EA2 /* ConfirmEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */; };
 		D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */; };
 		D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */; };
@@ -66,6 +67,7 @@
 		D5AE63D6278EF52E005E4294 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		D5AE63DD278F5C8C005E4294 /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
 		D5B1778B2796B1C700FF9E93 /* ProfileIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIconView.swift; sourceTree = "<group>"; };
+		D5B177902796C9C700FF9E93 /* RideDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailsView.swift; sourceTree = "<group>"; };
 		D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
 		D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordView.swift; sourceTree = "<group>"; };
 		D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				D5C0ADB12792305C007AC1EE /* RidesCardView.swift */,
 				D5E02C6427947D6E00E19402 /* SearchButtonView.swift */,
 				D5B1778B2796B1C700FF9E93 /* ProfileIconView.swift */,
+				D5B177902796C9C700FF9E93 /* RideDetailsView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C495BE27689C89002DC90F /* Persistence.swift in Sources */,
+				D5B177912796C9C700FF9E93 /* RideDetailsView.swift in Sources */,
 				D5C008F52780F5AC00E74EA2 /* ConfirmEmailView.swift in Sources */,
 				D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */,
 				D5C008FB27858F9D00E74EA2 /* ResetPasswordView.swift in Sources */,

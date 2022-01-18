@@ -13,12 +13,7 @@ struct CircleWithHelmetView: View {
     
     var body: some View {
         VStack(alignment: .center){
-            //Spacer()
             
-            Button(action:{
-                // action
-             // TabView()
-            }, label: {
                 ZStack(){
                     Circle()
                         .fill(Color("CircleBorderColor-1"))
@@ -29,7 +24,7 @@ struct CircleWithHelmetView: View {
                         .overlay(Circle().stroke(Color("CircleBorderColor"),lineWidth: 4))
                     Image(colorScheme == .light ? "helmet-white" : "helmet-dark")
                 }
-            }).buttonStyle(FlatLinkStyle())
+           
         }
     }
 }
