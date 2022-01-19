@@ -19,21 +19,34 @@ struct TabBarView: View {
     }
     
     var body: some View {
-        VStack{
+        ZStack{
             ZStack{
                 switch tabSelection{
                 case 0:
-                    NavigationView{
-                        Text("1")
-                            .navigationTitle("First")
-                    }
+                    RideDetailsView()
+                case 2:
+                   Text("PROFILE")
                 default:
-                    Text("remain")
+                    Text("MAIN")
                 }
                 
             }
-            
+            VStack{
+            VStack{
+                //MARK: - TABTOPVIEW
+                TabTopView()
+                   // .opacity(isHidden ? 0 : 1)
+                Spacer()
+             }
             Spacer()
+                ZStack{
+                    VStack{
+                        Spacer()
+                    Rectangle()
+                        .fill(Color("HomePageColor"))
+                        .frame(height: Screen.screenSize.height*0.10)
+                        .edgesIgnoringSafeArea(.all)
+                    }
             HStack{
                 ForEach(0..<3){num in
                     Button(action: {
@@ -48,7 +61,7 @@ struct TabBarView: View {
                                 ProfileIconView()
                                 Text(tabBarLabel[num])
                                     .font(Font.custom("poppins.extralight", size: 10))
-                                    .foregroundColor(tabSelection == num ? Color(.green) : .init(white: 0.8))
+                                    .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
                             }
                         }
                         else{
@@ -56,14 +69,17 @@ struct TabBarView: View {
                                 Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
                                 Text(tabBarLabel[num])
                                     .font(Font.custom("poppins.extralight", size: 10))
-                                    .foregroundColor(tabSelection == num ? Color(.green) : .init(white: 0.8))
+                                    .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
                             }
                         }
                         
                         Spacer()
                     })
                 }
-            }//.padding()
+            }
+                }
+            }
+            //.padding()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .edgesIgnoringSafeArea(.all)
         //
