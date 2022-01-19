@@ -74,11 +74,22 @@ struct RidesCardView: View {
                         }
                     }
                     Spacer()
+                    ZStack{
                     Image(rides.video)
                         .renderingMode(.original)
                         .resizable()
                         .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.15)
                         .cornerRadius(10)
+                        Spacer()
+                        
+                        ZStack(alignment: .bottomTrailing) {
+                            Circle()
+                                .fill(Color("FavoriteColor"))
+                                .frame(width: 20, height: 20)
+                          
+                        }
+                    }
+                    
                 }
                 .frame(height: Screen.screenSize.height*0.15)
             }
