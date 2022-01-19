@@ -14,7 +14,7 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
-		<string>Dark</string>
+		<string>SplashColor</string>
 		<key>UIImageName</key>
 		<string>logo</string>
 		<key>UIImageRespectsSafeAreaInsets</key>

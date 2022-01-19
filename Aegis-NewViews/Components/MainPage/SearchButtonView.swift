@@ -22,7 +22,7 @@ struct SearchButtonView: View {
                     tabSelection = num
                 }){
                     Text(buttonLabel[num])
-                        .font(Font.custom("poppins.extralight", size: Screen.screenSize.height < 600 ? 1 : 12))
+                        .font(Font.custom("poppins.extralight", size: Screen.screenSize.height < 700 ? 10 : 12))
                         .foregroundColor(tabSelection == num ? Color.white : Color("TextColor"))
                         .padding(.horizontal, Screen.screenSize.height < 600 ? 8 : 14)
                         .padding(.vertical,7)
@@ -32,8 +32,7 @@ struct SearchButtonView: View {
                     Capsule()
                         .fill(tabSelection == num ? Color("MainColor") : Color("HomePageColor"))
                 )
-                
-            }//.padding()
+             }
          }
         
       
