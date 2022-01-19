@@ -10,15 +10,12 @@ import SwiftUI
 struct ProfileIconView: View {
     var body: some View {
         VStack{
-        ZStack{
-            Circle()
-                .fill(Color("MainColor"))
-                .frame(width: Screen.screenSize.width < 375 ? 50 : 60, height: Screen.screenSize.height < 700 ? 25 : 30)
+        
             Image("Profile-white")
-                .frame(width: Screen.screenSize.width < 375 ? 45 : 80, height: Screen.screenSize.height < 700 ? 22.5 : 40)
-            
-        }
-      }
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color("MainColor"), lineWidth: 2))
+                .frame(width: Screen.screenSize.width < 375 ? 50 : 60, height: Screen.screenSize.height < 700 ? 25 : 30)
+       }
     }
 }
 

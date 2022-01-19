@@ -15,7 +15,7 @@ struct RidesCardView: View {
             
             Rectangle()
                 .fill(Color("HomePageColor"))
-                .cornerRadius(15)
+                .cornerRadius(10)
                 .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.20)
                 
             
@@ -78,7 +78,7 @@ struct RidesCardView: View {
                         .renderingMode(.original)
                         .resizable()
                         .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.15)
-                        .cornerRadius(15)
+                        .cornerRadius(10)
                 }
                 .frame(height: Screen.screenSize.height*0.15)
             }

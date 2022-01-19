@@ -20,7 +20,6 @@ struct UserProfileTextFieldView: View {
                     .frame( height: 35.0)
                     .padding(.leading)
                     .foregroundColor(Color.white)
-                
             }
             .padding(.all, 8)
         } .background(Color.black)
