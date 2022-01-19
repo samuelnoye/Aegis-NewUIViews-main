@@ -59,6 +59,7 @@ struct TabBarView: View {
                                 }else if num == 2{
                                     VStack{
                                         ProfileIconView()
+                                            .padding(.top,Screen.screenSize.height < 700 ? 10: 0)
                                         Text(tabBarLabel[num])
                                             .font(Font.custom("poppins.extralight", size: 10))
                                             .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
@@ -70,7 +71,7 @@ struct TabBarView: View {
                                         Text(tabBarLabel[num])
                                             .font(Font.custom("poppins.extralight", size: 10))
                                             .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
-                                    }
+                                    }.padding(.top,Screen.screenSize.height < 700 ? 10: 0)
                                 }
                                 
                                 Spacer()
