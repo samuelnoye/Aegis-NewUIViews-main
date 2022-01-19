@@ -11,7 +11,7 @@ struct MainPageView: View {
     //MARK: - PROPERTIES
     @State private var tabSelection = 1
     @State private var searchButton = 0
-    
+   // @State private var isHidden = ?
     init(){
         UITabBar.appearance().backgroundColor = UIColor(Color("HomePageColor"))
     }
@@ -38,6 +38,7 @@ struct MainPageView: View {
                 
                 //PROFILE
                 Text("Profile")
+                
                     .tabItem{
                         //Image(systemName: "person.crop.circle.fill")
                         ProfileIconView()
@@ -48,11 +49,14 @@ struct MainPageView: View {
             
             VStack{
                 //MARK: - TABTOPVIEW
-                TabTopView()//.padding(.bottom,750)
+                TabTopView()
+                   // .opacity(isHidden ? 0 : 1)
                 Spacer()
+                
                 //MARK: - CIRCLEBUTTONWITHHELMET
                 Button(action:{
                     tabSelection = 2
+                    
                 }, label: {
                     CircleWithHelmetView()
                         .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)

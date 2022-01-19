@@ -2,7 +2,7 @@
 //  DividerView.swift
 //  Aegis-NewViews
 //
-//  Created by Samuel Noye on 14/12/2021.
+//  Created by Samuel Noye Tetteh on 14/12/2021.
 //
 
 import SwiftUI
