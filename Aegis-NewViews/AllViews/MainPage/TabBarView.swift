@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBarView: View {
+    //MARK:- PROPERTIES
     @State private var isHidden = false
     @State private var Hidden = "true"
     @State private var tabSelection = 0
@@ -19,12 +20,12 @@ struct TabBarView: View {
         UITabBar.appearance().barTintColor = UIColor(Color("HomePageColor"))
     }
     
+    //MARK:- BODY
     var body: some View {
         ZStack{
             ZStack{
                 switch tabSelection{
                 case 0:
-                    
                     RideDetailsView()
                 case 2:
                     Text("PROFILE")
@@ -33,12 +34,7 @@ struct TabBarView: View {
                 }
             }
             VStack{
-                VStack{
-                    //MARK: - TABTOPVIEW
-                    //TabTopView()
-                        //.opacity(isHidden ? 0 : 1)
-                    Spacer()
-                }
+                
                 Spacer()
                 VStack{
                     ZStack{

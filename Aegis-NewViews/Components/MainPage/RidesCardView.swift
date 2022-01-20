@@ -89,8 +89,8 @@ struct RidesCardView: View {
                                 Circle()
                                     .fill(Color("FavoriteColor"))
                                     .frame(width: 25, height: 25)
-                                Image(systemName: "suit.heart")
-                                    .foregroundColor(Color("MainColor"))
+                                Image(systemName: "heart.fill")
+                                    .foregroundColor(Color.white)
                             }
                         }).padding()
                     }
