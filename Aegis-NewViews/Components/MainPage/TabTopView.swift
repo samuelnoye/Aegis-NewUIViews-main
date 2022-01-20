@@ -12,26 +12,25 @@ struct TabTopView: View {
     var body: some View {
         HStack{
             
-        ZStack{
-            Rectangle()
-                .fill(Color("HomePageColor"))
-            VStack{
-           Spacer()
-            HStack{
-                Image(colorScheme == .light ? "tabViewlogo-dark":"tabViewlogo-white")
-                Spacer()
-                Button(action:{
-                    // action
-                }, label: {
-                    Image(systemName: "ellipsis")
-                        .foregroundColor(Color("MainColor"))
-                })
-            }.padding()
-            }//.padding()
-        }.background(Color("HomePageColor"))
-        .frame(height: Screen.screenSize.height*0.12)
-        .edgesIgnoringSafeArea(.all)
-          
+            ZStack{
+                Rectangle()
+                    .fill(Color("HomePageColor"))
+                VStack{
+                    Spacer()
+                    HStack{
+                        Image(colorScheme == .light ? "tabViewlogo-dark":"tabViewlogo-white")
+                        Spacer()
+                        Button(action:{
+                            // action
+                        }, label: {
+                            Image(systemName: "ellipsis")
+                                .foregroundColor(Color("MainColor"))
+                        })
+                    }.padding()
+                }
+            }.background(Color("HomePageColor"))
+                .frame(height: Screen.screenSize.height*0.12)
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }

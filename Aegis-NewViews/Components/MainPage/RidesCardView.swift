@@ -16,8 +16,8 @@ struct RidesCardView: View {
             Rectangle()
                 .fill(Color("HomePageColor"))
                 .cornerRadius(10)
-                .frame(width: Screen.screenSize.width*0.95, height: Screen.screenSize.height*0.20)
-                
+                .frame(width: Screen.screenSize.width*0.92, height: Screen.screenSize.height*0.22)
+            
             
             VStack(){
                 HStack(){
@@ -35,7 +35,7 @@ struct RidesCardView: View {
                             Text("Distance")
                                 .font(Font.custom("Poppins-Light", size: 8))
                             HStack(spacing:1){
-                                Text(rides.distance).font(Font.custom("Poppins-Bold", size: 14))
+                                Text(rides.distance).font(Font.custom("Poppins-ExtraBold", size: 14))
                                 VStack{
                                     Text(".").font(Font.custom("Poppins-Light", size: 2))
                                     Text("km")
@@ -74,28 +74,31 @@ struct RidesCardView: View {
                         }
                     }
                     Spacer()
-                    ZStack{
-                    Image(rides.video)
-                        .renderingMode(.original)
-                        .resizable()
-                        .frame(width: Screen.screenSize.width*0.65, height: Screen.screenSize.height*0.15)
-                        .cornerRadius(10)
+                    ZStack(alignment: .bottomTrailing){
+                        Image(rides.video)
+                            .renderingMode(.original)
+                            .resizable()
+                            .frame(width: Screen.screenSize.width*0.60, height: Screen.screenSize.height*0.16)
+                            .cornerRadius(10)
                         Spacer()
-                        
-                        ZStack(alignment: .bottomTrailing) {
-                            Circle()
-                                .fill(Color("FavoriteColor"))
-                                .frame(width: 20, height: 20)
-                          
-                        }
+                        Button(action: {
+                            //
+                        }, label: {
+                            ZStack {
+                                
+                                Circle()
+                                    .fill(Color("FavoriteColor"))
+                                    .frame(width: 25, height: 25)
+                                Image(systemName: "suit.heart")
+                                    .foregroundColor(Color("MainColor"))
+                            }
+                        }).padding()
                     }
-                    
                 }
                 .frame(height: Screen.screenSize.height*0.15)
             }
             .padding()
-            .frame(width: Screen.screenSize.width*0.95,height: Screen.screenSize.height*0.20)
-            
+            .frame(width: Screen.screenSize.width*0.92,height: Screen.screenSize.height*0.22)
         }
     }
 }

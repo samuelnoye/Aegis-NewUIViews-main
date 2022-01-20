@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TabBarView: View {
-    
+    @State private var isHidden = false
+    @State private var Hidden = "true"
     @State private var tabSelection = 0
     let tabBarItemsDark = ["bike-green","","Profile-white"]
     let tabBarItemsWhite = ["bike-gray","","Profile-dark"]
@@ -23,19 +24,19 @@ struct TabBarView: View {
             ZStack{
                 switch tabSelection{
                 case 0:
+                    
                     RideDetailsView()
                 case 2:
                     Text("PROFILE")
                 default:
                     Text("MAIN")
                 }
-                
             }
             VStack{
                 VStack{
                     //MARK: - TABTOPVIEW
                     TabTopView()
-                    // .opacity(isHidden ? 0 : 1)
+                        .opacity(isHidden ? 0 : 1)
                     Spacer()
                 }
                 Spacer()
@@ -46,38 +47,41 @@ struct TabBarView: View {
                             .fill(Color("HomePageColor"))
                             .frame(height: Screen.screenSize.height*0.10)
                             .padding(.top,30)
-                    
-                    HStack{
-                        ForEach(0..<3){num in
-                            Button(action: {
-                                tabSelection = num
-                            }, label: {
-                                Spacer()
-                                if num == 1{
-                                    CircleWithHelmetView()
-                                        .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)
-                                }else if num == 2{
-                                    VStack{
-                                        ProfileIconView()
-                                         Text(tabBarLabel[num])
-                                            .font(Font.custom("poppins.extralight", size: 10))
-                                            .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
-                                    } .padding(.top,Screen.screenSize.height < 700 ? 20: 0)
-                                }
-                                else{
-                                    VStack{
-                                        Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
-                                        Text(tabBarLabel[num])
-                                            .font(Font.custom("poppins.extralight", size: 10))
-                                            .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
-                                    }.padding(.top,Screen.screenSize.height < 700 ? 20: 0)
-                                }
-                                
-                                Spacer()
-                            })
+                        
+                        HStack{
+                            ForEach(0..<3){num in
+                                Button(action: {
+                                    tabSelection = num
+                                    //tabSelection == 1 ? isHidden : Hidden
+                                }, label: {
+                                    Spacer()
+                                    if num == 1{
+                                      
+                                        CircleWithHelmetView()
+                                            .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)
+                                    }else if num == 2{
+                                     //   isHidden = true
+                                        VStack{
+                                            ProfileIconView()
+                                            Text(tabBarLabel[num])
+                                                .font(Font.custom("Poppins-ExtraLight", size: 10))
+                                                .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
+                                        } .padding(.top,Screen.screenSize.height < 700 ? 20: 0)
+                                    }
+                                    else{
+                                        VStack{
+                                            Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
+                                            Text(tabBarLabel[num])
+                                                .font(Font.custom("Poppins-ExtraLight", size: 10))
+                                                .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
+                                        }.padding(.top,Screen.screenSize.height < 700 ? 20: 0)
+                                    }
+                                    
+                                    Spacer()
+                                })
+                            }
                         }
                     }
-                }
                 }
             }
             //.padding()
