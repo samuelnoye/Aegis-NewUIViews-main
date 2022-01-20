@@ -14,7 +14,7 @@ struct RideDetailsView: View {
     //MARK:- BODY
     var body: some View {
         ZStack(alignment: .top){
-            //MARK: - TABTOPVIEW
+            
             
         NavigationView {
             ScrollView([.vertical], showsIndicators: false){
@@ -32,10 +32,9 @@ struct RideDetailsView: View {
             } .navigationBarHidden(true)
                 .navigationViewStyle(StackNavigationViewStyle())
         }
+            //MARK: - TABTOPVIEW
             TabTopView()
-            //Spacer()
         }
-        
     }
 }
 //MARK:- PREVIEW
