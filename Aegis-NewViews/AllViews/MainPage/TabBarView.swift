@@ -35,8 +35,8 @@ struct TabBarView: View {
             VStack{
                 VStack{
                     //MARK: - TABTOPVIEW
-                    TabTopView()
-                        .opacity(isHidden ? 0 : 1)
+                    //TabTopView()
+                        //.opacity(isHidden ? 0 : 1)
                     Spacer()
                 }
                 Spacer()
