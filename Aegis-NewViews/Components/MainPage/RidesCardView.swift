@@ -16,7 +16,7 @@ struct RidesCardView: View {
             
             Rectangle()
                 .fill(Color("HomePageColor"))
-                .cornerRadius(10)
+                .cornerRadius(15)
                 .frame(width: Screen.screenSize.width*0.92, height: Screen.screenSize.height*0.22)
             
             
@@ -79,8 +79,8 @@ struct RidesCardView: View {
                         Image(rides.video)
                             .renderingMode(.original)
                             .resizable()
-                            .frame(width: Screen.screenSize.width*0.60, height: Screen.screenSize.height*0.16)
-                            .cornerRadius(10)
+                            .frame(width: Screen.screenSize.width*0.60, height: Screen.screenSize.height*0.17)
+                            .cornerRadius(15)
                         Spacer()
                         Button(action: {
                             favorite.toggle()
@@ -98,10 +98,11 @@ struct RidesCardView: View {
                         }).padding()
                     }
                 }
-                .frame(height: Screen.screenSize.height*0.15)
+                .frame(height: Screen.screenSize.height*0.16)
+                //.padding()
             }
             .padding()
-            .frame(width: Screen.screenSize.width*0.92,height: Screen.screenSize.height*0.22)
+            .frame(width: Screen.screenSize.width*0.92,height: Screen.screenSize.height*0.21)
         }.padding(.bottom, 5)
     }
     

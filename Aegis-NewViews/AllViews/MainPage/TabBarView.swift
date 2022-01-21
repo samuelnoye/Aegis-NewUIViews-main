@@ -42,23 +42,23 @@ struct TabBarView: View {
                             .fill(Color("HomePageColor"))
                             .frame(height: Screen.screenSize.height*0.10)
                             .padding(.top,30)
-                        
                         HStack{
                             ForEach(0..<3){num in
                                 Button(action: {
                                     tabSelection = num
-                                 }, label: {
+                                }, label: {
                                     Spacer()
                                     if num == 1{
-                                      
                                         CircleWithHelmetView()
                                             .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)
                                     }else if num == 2{
-                                      VStack{
-                                            
+                                        VStack{
+                                            ZStack{
                                             ProfileIconView()
-                                             .overlay(Circle().stroke(Color("MainColor"),lineWidth: 1))
-                                           
+                                                Image(systemName:"circle")
+                                                    .font(.system(size: Screen.screenSize.height < 700 ? 25: 30))
+                                               
+                                            }.foregroundColor(tabSelection == num ? Color("MainColor") : Color.gray)
                                             Text(tabBarLabel[num])
                                                 .font(Font.custom("Poppins-ExtraLight", size: 10))
                                                 .foregroundColor(tabSelection == num ? Color("MainColor") : Color.gray)
@@ -69,10 +69,9 @@ struct TabBarView: View {
                                             Image(tabSelection == 0 ? tabBarItemsDark[num] : tabBarItemsWhite[num])
                                             Text(tabBarLabel[num])
                                                 .font(Font.custom("Poppins-ExtraLight", size: 10))
-                                                .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
+                                                .foregroundColor(tabSelection == num ? Color("MainColor") : Color.gray)
                                         }.padding(.top,Screen.screenSize.height < 700 ? 20: 0)
                                     }
-                                    
                                     Spacer()
                                 })
                             }
@@ -85,6 +84,7 @@ struct TabBarView: View {
     }
 }
 
+//MARK:- BODY
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()
