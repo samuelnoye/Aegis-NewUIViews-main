@@ -55,12 +55,10 @@ struct TabBarView: View {
                                             .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)
                                     }else if num == 2{
                                       VStack{
-                                            ZStack{
+                                            
                                             ProfileIconView()
-                                                
-                                                   // .overlay(Circle().stroke(Color(tabSelection == num ? Color("MainColor") : .init(white: 0.8)), lineWidth: 2))
+                                              //  .overlay(Circle().stroke(Color("MainColor"),lineWidth: 2))
                                            
-                                        }.frame(width: Screen.screenSize.width < 375 ? 50 : 60, height: Screen.screenSize.height < 700 ? 25 : 30)
                                             Text(tabBarLabel[num])
                                                 .font(Font.custom("Poppins-ExtraLight", size: 10))
                                                 .foregroundColor(tabSelection == num ? Color("MainColor") : Color.gray)
