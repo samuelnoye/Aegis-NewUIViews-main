@@ -54,20 +54,16 @@ struct TabBarView: View {
                                         CircleWithHelmetView()
                                             .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)
                                     }else if num == 2{
-                                     //   isHidden = true
-                                        VStack{
+                                      VStack{
                                             ZStack{
-                                            //ProfileIconView()
-                                                Image("Profile-white")
-                                                    .clipShape(Circle())
-                                                  //  .overlay(Circle().stroke(Color(tabSelection == num ? Color("MainColor") : .init(white: 0.8)), lineWidth: 2))
-                                               
-                                                    
+                                            ProfileIconView()
+                                                
+                                                   // .overlay(Circle().stroke(Color(tabSelection == num ? Color("MainColor") : .init(white: 0.8)), lineWidth: 2))
                                            
                                         }.frame(width: Screen.screenSize.width < 375 ? 50 : 60, height: Screen.screenSize.height < 700 ? 25 : 30)
                                             Text(tabBarLabel[num])
                                                 .font(Font.custom("Poppins-ExtraLight", size: 10))
-                                                .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
+                                                .foregroundColor(tabSelection == num ? Color("MainColor") : Color.gray)
                                         } .padding(.top,Screen.screenSize.height < 700 ? 20: 0)
                                     }
                                     else{
