@@ -57,7 +57,7 @@ struct TabBarView: View {
                                       VStack{
                                             
                                             ProfileIconView()
-                                              //  .overlay(Circle().stroke(Color("MainColor"),lineWidth: 2))
+                                             .overlay(Circle().stroke(Color("MainColor"),lineWidth: 1))
                                            
                                             Text(tabBarLabel[num])
                                                 .font(Font.custom("Poppins-ExtraLight", size: 10))
