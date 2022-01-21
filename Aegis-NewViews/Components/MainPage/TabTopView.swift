@@ -31,6 +31,7 @@ struct TabTopView: View {
             }.background(Color("HomePageColor"))
                 .frame(height: Screen.screenSize.height*0.12)
                 .edgesIgnoringSafeArea(.all)
+                
         }
     }
 }

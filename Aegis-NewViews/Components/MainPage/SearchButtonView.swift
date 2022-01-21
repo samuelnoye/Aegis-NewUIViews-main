@@ -24,11 +24,11 @@ struct SearchButtonView: View {
                     Text(buttonLabel[num])
                         .font(Font.custom("poppins.extralight", size: Screen.screenSize.height < 700 ? 10 : 12))
                         .foregroundColor(tabSelection == num ? Color.white : Color("TextColor"))
-                        .padding(.horizontal, Screen.screenSize.height < 600 ? 8 : 14)
+                        .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/, searchButtonPadding(screenHeight: Screen.screenSize.height))
                         .padding(.vertical,7)
                 }//: Button
-                //.padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.height < 500 ? 0 : 1)
-                .padding(.top, getTopPaddingValue(screenHeight: Screen.screenSize.height))
+                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.width < 400 ? 0 : 1)
+                
                 .background(
                     Capsule()
                         .fill(tabSelection == num ? Color("MainColor") : Color("HomePageColor"))
@@ -41,14 +41,14 @@ struct SearchButtonView: View {
         
         
     }
-    func getTopPaddingValue(screenHeight: CGFloat) -> CGFloat {
-        if screenHeight < 700 {
-            return    140
-        } else if (screenHeight > 700 && screenHeight <= 750) {
-            return 155
-        } else if (screenHeight > 750 && screenHeight <= 850) {
-            return 172
+    func searchButtonPadding(screenHeight: CGFloat) -> CGFloat {
+          if screenHeight < 700 {
+                return    14
+            } else if (screenHeight > 700 && screenHeight <= 750) {
+                return 60
+            } else if (screenHeight > 750 && screenHeight <= 850) {
+                return 10
+            }
+            return 13
         }
-        return 180
-    }
 }

@@ -21,7 +21,7 @@ struct RideDetailsView: View {
                 VStack{
                     //MARK: - SEARCHBUTTON
                     SearchButtonView()
-                        .padding(.top, 50)
+                        .padding(.top, searchButtonTopPadding(screenHeight: Screen.screenSize.height))
                     
                     ForEach(rides){ item in
                          RidesCardView(rides: item)
@@ -36,10 +36,15 @@ struct RideDetailsView: View {
             TabTopView()
         }
     }
-}
-//MARK:- PREVIEW
-struct RideDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        RideDetailsView()
+    func searchButtonTopPadding(screenHeight: CGFloat) -> CGFloat {
+        if screenHeight < 700 {
+            return    53
+        } else if (screenHeight > 700 && screenHeight <= 750) {
+            return 60
+        } else if (screenHeight > 750 && screenHeight <= 850) {
+            return 50
+        }
+        return 55
     }
 }
+
