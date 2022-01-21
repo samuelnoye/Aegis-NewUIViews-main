@@ -102,8 +102,10 @@ struct RidesCardView: View {
             }
             .padding()
             .frame(width: Screen.screenSize.width*0.92,height: Screen.screenSize.height*0.22)
-        }
+        }.padding(.bottom, 5)
     }
+    
+   
 }
 
 struct RidesCardView_Previews: PreviewProvider {
