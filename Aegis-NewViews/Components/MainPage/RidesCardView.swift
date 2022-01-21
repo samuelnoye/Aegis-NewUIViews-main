@@ -91,6 +91,8 @@ struct RidesCardView: View {
                                     .frame(width: 25, height: 25)
                                 Image(systemName: "heart.fill")
                                     .foregroundColor(Color.white)
+                                Image(systemName: "heart")
+                                    .foregroundColor(Color("MainColor"))
                             }
                         }).padding()
                     }
