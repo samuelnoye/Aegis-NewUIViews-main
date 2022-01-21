@@ -28,6 +28,7 @@ struct SearchButtonView: View {
                         .padding(.vertical,7)
                 }//: Button
                 //.padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/,Screen.screenSize.height < 500 ? 0 : 1)
+                .padding(.top, getTopPaddingValue(screenHeight: Screen.screenSize.height))
                 .background(
                     Capsule()
                         .fill(tabSelection == num ? Color("MainColor") : Color("HomePageColor"))
@@ -39,5 +40,15 @@ struct SearchButtonView: View {
         
         
         
+    }
+    func getTopPaddingValue(screenHeight: CGFloat) -> CGFloat {
+        if screenHeight < 700 {
+            return    140
+        } else if (screenHeight > 700 && screenHeight <= 750) {
+            return 155
+        } else if (screenHeight > 750 && screenHeight <= 850) {
+            return 172
+        }
+        return 180
     }
 }

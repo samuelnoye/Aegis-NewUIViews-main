@@ -13,7 +13,7 @@ struct ProfileIconView: View {
         
             Image("Profile-white")
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color("MainColor"), lineWidth: 2))
+                //.overlay(Circle().stroke(Color("MainColor"), lineWidth: 2))
                 .frame(width: Screen.screenSize.width < 375 ? 50 : 60, height: Screen.screenSize.height < 700 ? 25 : 30)
        }
     }

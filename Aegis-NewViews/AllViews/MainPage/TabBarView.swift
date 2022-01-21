@@ -34,7 +34,6 @@ struct TabBarView: View {
                 }
             }
             VStack{
-                
                 Spacer()
                 VStack{
                     ZStack{
@@ -48,8 +47,7 @@ struct TabBarView: View {
                             ForEach(0..<3){num in
                                 Button(action: {
                                     tabSelection = num
-                                    //tabSelection == 1 ? isHidden : Hidden
-                                }, label: {
+                                 }, label: {
                                     Spacer()
                                     if num == 1{
                                       
@@ -58,7 +56,15 @@ struct TabBarView: View {
                                     }else if num == 2{
                                      //   isHidden = true
                                         VStack{
-                                            ProfileIconView()
+                                            ZStack{
+                                            //ProfileIconView()
+                                                Image("Profile-white")
+                                                    .clipShape(Circle())
+                                                  //  .overlay(Circle().stroke(Color(tabSelection == num ? Color("MainColor") : .init(white: 0.8)), lineWidth: 2))
+                                               
+                                                    
+                                           
+                                        }.frame(width: Screen.screenSize.width < 375 ? 50 : 60, height: Screen.screenSize.height < 700 ? 25 : 30)
                                             Text(tabBarLabel[num])
                                                 .font(Font.custom("Poppins-ExtraLight", size: 10))
                                                 .foregroundColor(tabSelection == num ? Color("MainColor") : .init(white: 0.8))
@@ -80,10 +86,8 @@ struct TabBarView: View {
                     }
                 }
             }
-            //.padding()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .edgesIgnoringSafeArea(.all)
-        //
     }
 }
 

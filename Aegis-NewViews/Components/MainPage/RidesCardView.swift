@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RidesCardView: View {
     var rides: Rides
+   @State private var favorite = false
     
     var body: some View {
         ZStack{
@@ -82,7 +83,7 @@ struct RidesCardView: View {
                             .cornerRadius(10)
                         Spacer()
                         Button(action: {
-                            //
+                            favorite.toggle()
                         }, label: {
                             ZStack {
                                 
@@ -90,7 +91,7 @@ struct RidesCardView: View {
                                     .fill(Color("FavoriteColor"))
                                     .frame(width: 25, height: 25)
                                 Image(systemName: "heart.fill")
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(favorite ? Color("MainColor") : Color.white)
                                 Image(systemName: "heart")
                                     .foregroundColor(Color("MainColor"))
                             }
