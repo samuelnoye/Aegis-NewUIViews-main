@@ -27,7 +27,7 @@ struct RidesCardView: View {
                     Spacer()
                     Text(rides.date)
                         .font(Font.custom("Poppins-Light", size: 10))
-                }
+                }.padding(.bottom, 2)
                 Spacer()
                 
                 HStack(){
@@ -79,7 +79,7 @@ struct RidesCardView: View {
                         Image(rides.video)
                             .renderingMode(.original)
                             .resizable()
-                            .frame(width: Screen.screenSize.width*0.60, height: Screen.screenSize.height*0.17)
+                            .frame(width: Screen.screenSize.width*0.60, height: Screen.screenSize.height*0.16)
                             .cornerRadius(15)
                         Spacer()
                         Button(action: {

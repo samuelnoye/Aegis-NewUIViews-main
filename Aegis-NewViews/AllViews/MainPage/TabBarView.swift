@@ -52,16 +52,17 @@ struct TabBarView: View {
                                         CircleWithHelmetView()
                                             .padding(.bottom,Screen.screenSize.height < 700 ? 5: 30)
                                     }else if num == 2{
-                                        VStack{
+                                        VStack(spacing:0){
                                             ZStack{
                                             ProfileIconView()
                                                 Image(systemName:"circle")
-                                                    .font(.system(size: Screen.screenSize.height < 700 ? 25: 30))
+                                                    .font(.system(size: Screen.screenSize.height < 700 ? 20: 25))
                                                
                                             }.foregroundColor(tabSelection == num ? Color("MainColor") : Color.gray)
                                             Text(tabBarLabel[num])
                                                 .font(Font.custom("Poppins-ExtraLight", size: 10))
                                                 .foregroundColor(tabSelection == num ? Color("MainColor") : Color.gray)
+                                                
                                         } .padding(.top,Screen.screenSize.height < 700 ? 20: 0)
                                     }
                                     else{

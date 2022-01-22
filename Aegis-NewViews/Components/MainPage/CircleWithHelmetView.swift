@@ -18,7 +18,7 @@ struct CircleWithHelmetView: View {
                     Circle()
                         .fill(Color("CircleBorderColor"))
                         .frame(width: Screen.screenSize.width < 375 ? 136 : 150, height: Screen.screenSize.height < 700 ? 68 : 75)
-                        .overlay(Circle().stroke(Color("CircleBorderColor-1"),lineWidth: 2))
+                        .overlay(Circle().stroke(Color("CircleBorderColor-1"),lineWidth: 3))
                     Circle()
                         .fill(Color("MainColor"))
                         .frame(width: Screen.screenSize.width < 375 ? 110 : 130, height: Screen.screenSize.height < 700 ? 55 : 65)

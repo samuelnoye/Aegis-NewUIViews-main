@@ -14,7 +14,7 @@ struct ProfileIconView: View {
                 .resizable()
                 .scaledToFit()
                .clipShape(Circle())
-            .frame(width: Screen.screenSize.width < 375 ? 60 : 70, height: Screen.screenSize.height < 700 ? 30 : 35)
+            .frame(width: Screen.screenSize.width < 375 ? 50 : 60, height: Screen.screenSize.height < 700 ? 25 : 30)
        }
     }
 }
