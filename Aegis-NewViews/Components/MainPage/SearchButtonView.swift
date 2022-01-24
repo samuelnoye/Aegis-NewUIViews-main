@@ -49,6 +49,6 @@ struct SearchButtonView: View {
             } else if (screenHeight > 750 && screenHeight <= 850) {
                 return 10
             }
-            return 13
+            return 17
         }
 }
