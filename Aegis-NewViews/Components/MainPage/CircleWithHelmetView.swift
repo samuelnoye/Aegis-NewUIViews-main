@@ -21,7 +21,7 @@ struct CircleWithHelmetView: View {
                         .overlay(Circle().stroke(Color("CircleBorderColor-1"),lineWidth: 3))
                     Circle()
                         .fill(Color("MainColor"))
-                        .frame(width: Screen.screenSize.width < 375 ? 110 : 130, height: Screen.screenSize.height < 700 ? 55 : 65)
+                        .frame(width: Screen.screenSize.width < 375 ? 104 : 124, height: Screen.screenSize.height < 700 ? 52 : 62)
                         
                     Image(colorScheme == .light ? "helmet-white" : "helmet-dark")
                 }
