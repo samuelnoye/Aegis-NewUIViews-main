@@ -36,10 +36,10 @@ struct RidesCardView: View {
                             Text("Distance")
                                 .font(Font.custom("Poppins-Light", size: 8))
                             HStack(alignment: .bottom, spacing:1){
-                                Text(rides.distance).font(Font.custom("Poppins-ExtraBold", size: 14))
+                                Text(rides.distance).font(Font.custom("Poppins-Bold", size: 14))
                               
                                     Text("km")
-                                        .font(Font.custom("Poppins-Light", size: 10))
+                                        .font(Font.custom("Poppins-Light", size: 10)).padding(.bottom,1)
                             }
                         }
                         Spacer()
@@ -49,10 +49,10 @@ struct RidesCardView: View {
                             
                             HStack(alignment: .bottom, spacing:1){
                                 Text(rides.duration)
-                                    .font(Font.custom("Poppins-ExtraBold", size: 14))
+                                    .font(Font.custom("Poppins-Bold", size: 14))
     
                                     Text("hr")
-                                        .font(Font.custom("Poppins-Light", size: 10))
+                                    .font(Font.custom("Poppins-Light", size: 10)).padding(.bottom,1)
                             }
                         }
                         Spacer()
@@ -64,7 +64,7 @@ struct RidesCardView: View {
                                     .font(Font.custom("Poppins-Bold", size: 14))
                                
                                     Text("kph")
-                                        .font(Font.custom("Poppins-Light", size: 10))
+                                        .font(Font.custom("Poppins-Light", size: 10)).padding(.bottom,1)
                                 
                             }
                         }

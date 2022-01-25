@@ -30,7 +30,7 @@ struct TabBarView: View {
                 case 2:
                     Text("PROFILE")
                 default:
-                    Text("MAIN")
+                    Text("MAIN").font(Font.custom("Poppins-Light", size: 54))
                 }
             }
             VStack{

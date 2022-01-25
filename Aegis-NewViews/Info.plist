@@ -10,6 +10,7 @@
 		<string>Poppins-ExtraLight.ttf</string>
 		<string>Poppins-Regular.ttf</string>
 		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-Black.ttf</string>
 	</array>
 	<key>UILaunchScreen</key>
 	<dict>
