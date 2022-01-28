@@ -14,7 +14,7 @@ struct SwipeSampleView: View {
             ForEach(rides[0...5]){ ride in
                 ZStack{
                 RidesCardView(rides: ride)
-                }
+                }.background(Color("HomePageColor-1"))
                 
             }
         }
