@@ -11,6 +11,9 @@
 		D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE42769E1D800D06E03 /* BottomTextView.swift */; };
 		D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */; };
 		D58AEA4C27A40ADA00980C00 /* SwipeSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AEA4B27A40ADA00980C00 /* SwipeSampleView.swift */; };
+		D58AEA4E27A4134000980C00 /* IpagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AEA4D27A4134000980C00 /* IpagesView.swift */; };
+		D58AEA5127A4157F00980C00 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D58AEA5027A4157F00980C00 /* Algorithms */; };
+		D58AEA5427A41E8500980C00 /* iPages in Frameworks */ = {isa = PBXBuildFile; productRef = D58AEA5327A41E8500980C00 /* iPages */; };
 		D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63D6278EF52E005E4294 /* MainPageView.swift */; };
 		D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63DD278F5C8C005E4294 /* RidesView.swift */; };
 		D5B1778C2796B1C700FF9E93 /* ProfileIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1778B2796B1C700FF9E93 /* ProfileIconView.swift */; };
@@ -66,6 +69,7 @@
 		D55A7AE62769F7B100D06E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordView.swift; sourceTree = "<group>"; };
 		D58AEA4B27A40ADA00980C00 /* SwipeSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeSampleView.swift; sourceTree = "<group>"; };
+		D58AEA4D27A4134000980C00 /* IpagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpagesView.swift; sourceTree = "<group>"; };
 		D5AE63D6278EF52E005E4294 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		D5AE63DD278F5C8C005E4294 /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
 		D5B1778B2796B1C700FF9E93 /* ProfileIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIconView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58AEA5127A4157F00980C00 /* Algorithms in Frameworks */,
+				D58AEA5427A41E8500980C00 /* iPages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				D58AEA4B27A40ADA00980C00 /* SwipeSampleView.swift */,
+				D58AEA4D27A4134000980C00 /* IpagesView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -314,6 +321,10 @@
 			dependencies = (
 			);
 			name = "Aegis-NewViews";
+			packageProductDependencies = (
+				D58AEA5027A4157F00980C00 /* Algorithms */,
+				D58AEA5327A41E8500980C00 /* iPages */,
+			);
 			productName = "Aegis-NewViews";
 			productReference = D5C495B127689C87002DC90F /* Aegis-NewViews.app */;
 			productType = "com.apple.product-type.application";
@@ -386,6 +397,10 @@
 				Base,
 			);
 			mainGroup = D5C495A827689C87002DC90F;
+			packageReferences = (
+				D58AEA4F27A4157F00980C00 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				D58AEA5227A41E8500980C00 /* XCRemoteSwiftPackageReference "iPages" */,
+			);
 			productRefGroup = D5C495B227689C87002DC90F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -449,6 +464,7 @@
 				D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */,
 				D5C0ADB22792305C007AC1EE /* RidesCardView.swift in Sources */,
 				D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */,
+				D58AEA4E27A4134000980C00 /* IpagesView.swift in Sources */,
 				D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */,
 				D5C0ADB027922B29007AC1EE /* RidesModel.swift in Sources */,
 				D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */,
@@ -807,6 +823,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D58AEA4F27A4157F00980C00 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D58AEA5227A41E8500980C00 /* XCRemoteSwiftPackageReference "iPages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benjaminsage/iPages.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D58AEA5027A4157F00980C00 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58AEA4F27A4157F00980C00 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		D58AEA5327A41E8500980C00 /* iPages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58AEA5227A41E8500980C00 /* XCRemoteSwiftPackageReference "iPages" */;
+			productName = iPages;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D5C495BF27689C89002DC90F /* Aegis_NewViews.xcdatamodeld */ = {
