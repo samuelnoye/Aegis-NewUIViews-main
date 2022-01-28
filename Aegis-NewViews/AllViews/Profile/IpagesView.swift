@@ -16,6 +16,7 @@ struct IpagesView: View {
             TabBarView()
         } .hideDots(true)
             .wraps(true)
+        
 }
 }
 
