@@ -9,13 +9,16 @@ import SwiftUI
 
 struct SwiftBackView: View {
     var rides:[Rides] = RidesData
+   
+    
     var body: some View {
         NavigationView {
-            NavigationLink(destination: Text("Second View")) {
+            NavigationLink(destination: SignUpPasswordView()) {
                 Text("Hello, World!")
             }
-            //.navigationTitle("Navigation")
         }
+        // Add your custom back button here
+        
     }
 }
 

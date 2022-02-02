@@ -18,7 +18,8 @@ struct SignUpPasswordView: View {
     @State var passFieldBind: String = "password"
     @State var passConFieldName: String = "Confirm Password"
     @State var passConFieldBind: String = ""
-    
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+   
     //MARK: - BODY
     var body: some View {
         ZStack{
@@ -57,6 +58,13 @@ struct SignUpPasswordView: View {
                 }.padding(.top,20)
             }//:VSTACK
             .frame(width: Screen.screenSize.width*0.90, height: Screen.screenSize.height*0.70, alignment: .top)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action : {
+                self.mode.wrappedValue.dismiss()
+            }){
+                Image(systemName: "arrow.left")
+                    .foregroundColor(Color.white)
+            })
             
         }//:ZSTACK
         

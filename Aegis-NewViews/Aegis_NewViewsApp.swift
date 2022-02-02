@@ -10,7 +10,8 @@ import SwiftUI
 @main
 struct Aegis_NewViewsApp: App {
     let persistenceController = PersistenceController.shared
-
+    @AppStorage("isDarkMode") var isDarkMode: Bool = false
+    
     var body: some Scene {
         WindowGroup {
             //ForgotPasswordCodeView()
@@ -18,14 +19,15 @@ struct Aegis_NewViewsApp: App {
             // SignUpEmailView()
            // SearchButtonView()
         //  MainPageView()
-           //TabBarView()
+           TabBarView()
           //  SwipeSampleView()
-            SwiftBackView()
+         //   SwiftBackView()
             //SignInPasswordView()
             //SignUpPasswordView()
             //ConfirmEmailView()
             //ResetPasswordView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

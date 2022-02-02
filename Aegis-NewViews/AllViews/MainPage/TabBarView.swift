@@ -15,7 +15,7 @@ struct TabBarView: View {
     let tabBarItemsDark = ["bike-green","","Profile-white"]
     let tabBarItemsWhite = ["bike-gray","","Profile-dark"]
     let tabBarLabel = ["Rides","","Profile"]
-    
+     
     init(){
         UITabBar.appearance().barTintColor = UIColor(Color("HomePageColor"))
     }

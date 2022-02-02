@@ -6,20 +6,13 @@
 //
 
 import SwiftUI
-import iPages
+//import iPages
 
 struct IpagesView: View {
     var body: some View {
-        iPages {
-                    Text("iPages 🤑")
-                    Color.pink
-            TabBarView()
-        } .hideDots(true)
-            .wraps(true)
-        
+   Text("ahjkklvbjnkm")
 }
 }
-
 
 struct IpagesView_Previews: PreviewProvider {
     static var previews: some View {

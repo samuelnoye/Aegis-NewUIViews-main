@@ -12,13 +12,12 @@
 		D55A7AE8276A01CE00D06E03 /* SignUpPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A7AE7276A01CE00D06E03 /* SignUpPasswordView.swift */; };
 		D58AEA4C27A40ADA00980C00 /* SwipeSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AEA4B27A40ADA00980C00 /* SwipeSampleView.swift */; };
 		D58AEA4E27A4134000980C00 /* IpagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AEA4D27A4134000980C00 /* IpagesView.swift */; };
-		D58AEA5127A4157F00980C00 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D58AEA5027A4157F00980C00 /* Algorithms */; };
-		D58AEA5427A41E8500980C00 /* iPages in Frameworks */ = {isa = PBXBuildFile; productRef = D58AEA5327A41E8500980C00 /* iPages */; };
 		D58AEA5627A4373C00980C00 /* SwiftBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AEA5527A4373C00980C00 /* SwiftBackView.swift */; };
 		D5AE63D7278EF52E005E4294 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63D6278EF52E005E4294 /* MainPageView.swift */; };
 		D5AE63DE278F5C8D005E4294 /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE63DD278F5C8C005E4294 /* RidesView.swift */; };
 		D5B1778C2796B1C700FF9E93 /* ProfileIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1778B2796B1C700FF9E93 /* ProfileIconView.swift */; };
 		D5B177912796C9C700FF9E93 /* RideDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B177902796C9C700FF9E93 /* RideDetailsView.swift */; };
+		D5BFC42E27AA78D8004AA9E0 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = D5BFC42D27AA78D8004AA9E0 /* Sound */; };
 		D5C008F52780F5AC00E74EA2 /* ConfirmEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */; };
 		D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */; };
 		D5C008F9278499AA00E74EA2 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */; };
@@ -76,6 +75,7 @@
 		D5AE63DD278F5C8C005E4294 /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
 		D5B1778B2796B1C700FF9E93 /* ProfileIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIconView.swift; sourceTree = "<group>"; };
 		D5B177902796C9C700FF9E93 /* RideDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailsView.swift; sourceTree = "<group>"; };
+		D5BFC42D27AA78D8004AA9E0 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
 		D5C008F42780F5AC00E74EA2 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
 		D5C008F627847FB300E74EA2 /* SignInPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordView.swift; sourceTree = "<group>"; };
 		D5C008F8278499AA00E74EA2 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -112,8 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58AEA5127A4157F00980C00 /* Algorithms in Frameworks */,
-				D58AEA5427A41E8500980C00 /* iPages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +299,7 @@
 		D5C495E82768FC3F002DC90F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D5BFC42D27AA78D8004AA9E0 /* Sound */,
 				D5B1778D2796B1DE00FF9E93 /* Profile */,
 				D5C0ADB427923088007AC1EE /* MainPage */,
 				D5C0ADB32792307C007AC1EE /* Auth */,
@@ -325,8 +324,6 @@
 			);
 			name = "Aegis-NewViews";
 			packageProductDependencies = (
-				D58AEA5027A4157F00980C00 /* Algorithms */,
-				D58AEA5327A41E8500980C00 /* iPages */,
 			);
 			productName = "Aegis-NewViews";
 			productReference = D5C495B127689C87002DC90F /* Aegis-NewViews.app */;
@@ -422,6 +419,7 @@
 			files = (
 				D5C0ADA627907A8A007AC1EE /* Plan_Route in Resources */,
 				D5C495BC27689C89002DC90F /* Preview Assets.xcassets in Resources */,
+				D5BFC42E27AA78D8004AA9E0 /* Sound in Resources */,
 				D5E02C722795E46E00E19402 /* poppins-family in Resources */,
 				D5C495B927689C89002DC90F /* Assets.xcassets in Resources */,
 			);
@@ -635,10 +633,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Aegis-NewViews/Preview Content\"";
-				DEVELOPMENT_TEAM = 2PK549RRNR;
+				DEVELOPMENT_TEAM = R9G43NZ9J2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Aegis-NewViews/Info.plist";
@@ -654,6 +653,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -666,10 +666,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Aegis-NewViews/Preview Content\"";
-				DEVELOPMENT_TEAM = 2PK549RRNR;
+				DEVELOPMENT_TEAM = R9G43NZ9J2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Aegis-NewViews/Info.plist";
@@ -685,6 +686,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amalitech.Aegis-NewViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -846,19 +848,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D58AEA5027A4157F00980C00 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D58AEA4F27A4157F00980C00 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-		D58AEA5327A41E8500980C00 /* iPages */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D58AEA5227A41E8500980C00 /* XCRemoteSwiftPackageReference "iPages" */;
-			productName = iPages;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D5C495BF27689C89002DC90F /* Aegis_NewViews.xcdatamodeld */ = {
