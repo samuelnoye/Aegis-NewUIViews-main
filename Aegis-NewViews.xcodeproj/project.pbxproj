@@ -42,6 +42,10 @@
 		D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E427689D3F002DC90F /* SignUpEmailView.swift */; };
 		D5C495E72768ECF6002DC90F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E62768ECF5002DC90F /* DividerView.swift */; };
 		D5C495EA2768FC7A002DC90F /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */; };
+		D5CB214527AE6EA3002235E6 /* TabTopProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB214427AE6EA3002235E6 /* TabTopProfileView.swift */; };
+		D5CB214727AE6EBB002235E6 /* ProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB214627AE6EBB002235E6 /* ProfilePageView.swift */; };
+		D5CB214927AE6EE9002235E6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB214827AE6EE9002235E6 /* Utilities.swift */; };
+		D5CB214B27AE706F002235E6 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB214A27AE706F002235E6 /* StatsView.swift */; };
 		D5E02C6527947D6E00E19402 /* SearchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E02C6427947D6E00E19402 /* SearchButtonView.swift */; };
 		D5E02C722795E46E00E19402 /* poppins-family in Resources */ = {isa = PBXBuildFile; fileRef = D5E02C712795E46E00E19402 /* poppins-family */; };
 /* End PBXBuildFile section */
@@ -103,6 +107,10 @@
 		D5C495E427689D3F002DC90F /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
 		D5C495E62768ECF5002DC90F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		D5C495E92768FC7A002DC90F /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
+		D5CB214427AE6EA3002235E6 /* TabTopProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabTopProfileView.swift; sourceTree = "<group>"; };
+		D5CB214627AE6EBB002235E6 /* ProfilePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePageView.swift; sourceTree = "<group>"; };
+		D5CB214827AE6EE9002235E6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		D5CB214A27AE706F002235E6 /* StatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		D5E02C6427947D6E00E19402 /* SearchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonView.swift; sourceTree = "<group>"; };
 		D5E02C712795E46E00E19402 /* poppins-family */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "poppins-family"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +143,7 @@
 		D55A7AE9276A517900D06E03 /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
+				D5CB214827AE6EE9002235E6 /* Utilities.swift */,
 				D5E02C712795E46E00E19402 /* poppins-family */,
 			);
 			path = CustomFonts;
@@ -143,6 +152,8 @@
 		D58AEA4A27A40AB300980C00 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D5CB214427AE6EA3002235E6 /* TabTopProfileView.swift */,
+				D5CB214627AE6EBB002235E6 /* ProfilePageView.swift */,
 				D58AEA4B27A40ADA00980C00 /* SwipeSampleView.swift */,
 				D58AEA4D27A4134000980C00 /* IpagesView.swift */,
 				D58AEA5527A4373C00980C00 /* SwiftBackView.swift */,
@@ -178,6 +189,7 @@
 		D5B1778D2796B1DE00FF9E93 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D5CB214A27AE706F002235E6 /* StatsView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -185,6 +197,7 @@
 		D5C0ADAB27922AB0007AC1EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5C0ADAC27922AD5007AC1EE /* Data */,
 				D5C0ADAF27922B29007AC1EE /* RidesModel.swift */,
 			);
 			path = Model;
@@ -245,7 +258,6 @@
 		D5C495B327689C87002DC90F /* Aegis-NewViews */ = {
 			isa = PBXGroup;
 			children = (
-				D5C0ADAC27922AD5007AC1EE /* Data */,
 				D5C0ADAB27922AB0007AC1EE /* Model */,
 				D55A7AE9276A517900D06E03 /* CustomFonts */,
 				D55A7AE62769F7B100D06E03 /* Info.plist */,
@@ -452,12 +464,16 @@
 				D5C495E527689D3F002DC90F /* SignUpEmailView.swift in Sources */,
 				D5C008FB27858F9D00E74EA2 /* ResetPasswordView.swift in Sources */,
 				D55A7AE32769E06200D06E03 /* LogoHeadlineView.swift in Sources */,
+				D5CB214927AE6EE9002235E6 /* Utilities.swift in Sources */,
 				D58AEA5627A4373C00980C00 /* SwiftBackView.swift in Sources */,
 				D5B1778C2796B1C700FF9E93 /* ProfileIconView.swift in Sources */,
 				D5C0ADAE27922AFF007AC1EE /* RidesData.swift in Sources */,
 				D5C008FD2785E11400E74EA2 /* ForgotPasswordCodeView.swift in Sources */,
+				D5CB214B27AE706F002235E6 /* StatsView.swift in Sources */,
 				D55A7AE52769E1D800D06E03 /* BottomTextView.swift in Sources */,
 				D5C008F727847FB300E74EA2 /* SignInPasswordView.swift in Sources */,
+				D5CB214527AE6EA3002235E6 /* TabTopProfileView.swift in Sources */,
+				D5CB214727AE6EBB002235E6 /* ProfilePageView.swift in Sources */,
 				D5C0ADAA2791CAFA007AC1EE /* TabTopView.swift in Sources */,
 				D5C495B727689C87002DC90F /* ContentView.swift in Sources */,
 				D5C495B527689C87002DC90F /* Aegis_NewViewsApp.swift in Sources */,

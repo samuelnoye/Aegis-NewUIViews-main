@@ -14,28 +14,28 @@ struct RideDetailsView: View {
     //MARK:- BODY
     var body: some View {
         ZStack(alignment: .top){
-            
-            
-            NavigationView {
-                ScrollView([.vertical], showsIndicators: false){
-                    VStack{
-                        //MARK: - SEARCHBUTTON
-                        SearchButtonView()
-                            .padding(.top, searchButtonTopPadding(screenHeight: Screen.screenSize.height))
-                        
-                        ForEach(rides){ item in
-                            RidesCardView(rides: item)
-                        }
-                    }
-                    .padding()
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity).background(Color("HomePageBGColor"))
-                } .navigationBarHidden(true)
-                    .navigationViewStyle(StackNavigationViewStyle())
-            }
-            //MARK: - TABTOPVIEW
-            TabTopView()
-        }
-    }
+                  
+                  
+                  NavigationView {
+                      ScrollView([.vertical], showsIndicators: false){
+                          VStack{
+                              //MARK: - SEARCHBUTTON
+                              SearchButtonView()
+                                  .padding(.top, searchButtonTopPadding(screenHeight: Screen.screenSize.height))
+                              
+                              ForEach(rides){ item in
+                                  RidesCardView(rides: item)
+                              }
+                          }
+                          .padding()
+                          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity).background(Color("HomePageBGColor"))
+                      } .navigationBarHidden(true)
+                          .navigationViewStyle(StackNavigationViewStyle())
+                  }
+                  //MARK: - TABTOPVIEW
+                  TabTopView()
+              }
+          }
     func searchButtonTopPadding(screenHeight: CGFloat) -> CGFloat {
         if screenHeight < 700 {
             return    53
