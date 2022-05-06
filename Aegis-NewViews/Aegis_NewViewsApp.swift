@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct Aegis_NewViewsApp: App {
     let persistenceController = PersistenceController.shared
-    @AppStorage("isDarkMode") var isDarkMode: Bool = true
+    @AppStorage("isDarkMode") var isDarkMode: Bool = false
     
     var body: some Scene {
         WindowGroup {
