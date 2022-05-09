@@ -15,7 +15,7 @@ struct Aegis_NewViewsApp: App {
     var body: some Scene {
         WindowGroup {
             //ForgotPasswordCodeView()
-            //ForgotPasswordView()
+            ForgotPasswordView()
             // SignUpEmailView()
            // SearchButtonView()
          // MainPageView()
