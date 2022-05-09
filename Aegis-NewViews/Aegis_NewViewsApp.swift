@@ -21,7 +21,7 @@ struct Aegis_NewViewsApp: App {
          // MainPageView()
            TabBarView()
           //  SwipeSampleView()
-         //   SwiftBackView()
+            SwiftBackView()
             //SignInPasswordView()
             //SignUpPasswordView()
             //ConfirmEmailView()
