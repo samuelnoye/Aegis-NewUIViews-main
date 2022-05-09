@@ -8,7 +8,7 @@ import SwiftUI
 
 let RidesData: [Rides] = [
     Rides(
-        username: "Sam",
+        username: "Samuel",
         date: "12-08-21",
         day: "Tuesday",
         distance: "25.5",
