@@ -17,7 +17,7 @@ let RidesData: [Rides] = [
         video: "map"
       ),
     Rides(
-        username: "Mark",
+        username: "Mark Arthur",
         date: "12-08-21",
         day: "Tuesday",
         distance: "25.5",
