@@ -10,7 +10,7 @@ let RidesData: [Rides] = [
     Rides(
         username: "Samuel",
         date: "12-08-21",
-        day: "Tuesday",
+        day: "Tuesday man",
         distance: "25.5",
         duration:"1.03",
         speed: "73",
