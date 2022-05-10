@@ -11,7 +11,7 @@ let RidesData: [Rides] = [
         username: "Samuel",
         date: "12-08-21",
         day: "Tuesday man",
-        distance: "25.5",
+        distance: "25.6",
         duration:"1.03",
         speed: "73",
         video: "map"
