@@ -19,7 +19,7 @@ struct Aegis_NewViewsApp: App {
             // SignUpEmailView()
            // SearchButtonView()
          // MainPageView()
-           TabBarView()
+         //  TabBarView()
           //  SwipeSampleView()
           //  SwiftBackView()
             //SignInPasswordView()
