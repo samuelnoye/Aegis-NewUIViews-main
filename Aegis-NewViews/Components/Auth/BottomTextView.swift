@@ -13,7 +13,7 @@ struct BottomTextView: View {
         //MARK: - BOTTOM TEXT
         VStack(spacing:5){
             Spacer()
-          //  Text("By using our app you confirm that you accept our")
+            Text("By using our app you confirm that you accept our")
                 .foregroundColor(Color.white)
             HStack{
                 Link("Terms of Use",
