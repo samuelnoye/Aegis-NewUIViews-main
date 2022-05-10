@@ -26,12 +26,12 @@ struct DividerView: View {
                 line
             }.foregroundColor(color)        }
 
-        var line: some View {
-            VStack { Divider()
-                    .background(color)
-                    .foregroundColor(color)
-            }.padding(horizontalPadding)
-        }
+        // var line: some View {
+        //     VStack { Divider()
+        //             .background(color)
+        //             .foregroundColor(color)
+        //     }.padding(horizontalPadding)
+        // }
 }
 struct DividerView_Previews: PreviewProvider {
     static var previews: some View {
