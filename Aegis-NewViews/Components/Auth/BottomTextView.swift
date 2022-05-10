@@ -18,7 +18,7 @@ struct BottomTextView: View {
             HStack{
                 Link("Terms of Use",
                        destination: URL(string: "abc@abc.com")!).foregroundColor(Color("ColorOrange"))
-               // Text("and").foregroundColor(Color.white)
+                Text("and").foregroundColor(Color.white)
                Link("Privacy Policy.",
                       destination: URL(string: "abc@abc.com")!).foregroundColor(Color("ColorOrange"))
             }
