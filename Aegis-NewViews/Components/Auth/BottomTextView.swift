@@ -29,9 +29,9 @@ struct BottomTextView: View {
     }
 }
 
-// struct BottomTextView_Previews: PreviewProvider {
-//     static var previews: some View {
-//         BottomTextView()
-//             .preferredColorScheme(.dark)
-//     }
+struct BottomTextView_Previews: PreviewProvider {
+    static var previews: some View {
+        BottomTextView()
+            .preferredColorScheme(.dark)
+    }
 }
